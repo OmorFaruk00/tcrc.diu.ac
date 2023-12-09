@@ -32,7 +32,59 @@
 <!-- Add this to the head of your HTML file -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
+<style>
+  #header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  .navbar>ul>li {
+  white-space: nowrap;
+  padding: 10px 0 10px 5px !important;
+}
+.navbar a,
+.navbar a:focus {  
+  font-size: 16px !important;
+  text-align: center;
 
+}
+.top-logo img{
+  /* margin-left:50px; */
+  width:200px
+}
+@media (max-width: 1390px) {  
+  .navbar>ul>li {
+    white-space: nowrap;
+    padding: 10px 0 10px 5px;
+  }
+  .navbar a {
+    font-size: 11px !important;
+  }
+  .navbar a,
+.navbar a:focus {  
+  font-size: 11px !important;
+
+}
+.top-logo img{
+  /* margin-left:10px; */
+  width:100px
+}
+}
+
+
+/* @media (max-width: 590px) {
+.top-logo img{
+  width:300px;
+  padding-right: 200px
+  
+}
+} */
+
+
+</style>
 
 
  
@@ -44,7 +96,7 @@
   <section id="topbar" class="d-flex align-items-center">
     <div class="container d-flex justify-content-center justify-content-md-between">
       <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">bcgd.diu@gmail.com & infobcgddiu@gmail.com </a></i>
+        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">bcgd.diu@gmail.com</a></i>
         <i class="bi bi-phone d-flex align-items-center ms-4"><span>01718200985 </span></i>
       </div>
       <div class="social-links d-none d-md-flex align-items-center">
@@ -56,13 +108,12 @@
     </div>
   </section>
 
+   
+
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex align-items-center">
-    <div class="container d-flex align-items-center justify-content-between">
-
-      {{-- <h1 class="logo"><a href="index.html" >BCGD<span>.</span></a></h1> --}}
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <a href="#" class="logo"><img src="assets/img/bcgd.jpg" alt="" style="width:100px;margin-top:15px"></a>
+    <div class=" d-flex align-items-center justify-content-between">      
+      <a href="#" class="top-logo"><img src="assets/img/logo.jpg" alt="" style=""></a>
 
       <nav id="navbar" class="navbar">
         <ul>
@@ -132,28 +183,15 @@
   <!-- ======= Footer ======= -->
   <footer id="footer">
 
-    <div class="footer-newsletter">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-6">
-            <h4>Join Our Newsletter</h4>
-            <p>Sign Up to Our Newsletter to Get Latest Updates & Services</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <div class="footer-top">
       <div class="container">
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-contact">
-            <a href="#" class=""><img src="assets/img/footer-logo.jpg" alt="" style="width:250px;margin-top:-25px;margin-left:-25px"></a>
+            <a href="#" class=""><img src="assets/img/logo.jpg" alt="" style="width:250px;margin-top:-25px;margin-left:-25px"></a>
             <p>
-              04, Road# 01, Block# F,<br>
+              House# 04, Road# 01, Block# F,<br>
               Banani, Dhaka 1213, <br>
               Bangladesh. <br><br>
               <strong>Phone:</strong>  01718200985<br>
