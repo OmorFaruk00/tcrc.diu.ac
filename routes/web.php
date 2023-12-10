@@ -37,3 +37,12 @@ Route::get('/public_health',[FrontEndController::class,'publicHealth'])->name('p
 Route::get('/social_media',[FrontEndController::class,'socialMedia'])->name('social.media');
 Route::get('/mainstream_media',[FrontEndController::class,'mainstreamMedia'])->name('mainstream.media');
 Route::get('/electronic_media',[FrontEndController::class,'electronicMedia'])->name('electronic.media');
+
+Route::get('/activity1',[FrontEndController::class,'activity1'])->name('activity1');
+Route::get('/activity2',[FrontEndController::class,'activity2'])->name('activity2');
+Route::get('/activity3',[FrontEndController::class,'activity3'])->name('activity3');
+Route::get('/activity4',[FrontEndController::class,'activity4'])->name('activity4');
+Route::get('/activity5',[FrontEndController::class,'activity5'])->name('activity5');
+Route::get('/activity6',[FrontEndController::class,'activity6'])->name('activity6');
+Route::get('/activity7',[FrontEndController::class,'activity7'])->name('activity7');
+Route::get('/activity8',[FrontEndController::class,'activity8'])->name('activity8');

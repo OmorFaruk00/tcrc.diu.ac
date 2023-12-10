@@ -70,6 +70,31 @@ class FrontEndController extends Controller
     public function electronicMedia(){
         return view('electronic-media');
     }
+
+    public function activity1(){
+        return view('activity.activity1');
+    }
+    public function activity2(){
+        return view('activity.activity2');
+    }
+    public function activity3(){
+        return view('activity.activity3');
+    }
+    public function activity4(){
+        return view('activity.activity4');
+    }
+    public function activity5(){
+        return view('activity.activity5');
+    }
+    public function activity6(){
+        return view('activity.activity6');
+    }
+    public function activity7(){
+        return view('activity.activity7');
+    }
+    public function activity8(){
+        return view('activity.activity8');
+    }
    
 
     

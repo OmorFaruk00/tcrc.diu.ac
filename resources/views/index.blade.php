@@ -26,21 +26,61 @@
   width: 100% !important
 
 }
+.activitie{
+  border: 3px solid #f5f5f5;
+  padding: 10px;
+  border-radius: 20px
+}
+.activitie-img img{
+  height: 200px;
+  border-radius: 20px;
+  width: 100%;
+  margin-bottom: 20px;
+  
+
+}
+.activitie-info{
+  margin-bottom: 20px;
+}
+.activitie-info h4{
+  font-size: 16px;
+  line-height: 26px;
+  color: #000;
+  padding: 0px 10px;
+  margin-bottom: 10px;
+  text-align: justify;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+   overflow: hidden;
+}
+
+.activitie-info p{
+  color: #6D747F;
+  padding: 0px 10px;
+  text-align: justify;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+   overflow: hidden;
+}
+.read_more{
+  background: #FDC106;
+  color: #000;
+  padding: 5px 10px;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+.read_more:hover{
+  background: #fff;
+  color: #000;
+  border: 2px solid #FDC106;
+}
 
 </style>
-  <!-- ======= Hero Section ======= -->
-  {{-- <section id="hero" class="d-flex align-items-center">
-    <div class="container" data-aos="zoom-out" data-aos-delay="100">
-      <h1>Welcome to <span>Bcgd</span></h1>
-      <h2>We are team of talented designers making websites with Bootstrap</h2>
-      <div class="d-flex">
-        <a href="#about" class="btn-get-started scrollto">Get Started <i class="fas fa-arrow-right"></i></a>
-        <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
-      </div>
-    </div>
-  </section><!-- End Hero --> --}}
+ 
 
-  <div>
+  <div class="container">
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -51,22 +91,22 @@
         <div class="carousel-item active">
           <img src="assets/img/slider1.png" class="d-block w-100" alt="..." style="height: 75vh">
           <div class="carousel-caption d-none d-md-block">
-            <h1>Welcome to Bangladesh Center for Governance and Development, DIU.</h1>
-            <h5>BCGD are to become a think tank and academic hub on public policy, climate change and migration studies across the globe. </h5>
+            <h3>Welcome to Bangladesh Center for Governance and Development, DIU.</h3>
+            <h6>BCGD are to become a think tank and academic hub on public policy, climate change and migration studies across the globe. </h6>
           </div>
         </div>
         <div class="carousel-item">
           <img src="assets/img/slider2.jpg" class="d-block w-100" alt="..." style="height: 75vh">
           <div class="carousel-caption d-none d-md-block">
-            <h1>Welcome to Bangladesh Center for Governance and Development, DIU.</h1>
-            <h5>BCGD are to become a think tank and academic hub on public policy, climate change and migration studies across the globe. </h5>
+            <h3>Welcome to Bangladesh Center for Governance and Development, DIU.</h3>
+            <h6>BCGD are to become a think tank and academic hub on public policy, climate change and migration studies across the globe. </h6>
           </div>
         </div>
         <div class="carousel-item">
           <img src="assets/img/slider3.png" class="d-block w-100" alt="..." style="height: 75vh">
           <div class="carousel-caption d-none d-md-block">
-            <h1>Welcome to Bangladesh Center for Governance and Development, DIU.</h1>
-            <h5>BCGD are to become a think tank and academic hub on public policy, climate change and migration studies across the globe. </h5>
+            <h3>Welcome to Bangladesh Center for Governance and Development, DIU.</h3>
+            <h6>BCGD are to become a think tank and academic hub on public policy, climate change and migration studies across the globe. </h6>
           </div>
         </div>
       </div>
@@ -90,26 +130,178 @@
     <section id="about" class="about about-bg">
       <div class="container" data-aos="fade-up">
 
-        <div >
-          <h2>About DIU and BCGD</h2>
-          <p style="text-align:justify" >“A commitment to excellence in teaching and research will increasingly depend on a university’s capacity to partner as much it does on its ability to create and disseminate knowledge. Put another way, effective engagement that is central to university strategy may provide the most powerful driver of the agility required to thrive in the uncertain environment to which universities are subject worldwide.” said by Gaskell, S. & A. Collette. (The Benefits of Engagement. Times Higher Ed Feature Article; Dec 8, 2016.)</p>
-        
-          <p style="text-align:justify"><strong>Dhaka International University (DIU)</strong> is one of the leading private universities in Bangladesh. It is a non-profitable institution which maintains strict academic rules and provides quality educations in 10 disciplines. The mission of DIU is to produce able leaders in the respective field of study who can meet the challenges of present dynamic world. It provides multidisciplinary knowledge, improves communication and interpersonal skills at the highest level of excellence among the students, which will make them honest, sincere and dedicated in their thoughts and deeds. The vision of this university is ‘to see an educated and healthy generation’. </p>
-        
-          <p style="text-align:justify">To meet successfully the above vision and missions, the university is continuously working on various governance, and development issues including climate change, human migration due to climate change, public health, human rights and so on.</p>
-        
-          <p style="text-align:justify">As Bangladesh looks forward to becoming an advanced economy by 2041, the country needs professionals with an adequate understanding of the evolving governance and development dynamics. Therefore, there is always an overarching need for critical research on governance and development issues such as nationwide fast mobility and communication for fast economic growth, climate change, river erosion, reduced upstream flow of the rivers, salinity, migration, displacement, increased inequality, unemployment, social disintegration, and so on. Within this context and formalization with the community engagement, the university has established the <strong> Bangladesh Center for Governance and Development (BCGD). </strong></p>
-
-          <div class="d-flex justify-content-end mt-4" data-aos="fade-left" data-aos-delay="100">
-            <a href="https://www.facebook.com/BCGD.DIU " class="btn-get-started scrollto">View BCGD Latest Facebook Post <i class="fas fa-arrow-right"></i></a>
+        <div class="row">
+          <div class="col-lg-7 col-md-7 col-sm-12">
+              <h2>About DIU and BCGD</h2>
+              <p style="text-align:justify" >“A commitment to excellence in teaching and research will increasingly depend on a university’s capacity to partner as much it does on its ability to create and disseminate knowledge. Put another way, effective engagement that is central to university strategy may provide the most powerful driver of the agility required to thrive in the uncertain environment to which universities are subject worldwide.” said by Gaskell, S. & A. Collette. (The Benefits of Engagement. Times Higher Ed Feature Article; Dec 8, 2016.)</p>
+            
+              <p style="text-align:justify"><strong>Dhaka International University (DIU)</strong> is one of the leading private universities in Bangladesh. It is a non-profitable institution which maintains strict academic rules and provides quality educations in 10 disciplines. The mission of DIU is to produce able leaders in the respective field of study who can meet the challenges of present dynamic world. It provides multidisciplinary knowledge, improves communication and interpersonal skills at the highest level of excellence among the students, which will make them honest, sincere and dedicated in their thoughts and deeds. The vision of this university is ‘to see an educated and healthy generation’. </p>
+              <a href="{{route('about.history')}}" target="_blank" class="btn-get-started scrollto mb-3">Read More <i class="fas fa-arrow-right"></i></a>
+          
           </div>
-        
+          <div class="col-lg-5 col-md-5 col-sm-12" >
+              <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FBCGD.DIU%2Fposts%2Fpfbid0RZb1LihBTKmdd2fLtH46grGmyHxff7nBTCwMShQ22XrmiX27srMzsEi8zLaK68R5l&show_text=true&width=500" width="100%" height="370" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; picture-in-picture; web-share"></iframe>
+            <div class=" mt-4" data-aos="fade-left" data-aos-delay="100">
+              <a href="https://www.facebook.com/BCGD.DIU " target="_blank" class="btn-get-started scrollto" style="">View BCGD Latest Facebook Post <i class="fas fa-arrow-right"></i></a>
+
+          </div>
         </div>
+
+            </div>
+    </section><!-- End About Section -->
+    
+
+<!-- Recent Activities -->
+<section>
+  <div class="container" data-aos="zoom-in">
+    <h2 >RECENT ACTIVITIES</h2>
+
+
+    <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+            <div class="row">
+              
+              <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-5" data-aos="fade-up" data-aos-delay="100">
+                <div class="activitie">
+                  <div class="activitie-img">
+                    <img src="assets/img/activity/activity1.png" class="img-fluid" alt="">
+                    
+                  </div>
+                  <div class="activitie-info">
+                    <h4>Program Report: Roundtable Meeting on Road Safety Law - Bangladesh Perspective
+                    </h4>
+                    <p>The roundtable meeting on Road Safety Law Bangladesh Perspective was organized by the Road Safety Coalition Bangladesh at Hotel Intercontinental, Dhaka. </p>
+                    <p><i class="fas fa-calendar" style="margin-right: 10px"></i>21st October, 2023</p>
+                    <a href="{{ route('activity1') }}" target="_blank" class="read_more mb-4">Read More</a>
+                  </div>
+                </div>
+              </div>  
+              <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-5" data-aos="fade-up" data-aos-delay="100">
+                <div class="activitie">
+                  <div class="activitie-img">
+                    <img src="assets/img/activity/activity2.png" class="img-fluid" alt="">
+                    
+                  </div>
+                  <div class="activitie-info">
+                    <h4>The Multi-stakeholder Preparatory Workshop on "COP28 Influencing Arbitrations"</h4>
+                    <p>The Multi-stakeholder Preparatory Workshop on "COP28 Influencing Arbitrations" jointly  </p>
+                    <p><i class="fas fa-calendar" style="margin-right: 10px"></i>11 November 2023</p>
+                    <a href="{{ route('activity2') }}" target="_blank" class="read_more mb-4">Read More</a>
+                  </div>
+                </div>
+              </div>  
+              <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-5" data-aos="fade-up" data-aos-delay="100">
+                <div class="activitie">
+                  <div class="activitie-img">
+                    <img src="assets/img/activity/activity3.png" class="img-fluid" alt="">
+                    
+                  </div>
+                  <div class="activitie-info">
+                    <h4>COP 27-Climate Change Debriefing Program at Parliament Members Club</h4>
+                    <p>Team Dhaka International University is at COP 27-Climate Change Debriefing Program at Parliament Members Club, Bangladesh National Parliament, Dhaka. </p>
+                    <p><i class="fas fa-calendar" style="margin-right: 10px"></i>08 Feb 2023</p>
+                    <a href="{{ route('activity3') }}" target="_blank" class="read_more mb-4">Read More</a>
+                  </div>
+                </div>
+              </div> 
+              <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-5" data-aos="fade-up" data-aos-delay="100">
+                <div class="activitie">
+                  <div class="activitie-img">
+                    <img src="assets/img/activity/activity4.png" class="img-fluid" alt="">
+                    
+                  </div>
+                  <div class="activitie-info">
+                    <h4>22 organizations demand ban on e-cigarette in Bangladesh</h4>
+                    <p>The organisations argued that the activities of tobacco companies in the production and expansion of e-cigarettes in the country may cause a serious threat to public health.  </p>
+                    <p><i class="fas fa-calendar" style="margin-right: 10px"></i>November 25, 2023</p>
+                    <a href="{{ route('activity4') }}" target="_blank" class="read_more mb-4">Read More</a>
+                  </div>
+                </div>
+              </div>      
+               </div>
+         
+        </div><!-- End testimonial item -->
+
+        <div class="swiper-slide">
+            <div class="row">             
+              <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-5" data-aos="fade-up" data-aos-delay="100">
+                <div class="activitie">
+                  <div class="activitie-img">
+                    <img src="assets/img/activity/activity5.png" class="img-fluid" alt="">
+                    
+                  </div>
+                  <div class="activitie-info">
+                    <h4>Health Ministry’s Proposal to Ban E-Cigarettes is Commendable</h4>
+                    <p>Recently, the drafting amendment of the Smoking and Tobacco Products Usage (Control) Act-2005 (amendment 2013) has included </p>
+                    <p><i class="fas fa-calendar" style="margin-right: 10px"></i>January 30, 2023</p>
+                    <a href="{{ route('activity5') }}" target="_blank" class="read_more mb-4">Read More</a>
+                  </div>
+                </div>
+              </div>  
+              <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-5" data-aos="fade-up" data-aos-delay="100">               
+                <div class="activitie">
+                  <div class="activitie-img">
+                    <img src="assets/img/activity/activity6.png" class="img-fluid" alt="">                    
+                  </div>
+                  <div class="activitie-info">
+                    <h4>Seminar on "Importance of Standard Packaging Model to Protect Tobacco Tax Evasion in Bangladesh"</h4>
+                    <p>Speakers at a seminar said that it has become necessary to introduce the standard packaging for tobacco products as well the plain packaging in order to prevent revenue evasion.</p>
+                    <p><i class="fas fa-calendar" style="margin-right: 10px"></i>October 5 2023</p>
+                    <a href="{{ route('activity6') }}" target="_blank" class="read_more mb-4">Read More</a>
+                  </div>
+                </div>             
+              </div>  
+              <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-5" data-aos="fade-up" data-aos-delay="100">
+                <div class="activitie">
+                  <div class="activitie-img">
+                    <img src="assets/img/activity/activity7.png" class="img-fluid" alt="">
+                    
+                  </div>
+                  <div class="activitie-info">
+                    <h4>Textiles and Jute Minister's support for strengthening and amendment Tobacco Control Act- TCRC team met with the Minister</h4>
+                    <p>Tobacco seriously threatens public health, social degradation, the economy, and the environment. According to a study by the Bangladesh Cancer Society in 2018, </p>
+                    <p><i class="fas fa-calendar" style="margin-right: 10px"></i> 12 February 2023</p>
+                    <a href="{{ route('activity7') }}" target="_blank" class="read_more mb-4">Read More</a>
+                  </div>
+                </div>
+              </div> 
+              <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-5" data-aos="fade-up" data-aos-delay="100">
+                <div class="activitie">
+                  <div class="activitie-img">
+                    <img src="assets/img/activity/activity8.png" class="img-fluid" alt="">
+                    
+                  </div>
+                  <div class="activitie-info">
+                    <h4>Tobacco Tax Policy Reformation for Protecting Public Health</h4>
+                    <p>The lawmakers called upon the government to impose specific taxes on cigarettes and other tobacco products in the upcoming budget to  </p>
+                    <p><i class="fas fa-calendar" style="margin-right: 10px"></i>26 Nov 2023</p>
+                    <a href="{{ route('activity8') }}" target="_blank" class="read_more mb-4">Read More</a>
+                  </div>
+                </div>
+              </div>  
+              
+                
+                
+               </div>
+         
+        </div>
+     
+     
+
+    
 
        
 
+     
+
       </div>
-    </section><!-- End About Section -->
+      <div class="swiper-pagination"></div>
+    </div>
+
+  </div>
+</section>
 
   
     <!-- ======= Clients Section ======= -->
