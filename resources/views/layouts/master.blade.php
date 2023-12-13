@@ -112,15 +112,34 @@
 
   }
 }
-
-
-/* @media (max-width: 590px) {
-.top-logo img{
-  width:300px;
-  padding-right: 200px
-  
+.footer-top{
+  background: #063c34 !important;
+  /* background: linear-gradient(to right, #008080, #135C51) !important;
+  /* Replace #008080 and #135C51 with your desired gradient colors */
+  color: #fff !important; 
 }
-} */
+.footer-contact p{
+  color: #fff !important;
+}
+.footer-links ul li a,i{
+  color: #fff !important;
+}
+.footer-links h4{
+  color: #fff !important;
+}
+#footer{
+  background: #135C51 !important;
+}
+.copyright {
+ height: 30px;
+}
+.copyright p{
+  color: #fff;
+  padding-top: 15px;
+}
+
+
+
 
 
 </style>
@@ -169,14 +188,9 @@
             </ul>
           </li>
           <li class="dropdown"><a href="#"><span>Our Approach</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              
-                <li class="dropdown"><a href="#"><span>Research</span> <i class="bi bi-chevron-right"></i></a>
-                  <ul>
-                    <li><a href="{{route('research')}}">Bcgd</a></li>
-                    <li><a href="{{route('other.research')}}">Others</a></li>                  
-                  </ul>
-                </li>    
+            <ul>             
+                
+              <li><a href="{{route('research')}}">Research</a></li>
               <li><a href="{{route('advocacy')}}">Advocacy</a></li>
               <li><a href="{{route('capacity')}}">Capacity Building</a></li>
               <li><a href="{{route('public.awereness')}}">Public Awereness</a></li>
@@ -228,11 +242,11 @@
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-contact">
-            <a href="#" class=""><img src="assets/img/logo.jpg" alt="" style="width:250px;margin-top:-25px;margin-left:-25px"></a>
+            <a href="#" class=""><img src="assets/img/bcgd.jpg" alt="" style="width:100px;margin-bottom:10px;height:50px"></a>
             <p>
               House# 04, Road# 01, Block# F,<br>
-              Banani, Dhaka 1213, <br>
-              Bangladesh. <br><br>
+              Banani, Dhaka 1213, Bangladesh.<br>
+               <br>
               <strong>Phone:</strong>  01718200985<br>
               <strong>Email:</strong> bcgd.diu@gmail.com  & infobcgddiu@gmail.com <br>
             </p>
@@ -242,21 +256,21 @@
             <h4>Useful Links</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#about">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{{route('about.executive')}}" target="_blank">About us</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#services">Services</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#portfolio">Portfolio</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#contact">Contact</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{{route('contact')}}" target="_blank">Contact</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
+            <h4>Useful Links</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="{{route('recent.activities')}}">Future Course Plan</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="{{route('recent.activities')}}">Short Courses</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="{{route('recent.activities')}}">Research and dialogue</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="{{route('recent.activities')}}">Dialogue partners</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="{{route('recent.activities')}}">Partnership beyond the country</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{{route('recent.activities')}}" target="_blank">Recent Activities</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{{route('publication')}}" target="_blank">Publication</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{{route('achivement')}}" target="_blank">Achievement</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{{route('network')}}" target="_blank">Our Network</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{{route('social.media')}}" target="_blank">Social Media</a></li>
             </ul>
           </div>
 
@@ -276,11 +290,9 @@
       </div>
     </div>
 
-    <div class="container py-4">
+    <div class="container d-flex justify-content-center">
       <div class="copyright">
-        <div class="">
           <p class=""> © 2023 <strong>DIU</strong>. All rights Reserved. | Developed & Powered by: <strong>IT-Team, DIU</strong></p>
-        </div>
       
         {{-- &copy; Copyright <strong><span></span></strong>. All Rights Reserved --}}
       </div>

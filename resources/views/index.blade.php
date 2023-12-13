@@ -4,6 +4,10 @@
 
 @section('content')
 <style>
+  .portfolio-item img{
+    height: 200px;
+    width: 100%
+  }
   .team-info{
     padding: 20px 20px 0px;
     height: 130px;
@@ -152,7 +156,7 @@
     
 
 <!-- Recent Activities -->
-<section>
+<section id="project">
   <div class="container" data-aos="zoom-in">
     <h2 >RECENT ACTIVITIES</h2>
 
@@ -302,39 +306,234 @@
 
   </div>
 </section>
+<!-- publication -->
+<section>
+  <div class="container" data-aos="zoom-in">
+    <h2 >PUBLICATIONS</h2>
 
+
+    <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+            <div class="row">
+              
+              <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-5" data-aos="fade-up" data-aos-delay="100">
+                <div class="activitie">
+                  <div class="activitie-img">
+                    <img src="assets/img/publication/publication.png" class="img-fluid" alt="">
+                    
+                  </div>
+                  <div class="activitie-info">
+                    <h4>TOBACCO CONTROL LAWS OF BANGLADESH:
+                      ANALYSIS OF GAPS AND PROPOSED REFORMS
+                    </h4>
+                    <p>The materials presented and the opinions expressed
+                      in this publication are those of the researchers and
+                      do not necessary reﬂect those of DIU. </p>
+                    <p><i class="fas fa-calendar" style="margin-right: 10px"></i>21st October, 2023</p>
+                    <a href="{{ route('publication1') }}" target="_blank" class="read_more mb-4">Read More</a>
+                  </div>
+                </div>
+              </div>  
+              <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-5" data-aos="fade-up" data-aos-delay="100">
+                <div class="activitie">
+                  <div class="activitie-img">
+                    <img src="assets/img/publication/publication2.png" class="img-fluid" alt="">
+                    
+                  </div>
+                  <div class="activitie-info">
+                    <h4>Introduce Standard Packaging for Smokeless Tobacco and Bidi for Effective
+                      Implementation of Pictorial Warnings in Bangladesh</h4>
+                    <p>In Bangladesh 37.8 million adults currently used tobacco in
+                      different format. Among these 19.2 million adults used tobacco in
+                      smoking format (15 million used cigarettes & 5.3 million used bidi). 22
+                      million adults (16.2% men and 24.8% women) </p>
+                    <p><i class="fas fa-calendar" style="margin-right: 10px"></i>11 November 2023</p>
+                    <a href="{{ route('publication2') }}" target="_blank" class="read_more mb-4">Read More</a>
+                  </div>
+                </div>
+              </div>  
+              <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-5" data-aos="fade-up" data-aos-delay="100">
+                <div class="activitie">
+                  <div class="activitie-img">
+                    <img src="assets/img/publication/publication3.jpg" class="img-fluid" alt="">
+                    
+                  </div>
+                  <div class="activitie-info">
+                    <h4>Post Budget Market
+                      Reflection of Increase
+                      Tax on Smokeless
+                      Tobacco (Jorda) in
+                      Bangladesh</h4>
+                    <p>Bangladesh is a highly densely populated country and tobacco consumption is also high.
+                      According to Global Adult Tobacco Survey-2017, In Bangladesh 37.8 million adults
+                      currently used tobacco in different format. Among these 19.2 million adults used tobacco in </p>
+                    <p><i class="fas fa-calendar" style="margin-right: 10px"></i>2020</p>
+                    <a href="{{ route('publication3') }}" target="_blank" class="read_more mb-4">Read More</a>
+                  </div>
+                </div>
+              </div> 
+              <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-5" data-aos="fade-up" data-aos-delay="100">
+                <div class="activitie">
+                  <div class="activitie-img">
+                    <img src="assets/img/publication/publication3.jpg" class="img-fluid" alt="">
+                    
+                  </div>
+                  <div class="activitie-info">
+                    <h4>Markets of Smokeless Tobacco Products: Challenges and Way Forward</h4>
+                    <p>The philosopher and world famous traveler Ibn Battuta wrote his book "The Traveler of Ibn Battuta"
+                      regarding the tradition of consuming betel leaf in this subcontinent.  </p>
+                    <p><i class="fas fa-calendar" style="margin-right: 10px"></i>09 March 2020</p>
+                    <a href="{{ route('publication4') }}" target="_blank" class="read_more mb-4">Read More</a>
+                  </div>
+                </div>
+              </div>      
+               </div>
+         
+        </div><!-- End testimonial item -->
+
+        <div class="swiper-slide">
+            <div class="row">             
+              <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-5" data-aos="fade-up" data-aos-delay="100">
+                <div class="activitie">
+                  <div class="activitie-img">
+                    <img src="assets/img/publication/publication5.png" class="img-fluid" alt="">
+                    
+                  </div>
+                  <div class="activitie-info">
+                    <h4>বাজেট পরর্বতী ধোয়াবিহীন
+                      তামাকের (জর্দ্দার) রাজ¯
+                      বৃদ্ধি: বাস্তবতা</h4>
+                    <p>বাংলাদেশে ধোঁয়াবিহীন তামাক ব্যবহারকারীর সংখ্যা ২ কোটি ২০ লক্ষ হলেও এর ওপর যথোপযুক্ত করারোপ, কর বৃদ্ধি ও কর আদায়ের
+                      বিষয়টি কখনোই গুরুত্বের সাথে বিবেচনা করা হয় না। যার ফলে সরকার মোটা অংকের রাজস্ব হারা”েছ</p>
+                    <p><i class="fas fa-calendar" style="margin-right: 10px"></i>2020</p>
+                    <a href="{{ route('publication5') }}" target="_blank" class="read_more mb-4">Read More</a>
+                  </div>
+                </div>
+              </div>  
+              <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-5" data-aos="fade-up" data-aos-delay="100">               
+                <div class="activitie">
+                  <div class="activitie-img">
+                    <img src="assets/img/publication/publication6.png" class="img-fluid" alt="">                    
+                  </div>
+                  <div class="activitie-info">
+                    <h4 style="margin-bottom:30px">ধোয়াবিহীন তামাকজাত  বাজার  নিয়ন্ত্রণে  করণীয় </h4>
+                    <p>বাংলাদেশে ধোঁয়াবিহীন তামাক ব্যবহারকারীর সংখ্যা ২ কোটি ২০ লক্ষ হলেও এর ওপর যথোপযুক্ত করারোপ, কর বৃদ্ধি ও কর আদায়ের
+                      বিষয়টি কখনোই গুরুত্বের সাথে বিবেচনা করা হয় না। যার ফলে সরকার মোটা অংকের রাজস্ব হারা”ে</p>
+                    <p><i class="fas fa-calendar" style="margin-right: 10px"></i>2020</p>
+                    <a href="{{ route('publication6') }}" target="_blank" class="read_more mb-4">Read More</a>
+                  </div>
+                </div>             
+              </div>  
+              <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-5" data-aos="fade-up" data-aos-delay="100">
+                <div class="activitie">
+                  <div class="activitie-img">
+                    <img src="assets/img/publication/publication88.png" class="img-fluid" alt="">
+                    
+                  </div>
+                  <div class="activitie-info">
+                    <h4 style="margin-bottom: 30px">Resources </p>
+                      <p> Dhaka International University (DIU) is one of the leading, familiar and note-worthy private universities in Bangladesh which was established on 7th April 1995. It is a non-profitable institution having strict academic discipline.</p>
+                    <p><i class="fas fa-calendar" style="margin-right: 10px"></i> 12 February 2023</p>
+                    <a href="{{ route('publication8') }}" target="_blank" class="read_more mb-4">Read More</a>
+                  </div>
+                </div>
+              </div> 
+            
+              
+                
+                
+               </div>
+         
+        </div>
+     
+     
+
+    
+
+       
+
+     
+
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+  </div>
+</section>
   
     <!-- ======= Clients Section ======= -->
-    <section id="clients" class="clients section-bg mb-5">
+    <section id="clients" class="clients mb-5 py-5">
       <div class="container" data-aos="zoom-in">
-
-        <div class="row">
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/diu.jpg" class="img-fluid" alt="">
+        <h2>OUR NETWORKS</h2>  
+        
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+    
+            <div class="swiper-slide">
+                <div class="row">
+                  <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                    <img src="assets/img/network/international/Asian_Development_Bank_logo.svg.png" class="img-fluid" alt="" style="height: 100px">
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                      <img src="assets/img/network/international/download.png" class="img-fluid" alt="">
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                      <img src="assets/img/network/international/png-clipart-green-oxfam-logo-oxfam-logo-icons-logos-emojis-shop-logos-thumbnail.png" class="img-fluid" alt="">
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                      <img src="assets/img/network/international/download.png" class="img-fluid" alt="">
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                      <img src="assets/img/network/international/The Union.png" class="img-fluid" alt="">
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                    <img src="assets/img/network/national/alliance_logo_464x200.png" class="img-fluid" alt="">
+                  </div>
+                 
+                   </div>
+             
+            </div><!-- End testimonial item -->
+    
+            <div class="swiper-slide">
+                <div class="row mb-4">             
+                  <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                    <img src="assets/img/network/national/BRAC_logo.svg.png" class="img-fluid" alt="">
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                    <img src="assets/img/network/national/clpa_logo_wt.png" class="img-fluid" alt="">
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                    <img src="assets/img/network/national/DIU Logo High.png" class="img-fluid" alt="">
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                    <img src="assets/img/network/national/Emblem_of_Bangladesh_Road_Transport_Authority_(BRTA).svg.png" class="img-fluid" alt="" style="height: 90px">
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                    <img src="assets/img/network/national/IPHRC Logo.jpeg" class="img-fluid" alt="">
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                    <img src="assets/img/network/national/IPNLogoo.png" class="img-fluid" alt="">
+                  </div>                  
+                                  
+                  </div>             
+            </div> 
+            <div class="swiper-slide">
+              <div class="row mb-4">           
+             
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                  <img src="assets/img/network/national/Nirapad Sorok CHai.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                  <img src="assets/img/network/national/zzz.jpg" class="img-fluid" alt="" style="height: 90px">
+                </div>
+                                
+                </div>             
+          </div>               
           </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/sanpa.jpg" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/united.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/client-4.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/client-5.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
-          </div>
-
-        </div>
+          <div class="swiper-pagination"></div>
+        </div>      
 
       </div>
     </section><!-- End Clients Section -->
@@ -343,49 +542,43 @@
     <section id="services" class="services">
       <div class="container" data-aos="fade-up">
 
-        <div class="section-title mb-3">
-          <h3 style="color:#135C51 ">WHAT WE DO</h3>
-          {{-- <h3 h2>Future Course Plan</h3>
-          <p style="color: #726d6d">Vestibulum lectus mauris ultrices eros in. Cursus sit amet dictum sit amet. Adipiscing tristique risus nec feugiat the aenean bcom here</p> --}}
-        </div>
-
+      
+        <h2 class="mb-3">Area of Expertise</h2>
         <div class="row">
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-5" data-aos="zoom-in"   data-aos-delay="100">
-            <div class="icon-box">
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-5" data-aos="zoom-in"   data-aos-delay="100">
+            <div class="icon-box" style="width: 100%">
                 <div class="d-flex justify-content-between px-4 pt-4">
-                    <div class="icon "><i class="bx bx-file"></i></div>
+                    <div class="icon "><i class="fas fa-shield"></i></div>
                     <div class="">
                         <p class="servece-serial">01</p>
                     </div>                    
                 </div>              
               <div class="px-4">
-                <h4><a href="">Future Course Plan</a></h4>
-              <p>BCGD has plan to offer several courses on the basis of below concepts...</p>
+                <h4>Road Safety</h4>
               </div>
               <div class="p-4">
-                <a href="{{route('recent.activities')}}" class="service-read"> Read More <i class="fas fa-arrow-right"></i></a>
+                <a href="{{route('road.safety')}}" class="service-read"  target="_blank"> Read More <i class="fas fa-arrow-right"></i></a>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-5" data-aos="zoom-in"   data-aos-delay="100">
-            <div class="icon-box">
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-5" data-aos="zoom-in"   data-aos-delay="100">
+            <div class="icon-box" style="width: 100%">
                 <div class="d-flex justify-content-between px-4 pt-4">
-                    <div class="icon "><i class="bx bx-file"></i></div>
+                    <div class="icon "><i class="fas fa-cloud"></i></div>
                     <div class="">
                         <p class="servece-serial">02</p>
                     </div>                    
                 </div>              
               <div class="px-4">
-                <h4><a href="">Short Courses</a></h4>
-              <p>BCGD currecntly offering Short Certificate Course on Migration Governance...</p>
+                <h4><a href="">Climate Change</a></h4>
               </div>
               <div class="p-4">
-                <a href="{{route('recent.activities')}}" class="service-read"> Read More <i class="fas fa-arrow-right"></i></a>
+                <a href="{{route('climate_change')}}" class="service-read" target="_blank"> Read More <i class="fas fa-arrow-right"></i></a>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-5" data-aos="zoom-in"   data-aos-delay="100">
-            <div class="icon-box">
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-5" data-aos="zoom-in"   data-aos-delay="100">
+            <div class="icon-box" style="width: 100%">
                 <div class="d-flex justify-content-between px-4 pt-4">
                     <div class="icon "><i class="fas fa-search"></i></div>
                     <div class="">
@@ -393,67 +586,30 @@
                     </div>                    
                 </div>              
               <div class="px-4">
-                <h4><a href="">Research and dialogue</a></h4>
-              <p>Apart from the executive courses, BCGD expresses a strong interest...</p>
+                <h4><a href="">Migration</a></h4>
               </div>
               <div class="p-4">
-                <a href="{{route('recent.activities')}}" class="service-read"> Read More <i class="fas fa-arrow-right"></i></a>
+                <a href="{{route('migration')}}" class="service-read" target="_blank"> Read More <i class="fas fa-arrow-right"></i></a>
               </div>
             </div>
           </div>
-          <div class="col-lg-6 col-md-6 d-flex align-items-stretch mb-5" data-aos="zoom-in"   data-aos-delay="100">
-            <div class="icon-box">
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-5" data-aos="zoom-in"   data-aos-delay="100">
+            <div class="icon-box" style="width: 100%">
                 <div class="d-flex justify-content-between px-4 pt-4">
-                    <div class="icon "><i class="fas fa-comments"></i></div>
+                    <div class="icon "><i class="fas fa-notes-medical"></i></div>
                     <div class="">
                         <p class="servece-serial">04</p>
                     </div>                    
                 </div>              
               <div class="px-4">
-                <h4><a href="">Dialogue partners</a></h4>
-              <p>BCGD partners with different stakeholders to spread the research findings and inform the policy community....</p>
+                <h4><a href="">Public Health</a></h4>
               </div>
               <div class="p-4">
-                <a href="{{route('recent.activities')}}" class="service-read"> Read More <i class="fas fa-arrow-right"></i></a>
+                <a href="{{route('public.health')}}" class="service-read" target="_blank"> Read More <i class="fas fa-arrow-right"></i></a>
               </div>
             </div>
-          </div>
-          <div class="col-lg-6 col-md-6 d-flex align-items-stretch mb-5" data-aos="zoom-in"   data-aos-delay="100">
-            <div class="icon-box">
-                <div class="d-flex justify-content-between px-4 pt-4">
-                    <div class="icon "><i class="fas fa-handshake"></i></div>
-                    <div class="">
-                        <p class="servece-serial">05</p>
-                    </div>                    
-                </div>              
-              <div class="px-4">
-                <h4><a href="">Partnership beyond the country</a></h4>
-              <p>BCGD’s foremost objectives are to be a credible platform for ideas to promote excellence in governance...</p>
-              </div>
-              <div class="p-4">
-                <a href="{{route('recent.activities')}}" class="service-read"> Read More <i class="fas fa-arrow-right"></i></a>
-              </div>
-            </div>
-          </div>
-          {{-- <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-5" data-aos="zoom-in"   data-aos-delay="100">
-            <div class="icon-box">
-                <div class="d-flex justify-content-between px-4 pt-4">
-                    <div class="icon "><i class="bx bx-arch"></i></div>
-                    <div class="">
-                        <p class="servece-serial">06</p>
-                    </div>                    
-                </div>              
-              <div class="px-4">
-                <h4><a href="">Link Building</a></h4>
-              <p>Proactively envisioned multimedia based expertise and cross-media growth strategies.</p>
-              </div>
-              <div class="p-4">
-                <a href="#" class="service-read"> Read More <i class="fas fa-arrow-right"></i></a>
-              </div>
-            </div>
-          </div> --}}
-
-         
+          </div>   
+        
 
         </div>
 
@@ -465,95 +621,60 @@
 
         <div class="section-title">
           <h2>Portfolio</h2>
-          <h3>Check our <span>Portfolio</span></h3>
-          {{-- <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p> --}}
-        </div>
-
-        {{-- <div class="row" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
-            </ul>
-          </div>
-        </div> --}}
+          <h3>Check our <span>Portfolio</span></h3>          
+        </div>     
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+            <a href="assets/img/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="portfolio">
             <img src="assets/img/portfolio-1.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">             
-              <a href="assets/img/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
+              </a>            
           </div>
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img src="assets/img/portfolio-2.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-             
-              <a href="assets/img/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
+          <div class="col-lg-3 col-md-6 portfolio-item filter-web">
+            <a href="assets/img/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="portfolio">
+            <img src="assets/img/portfolio-2.jpg" class="img-fluid" alt="">             
+            </a>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+            <a href="assets/img/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="portfolio">
             <img src="assets/img/portfolio-3.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">             
-              <a href="assets/img/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
+            </a>
           </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="col-lg-3 col-md-6 portfolio-item filter-card">
+            <a href="assets/img/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="portfolio">
             <img src="assets/img/portfolio-4.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              
-              <a href="assets/img/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
+            </a>
           </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="col-lg-3 col-md-6 portfolio-item filter-web">
+            <a href="assets/img/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="portfolio">
             <img src="assets/img/portfolio-5.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">             
-              <a href="assets/img/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
+            </a>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+            <a href="assets/img/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="portfolio">
             <img src="assets/img/portfolio-6.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">           
-              <a href="assets/img/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
+            </a>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="col-lg-3 col-md-6 portfolio-item filter-card">
+            <a href="assets/img/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="portfolio">
             <img src="assets/img/portfolio-7.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">            
-              <a href="assets/img/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
+            </a>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="col-lg-3 col-md-6 portfolio-item filter-card">
+            <a href="assets/img/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="portfolio">
             <img src="assets/img/portfolio-8.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">              
-              <a href="assets/img/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
+            </a>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          {{-- <div class="col-lg-3 col-md-6 portfolio-item filter-web">
+            <a href="assets/img/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3">
             <img src="assets/img/portfolio-9.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">             
-              <a href="assets/img/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
+            </a>
+          </div> --}}
 
         </div>
 
@@ -564,40 +685,57 @@
  <!-- ======= Our Project Section ======= -->
           <section id=project>
             <div class="container" >
-                <h6 class="title-section">OUR PROJECT</h6>
-                <div class="d-flex justify-content-between">
-                    <h3 class="title-header">Explore Case Studies</h3>
+              <h3 class="title-header">Our Approach</h3>
+                {{-- <div class="d-flex justify-content-between">
+                    <h3 class="title-header">Our Approach</h3>
                     <a href="#" class="btn-get-started scrollto">View All Project <i class="fas fa-arrow-right"></i> </a>
-                </div>
+                </div> --}}
 
                 <div class="row my-5">
-                    <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                      <a href="{{route('research')}}" target="_blank">
                         <div class="our-project">
-                            <img src="assets/img/project1.jpg">
+                            <img src="assets/img/publication/publication88.png" style="height: 200px">
                             <div class="team-content">
-                                <h3 class="post">Business service</h3>
-                                <span class="title">Business Planning</span>                              
+                                {{-- <h3 class="post">Business service</h3> --}}
+                                <span class="title">Research</span>                              
                             </div>
                         </div>
+                      </a>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                      <a href="{{route('advocacy')}}" target="_blank">
                         <div class="our-project">
-                            <img src="assets/img/project2.jpg">
+                            <img src="assets/img/activity/activity4.png" style="height: 200px">
                             <div class="team-content">
-                                <h3 class="post">Development Servece</h3>
-                                <span class="title">Investment</span>                              
+                                {{-- <h3 class="post">Development Servece</h3> --}}
+                                <span class="title">Advocacy</span>                              
                             </div>
                         </div>
+                      </a>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                      <a href="{{route('capacity')}}" target="_blank">
                         <div class="our-project">
-                            <img src="assets/img/project3.jpg">
+                            <img src="assets/img/migration1.png" style="height: 200px">
                             <div class="team-content">
-                                <h3 class="post">Marketing Service</h3>
-                                <span class="title">Risk Management</span>                              
+                                {{-- <h3 class="post">Marketing Service</h3> --}}
+                                <span class="title">Capacity Building</span>                              
                             </div>
                         </div>
+                      </a>
                     </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                      <a href="{{route('public.awereness')}}" target="_blank">
+                      <div class="our-project">
+                          <img src="assets/img/climate2.png" style="height: 200px">
+                          <div class="team-content">
+                              {{-- <h3 class="post">Marketing Service</h3> --}}
+                              <span class="title">Public Awareness</span>                              
+                          </div>
+                      </div>
+                      </a>
+                  </div>
              
                   
                 </div>
@@ -622,7 +760,7 @@
             </div>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-end mb-5">
-                <a href="{{route('about.executive')}}" class="btn-get-started scrollto">View All<i class="fas fa-arrow-right"></i> </a>
+                <a href="{{route('about.executive')}}" class="btn-get-started scrollto" target="_blank">View All<i class="fas fa-arrow-right" ></i> </a>
             </div>
           </div>
 

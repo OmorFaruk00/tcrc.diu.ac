@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'advocacy')
+@section('title', 'activities')
 @section('content')
 <style>
   .item p {
@@ -18,7 +18,7 @@
 <section id="project" data-aos="fade-up" data-aos-delay="200">
   <div class="container">
     <div class="d-flex justify-content-center mb-3">
-      <img src="assets/img/activity/activity5.png" alt="" style="width: 40%">
+      <img src="assets/img/activity/activity8.png" alt="" style="width: 40%">
     </div>
     <div class="item">
       <p>
