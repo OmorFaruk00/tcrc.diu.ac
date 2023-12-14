@@ -45,14 +45,19 @@
     overflow: hidden;
 
   }
+
+  .fas {
+    color: #000 !important;
+    margin: 0px 5px;
+  }
 </style>
 <section class="page-bg">
   <div class="container">
     <div class="" data-aos="fade-up" data-aos-delay="200">
       <h1 class="page-title">Our Achivement</h1>
       <p class="page-desc">Welcome to Bangladesh Center for Governance and Development, DIU</p>
-      <button class="page-btn"> <a href="{{ route('home') }}">Home</a> <i class="fas fa-arrow-right"></i> 
-  </div>
+      <button class="page-btn"> <a href="{{route('home')}}">Home</a>  <i class="fas fa-arrow-right"></i> Achivement</button>  
+    </div>
 </section>
 
 <section>
@@ -77,7 +82,7 @@
                     United Nations Framework Convention on Climate Change (UNFCCC). Countries who have attained the
                     status can join the UNFCCC meet to measure progress and negotiate multilateral responses to climate
                     change.</p>
-                    <p><i class="fas fa-calendar" style="margin-right: 10px"></i>11 November 2023</p>
+                  <p>11 November 2023</p>
 
                 </div>
               </a>
@@ -105,21 +110,16 @@
                     the South Asian Network for Public Administration, hereinafter referred to as “SANPA” and the
                     Bangladesh Center for Governance and Development (BCGD) of Dhaka International University,
                     hereinafter referred to as “BCGD-DIU.</p>
-                  <p><i class="fas fa-calendar" style="margin-right: 10px"></i>18 November 2023</p>
+                  <p>18 November 2023</p>
 
                 </div>
               </a>
             </div>
           </div>
-        </div>   
-
-          
-              
-
-              
-       
+        </div>
 
 
-    </div>
+
+      </div>
 </section><!-- End Services Section -->
 @endsection

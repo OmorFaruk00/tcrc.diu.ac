@@ -33,6 +33,10 @@
         -webkit-box-orient: vertical;
         overflow: hidden;
     }
+    .fas {
+    color: #000 !important;
+    margin: 0px 5px;
+  }
 </style>
 <section class="page-bg">
     <div class="container">
@@ -50,7 +54,7 @@
 
 
         <div class="row my-4">
-            <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
                 <div class="card-body">
                     <img src="assets/img/climate1.png" alt="" style="width:100%;height:200px">
                     <div class="info">
@@ -63,7 +67,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
                 <div class="card-body">
                     <img src="assets/img/climate2.png" alt="" style="width:100%;height:200px">
                     <div class="info">
@@ -78,7 +82,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="col-lg-3 col-md-6 col-sm-1 mb-4">
                 <div class="card-body">
                     <img src="assets/img/climate3.png" alt="" style="width:100%;height:200px">
                     <div class="info">
@@ -92,7 +96,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
                 <div class="card-body">
                     <img src="assets/img/united.png" alt="" style="width:100%;height:200px">
                     <div class="info">

@@ -14,8 +14,7 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet"> 
   <!-- Vendor CSS Files -->
   <link href="{{ asset('assets/vendor/aos/aos.css')}}" rel="stylesheet">
   <link href="{{ asset('assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
@@ -28,9 +27,12 @@
   <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
   <link href="{{ asset('assets/css/pages.css') }}" rel="stylesheet">
   <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
+  {{-- <link href="{{ asset('assets/css/fontawesome.css') }}" rel="stylesheet"> --}}
  <!-- Add this to the head of your HTML file -->
 <!-- Add this to the head of your HTML file -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
 
 <style>
   #header {
@@ -155,12 +157,16 @@
     <div class="container d-flex justify-content-center justify-content-md-between">
       <div class="contact-info d-flex align-items-center">
         <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">bcgd.diu@gmail.com</a></i>
-        <i class="bi bi-phone d-flex align-items-center ms-4"><span>01718200985 </span></i>
+        <i class="bi bi-phone d-flex align-items-center ms-4"><span>+8801718200985 </span></i>
+      </div>
+      <div class="social-links d-none d-md-flex align-items-center">
+        <a href="https://www.facebook.com/BCGD.DIU" class="facebook"><h5 class="pt-2 color-white">Bangladesh Center for Governance and Development-DIU</h5></a>
+       
       </div>
       <div class="social-links d-none d-md-flex align-items-center">
         <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
         <a href="https://www.facebook.com/BCGD.DIU" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-youtube"></i></a>
         <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
       </div>
     </div>
@@ -171,15 +177,17 @@
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex align-items-center">
     <div class=" d-flex align-items-center justify-content-between">      
-      <a href="#" class="top-logo"><img src="assets/img/logo.jpg" alt="" style=""></a>
+      <a href="{{route('home')}}" class="top-logo"><img src="assets/img/logo.jpg" alt="" style=""></a>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="{{route('home')}}">Home</a></li>          
-          <li class="dropdown"><a href="#"><span>About Us</span> <i class="bi bi-chevron-down"></i></a>
+          <li><a class="nav-link scrollto{{ Request::is('/') ? ' active' : '' }}" href="{{route('home')}}">Home</a></li>          
+          <li class="dropdown"><a href="#"> <span>About Us</span>  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mt-1" height='20px'>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+          </svg></i></a>
             <ul>
               <li><a href="{{route('about.history')}}">History</a></li>
-              <li class="dropdown"><a href="#"><span>Our Team</span> <i class="bi bi-chevron-right"></i></a>
+              <li class="dropdown"> <a href="#"><span>Our Team</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
                   <li><a href="{{route('about.executive')}}">Executive Body</a></li>
                   <li><a href="{{route('about.team')}}">Working Team</a></li>                  
@@ -187,17 +195,21 @@
               </li>              
             </ul>
           </li>
-          <li class="dropdown"><a href="#"><span>Our Approach</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a href="#"><span>Our Approach</span>  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mt-1" height='20px'>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+          </svg></a>
             <ul>             
                 
               <li><a href="{{route('research')}}">Research</a></li>
               <li><a href="{{route('advocacy')}}">Advocacy</a></li>
               <li><a href="{{route('capacity')}}">Capacity Building</a></li>
-              <li><a href="{{route('public.awereness')}}">Public Awereness</a></li>
+              <li><a href="{{route('public.awereness')}}">Public Awareness</a></li>
                          
             </ul>
           </li>
-          <li class="dropdown"><a href="#"><span>Area of Expertise</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a href="#"><span>Area of Expertise</span>  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mt-1" height='20px'>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+          </svg></a>
             <ul>
               <li><a href="{{route('road.safety')}}">Road Safety</a></li>
               <li><a href="{{route('climate_change')}}">Climate Change</a></li>
@@ -206,23 +218,37 @@
                          
             </ul>
           </li>
-          <li><a class="nav-link scrollto" href="{{route('recent.activities')}}">Recent Activities</a></li>
-          <li><a class="nav-link scrollto" href="{{route('publication')}}">Publication</a></li>
-          <li><a class="nav-link scrollto" href="{{route('achivement')}}">Achievement</a></li>
-          <li><a class="nav-link scrollto" href="{{route('network')}}">Our Network</a></li>
-          <li class="dropdown"><a href="#"><span>News & Media</span> <i class="bi bi-chevron-down"></i></a>
+          {{-- <li><a class="nav-link scrollto" href="{{route('recent.activities')}}">Recent Activities</a></li> --}}
+
+          <li><a class="nav-link scrollto{{ Request::is('recent_activities') ? ' active' : '' }}" href="{{ route('recent.activities') }}">Recent Activities</a></li>
+
+          <li><a class="nav-link scrollto{{ Request::is('publication') ? ' active' : '' }}" href="{{route('publication')}}">Publication</a></li>
+          <li><a class="nav-link scrollto{{ Request::is('achivement') ? ' active' : '' }}" href="{{route('achivement')}}">Achievement</a></li>
+          <li><a class="nav-link scrollto{{ Request::is('our_network') ? ' active' : '' }}" href="{{route('network')}}">Network</a></li>
+          <li class="dropdown"><a href="#"><span>Newsroom</span>  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mt-1" height='20px'>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+          </svg></a>
             <ul>
-              <li><a href="{{route('social.media')}}">Social Media</a></li>
+              {{-- <li><a href="{{route('social.media')}}">Social Media</a></li> --}}
               <li><a href="{{route('mainstream.media')}}">Mainstream Media</a></li>
               <li><a href="{{route('electronic.media')}}">Electronic Media</a></li>
                          
             </ul>
           </li>
-          <li><a class="nav-link scrollto" href="{{route('contact')}}">Contact Us</a></li>
+          <li><a class="nav-link scrollto{{ Request::is('contact') ? ' active' : '' }}"  href="{{route('contact')}}">Contact Us</a></li>
         </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+        {{-- <i class="bi bi-list mobile-nav-toggle"></i> --}}
 
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mobile-nav-toggle" style="height: 30px">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+        
+
+      
+        
+      </nav><!-- .navbar -->
+      
+      {{-- <img src="assets/img/list.png" alt="" > --}}
     </div>
   </header><!-- End Header -->
 
@@ -242,13 +268,13 @@
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-contact">
-            <a href="#" class=""><img src="assets/img/bcgd.jpg" alt="" style="width:100px;margin-bottom:10px;height:50px"></a>
+            <a href="{{route('home')}}" class=""><img src="assets/img/bcgd.jpg" alt="" style="width:150px;margin-bottom:10px;height:80px"></a>
             <p>
               House# 04, Road# 01, Block# F,<br>
               Banani, Dhaka 1213, Bangladesh.<br>
                <br>
               <strong>Phone:</strong>  01718200985<br>
-              <strong>Email:</strong> bcgd.diu@gmail.com  & infobcgddiu@gmail.com <br>
+              <strong>Email:</strong> bcgd.diu@gmail.com<br>
             </p>
           </div>
 

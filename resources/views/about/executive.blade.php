@@ -48,6 +48,10 @@
   width: 100% !important
 
 }
+.fas{
+  color: #000 !important;
+  margin: 0px 5px;
+}
 
 </style>
 <section class="page-bg">

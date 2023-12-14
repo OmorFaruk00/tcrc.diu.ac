@@ -27,6 +27,10 @@
         -webkit-box-orient: vertical;
         overflow: hidden;
     }
+    .fas {
+    color: #000 !important;
+    margin: 0px 5px;
+  }
  
 </style>
 <section class="page-bg">
@@ -44,67 +48,52 @@
     <div class="container">
 
 
-        <div class="row my-4">
-            <div class="col-lg-3 col-md-6 col-sm-12">
-                <a href="#"></a>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
+                <a href="{{route('electronic1')}}" target="_blank">
                 <div class="mainstream-body">
-                    <img src="assets/img/climate1.png" alt="" style="width:100%;height:200px">
-                    <div class="mainstream-info">
-                        <h5>COP 27-Climate Change Debriefing Program at Parliament Members Club</h5>
+                    <img src="assets/img/electronic/electronic1.jpg" alt="" style="width:100%;height:200px">
+                    <div class="mainstream-info">                        
+                        <h5>80% Tobacco Products Violate Tobacco Control Law in Bangladesh -2020</h5>
                         <p>
-                            24 March 2023
+                           2023
                         </p>
-                       
                     </div>
                 </div>
-                </a>
+               </a>                       
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
-                <a href="#"></a>
+
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
+                <a href="{{route('electronic2')}}" target="_blank">
                 <div class="mainstream-body">
-                    <img src="assets/img/climate1.png" alt="" style="width:100%;height:200px">
-                    <div class="mainstream-info">
-                        <h5>COP 27-Climate Change Debriefing Program at Parliament Members Club</h5>
+                    <img src="assets/img/electronic/electronic2.png" alt="" style="width:100%;height:200px">
+                    <div class="mainstream-info">                        
+                        <h5>স্কুলে রোড সেফটি ইউনিট করা হোক: ইলিয়াস কাঞ্চন</h5>
                         <p>
-                            24 March 2023
+                           2023
                         </p>
-                       
                     </div>
                 </div>
-                </a>
+               </a>                       
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
-                <a href="#"></a>
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
+                <a href="{{route('electronic3')}}" target="_blank">
                 <div class="mainstream-body">
-                    <img src="assets/img/climate1.png" alt="" style="width:100%;height:200px">
-                    <div class="mainstream-info">
-                        <h5>COP 27-Climate Change Debriefing Program at Parliament Members Club</h5>
+                    <img src="assets/img/electronic/electronic3.jpeg" alt="" style="width:100%;height:200px">
+                    <div class="mainstream-info">                        
+                        <h5>Many tobacco companies yet to follow health warning rules</h5>
                         <p>
-                            24 March 2023
+                           2023
                         </p>
-                       
                     </div>
                 </div>
-                </a>
+               </a>                       
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
-                <a href="#"></a>
-                <div class="mainstream-body">
-                    <img src="assets/img/climate1.png" alt="" style="width:100%;height:200px">
-                    <div class="mainstream-info">
-                        <h5>COP 27-Climate Change Debriefing Program at Parliament Members Club</h5>
-                        <p>
-                            24 March 2023
-                        </p>
-                       
-                    </div>
-                </div>
-                </a>
-            </div>
-      
+
+        </div>
             
          
-        </div>
+        
     </div>
 
 </section>

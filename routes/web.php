@@ -59,7 +59,20 @@ Route::get('/public_health_2',[FrontEndController::class,'publicHealth2'])->name
 Route::get('/public_health_3',[FrontEndController::class,'publicHealth3'])->name('public_health_3');
 Route::get('/social_media',[FrontEndController::class,'socialMedia'])->name('social.media');
 Route::get('/mainstream_media',[FrontEndController::class,'mainstreamMedia'])->name('mainstream.media');
+Route::get('/mainstream_media_1',[FrontEndController::class,'mainstreamMedia1'])->name('mainstream1');
+Route::get('/mainstream_media_2',[FrontEndController::class,'mainstreamMedia2'])->name('mainstream2');
+Route::get('/mainstream_media_3',[FrontEndController::class,'mainstreamMedia3'])->name('mainstream3');
+Route::get('/mainstream_media_4',[FrontEndController::class,'mainstreamMedia4'])->name('mainstream4');
+Route::get('/mainstream_media_5',[FrontEndController::class,'mainstreamMedia5'])->name('mainstream5');
+Route::get('/mainstream_media_6',[FrontEndController::class,'mainstreamMedia6'])->name('mainstream6');
+Route::get('/mainstream_media_7',[FrontEndController::class,'mainstreamMedia7'])->name('mainstream7');
+Route::get('/mainstream_media_8',[FrontEndController::class,'mainstreamMedia8'])->name('mainstream8');
+
 Route::get('/electronic_media',[FrontEndController::class,'electronicMedia'])->name('electronic.media');
+Route::get('/electronic_media_1',[FrontEndController::class,'electronicMedia1'])->name('electronic1');
+Route::get('/electronic_media_2',[FrontEndController::class,'electronicMedia2'])->name('electronic2');
+Route::get('/electronic_media_3',[FrontEndController::class,'electronicMedia3'])->name('electronic3');
+Route::get('/electronic_media_4',[FrontEndController::class,'electronicMedia4'])->name('electronic4');
 
 Route::get('/activity1',[FrontEndController::class,'activity1'])->name('activity1');
 Route::get('/activity2',[FrontEndController::class,'activity2'])->name('activity2');

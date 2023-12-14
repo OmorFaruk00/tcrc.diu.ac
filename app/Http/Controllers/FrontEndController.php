@@ -20,16 +20,8 @@ class FrontEndController extends Controller
     }
     public function contact(){
         return view('contact');
-    }
-    public function recentActivities(){
-        return view('recent-activities');
-    }
-    public function publication(){
-        return view('publication');
-    }
-    public function achivement(){
-        return view('achivement');
-    }
+    }    
+   
     public function network(){
         return view('our-network');
     }
@@ -136,10 +128,48 @@ class FrontEndController extends Controller
     public function mainstreamMedia(){
         return view('mainstream_media.index');
     }
+    public function mainstreamMedia1(){
+        return view('mainstream_media.mainstream1');
+    }
+    public function mainstreamMedia2(){
+        return view('mainstream_media.mainstream2');
+    }
+    public function mainstreamMedia3(){
+        return view('mainstream_media.mainstream3');
+    }
+    public function mainstreamMedia4(){
+        return view('mainstream_media.mainstream4');
+    }
+    public function mainstreamMedia5(){
+        return view('mainstream_media.mainstream5');
+    }
+    public function mainstreamMedia6(){
+        return view('mainstream_media.mainstream6');
+    }
+    public function mainstreamMedia7(){
+        return view('mainstream_media.mainstream7');
+    }
+    public function mainstreamMedia8(){
+        return view('mainstream_media.mainstream8');
+    }
     public function electronicMedia(){
         return view('electronic_media.index');
     }
-
+    public function electronicMedia1(){
+        return view('electronic_media.electronic-media1');
+    }
+    public function electronicMedia2(){
+        return view('electronic_media.electronic-media2');
+    }
+    public function electronicMedia3(){
+        return view('electronic_media.electronic-media3');
+    }
+    public function electronicMedia4(){
+        return view('electronic_media.electronic-media4');
+    }
+    public function recentActivities(){
+        return view('activity.index');
+    }
     public function activity1(){
         return view('activity.activity1');
     }
@@ -164,13 +194,18 @@ class FrontEndController extends Controller
     public function activity8(){
         return view('activity.activity8');
     }
+    public function achivement(){
+        return view('achivement.index');
+    }
     public function achivement1(){
         return view('achivement.achivement1');
     }
     public function achivement2(){
         return view('achivement.achivement2');
     }
-
+    public function publication(){
+        return view('publication.index');
+    }
     public function publication1(){
         return view('publication.publication1');
     }

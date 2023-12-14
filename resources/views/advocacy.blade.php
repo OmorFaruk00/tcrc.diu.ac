@@ -3,6 +3,7 @@
 @section('title', 'advocacy')
 
 @section('content')
+
 <section class="page-bg">
     <div class="container">
           <div class="" data-aos="fade-up" data-aos-delay="200">

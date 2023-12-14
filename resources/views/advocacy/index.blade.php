@@ -33,6 +33,10 @@
         -webkit-box-orient: vertical;
         overflow: hidden;
     }
+    .fas {
+    color: #000 !important;
+    margin: 0px 5px;
+  }
 </style>
 <section class="page-bg">
     <div class="container">
@@ -50,7 +54,7 @@
 
 
         <div class="row my-5">
-            <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
                 <div class="card-body">
                     <img src="assets/img/activity/activity4.png" alt="" style="width:100%;height:200px">
                     <div class="info">
@@ -62,7 +66,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
                 <div class="card-body">
                     <img src="assets/img/activity/activity5.png" alt="" style="width:100%;height:200px">
                     <div class="info">
@@ -74,7 +78,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
                 <div class="card-body">
                     <img src="assets/img/activity/activity8.png" alt="" style="width:100%;height:200px">
                     <div class="info">
