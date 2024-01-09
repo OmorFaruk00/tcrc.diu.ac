@@ -82,7 +82,7 @@
               </div>
     
             <div class="row">
-              <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+              <div class="col-lg-4 col-md-6 col-sm-12 " data-aos="fade-up" data-aos-delay="100">
                 <a href="https://profile.diu.ac/sislamk">
                   <div class="member" >
                     <div class="member-img">
@@ -96,7 +96,7 @@
                 </a>
               </div>
     
-              <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+              <div class="col-lg-4 col-md-6 col-sm-12 " data-aos="fade-up" data-aos-delay="200">
                 <a href="https://profile.diu.ac/prof.dr.ganeshchandrasaha">
                 <div class="member">
                   <div class="member-img">
@@ -111,7 +111,7 @@
                 </a>
               </div>
     
-              <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+              <div class="col-lg-4 col-md-6 col-sm-12 " data-aos="fade-up" data-aos-delay="300">
                 <a href="https://profile.diu.ac/patwari">
                 <div class="member">
                   <div class="member-img">
@@ -126,7 +126,7 @@
                 </a>
               </div>
     
-              <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+              <div class="col-lg-4 col-md-6 col-sm-12 " data-aos="fade-up" data-aos-delay="400">
                 <a href="">
                 <div class="member">
                   <div class="member-img">
@@ -141,7 +141,7 @@
                 </a>
               </div>
 
-              <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+              <div class="col-lg-4 col-md-6 col-sm-12 " data-aos="fade-up" data-aos-delay="400">
                 <a href="">
                 <div class="member">
                   <div class="member-img">
@@ -156,7 +156,7 @@
                 </a>
               </div>
 
-              <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+              <div class="col-lg-4 col-md-6 col-sm-12 " data-aos="fade-up" data-aos-delay="400">
                 <a href="">
                 <div class="member">
                   <div class="member-img">
@@ -179,7 +179,7 @@
           </div>
        
           <div class="container" data-aos="fade-up">
-              <div class="col-lg-9 col-md-6 col-sm-12">
+              <div class="col-lg-9 col-md-6 col-sm-12 col-sm-12">
                 <div class="mb-4">
                     <h3 class="content-section">BCGD Executive Committee</h3>
                 </div>
@@ -187,7 +187,7 @@
              
     
             <div class="row">
-              <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+              <div class="col-lg-3 col-md-6 col-sm-12 " data-aos="fade-up" data-aos-delay="100">
                 <a href="https://profile.diu.ac/patwary">
                 <div class="member">
                   <div class="member-img">
@@ -202,7 +202,7 @@
               </a>
               </div>              
 
-              <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+              <div class="col-lg-3 col-md-6 col-sm-12 " data-aos="fade-up" data-aos-delay="100">
                 <a href="https://profile.diu.ac/md.azmir.hossain">
                 <div class="member">
                   <div class="member-img">
@@ -216,7 +216,7 @@
                 </div>
               </a>
               </div>
-              <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+              <div class="col-lg-3 col-md-6 col-sm-12 " data-aos="fade-up" data-aos-delay="100">
                 <a href="https://profile.diu.ac/md.raisul.islam.sourav">
                 <div class="member">
                   <div class="member-img">
@@ -231,7 +231,7 @@
                 </div>
               </a>
               </div>
-              <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+              <div class="col-lg-3 col-md-6 col-sm-12 " data-aos="fade-up" data-aos-delay="100">
                 <a href="https://profile.diu.ac/prof.dr.a.t.mmahbuburrahmansarker">
                 <div class="member">
                   <div class="member-img">
@@ -245,7 +245,7 @@
                 </div>
               </a>
               </div>
-              <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+              <div class="col-lg-3 col-md-6 col-sm-12 " data-aos="fade-up" data-aos-delay="100">
                 <a href="https://profile.diu.ac/mohammad.tareq">
                 <div class="member">
                   <div class="member-img">
@@ -259,7 +259,7 @@
                 </div>
               </a>
               </div>
-              <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+              <div class="col-lg-3 col-md-6 col-sm-12 " data-aos="fade-up" data-aos-delay="100">
                 <a href="https://profile.diu.ac/shovon">
                 <div class="member">
                   <div class="member-img">
@@ -273,7 +273,7 @@
                 </div>
               </a>
               </div>
-              <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+              <div class="col-lg-3 col-md-6 col-sm-12 " data-aos="fade-up" data-aos-delay="100">
                 <a href="https://profile.diu.ac/s.jubair.al.ahmed">
                 <div class="member">
                   <div class="member-img">
@@ -287,7 +287,7 @@
                 </div>
               </a>
               </div>
-              <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+              <div class="col-lg-3 col-md-6 col-sm-12 " data-aos="fade-up" data-aos-delay="100">
                 <a href="https://profile.diu.ac/jamsedur.rahman?fbclid=IwAR2mX4t0V4Qkk9aly9uMbv_bnAa_h2VheqDcPx4qf9S7Ny2rMxxQxINjvN4">
                 <div class="member">
                   <div class="member-img">
@@ -301,7 +301,7 @@
                 </div>
               </a>
               </div>
-              <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+              <div class="col-lg-3 col-md-6 col-sm-12 " data-aos="fade-up" data-aos-delay="100">
                 <a href="https://profile.diu.ac/professor.farida.begum">
                 <div class="member">
                   <div class="member-img">
@@ -315,7 +315,7 @@
                 </div>
               </a>
               </div>
-              <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+              <div class="col-lg-3 col-md-6 col-sm-12 " data-aos="fade-up" data-aos-delay="100">
                 <a href="https://profile.diu.ac/md.fazlul.haque?fbclid=IwAR1iEwFPwxfdXkekbVN7KCVuDdedCtxb0ib3EC_h-UrWAUCLUQadAJoYRoM">
                 <div class="member">
                   <div class="member-img">
@@ -329,7 +329,7 @@
                 </div>
               </a>
               </div>
-              <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+              <div class="col-lg-3 col-md-6 col-sm-12 " data-aos="fade-up" data-aos-delay="100">
                 <a href="https://profile.diu.ac/md.rofiqul.islam">
                 <div class="member">
                   <div class="member-img">
@@ -343,7 +343,7 @@
                 </div>
               </a>
               </div>
-              <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+              <div class="col-lg-3 col-md-6 col-sm-12 " data-aos="fade-up" data-aos-delay="100">
                 <a href="">
                 <div class="member">
                   <div class="member-img">
@@ -357,7 +357,7 @@
                 </div>
               </a>
               </div>
-              <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+              <div class="col-lg-3 col-md-6 col-sm-12 " data-aos="fade-up" data-aos-delay="100">
                 <a href="https://profile.diu.ac/farhana.zaman">
                 <div class="member">
                   <div class="member-img">
@@ -371,7 +371,7 @@
                 </div>
               </a>
               </div>
-              <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+              <div class="col-lg-3 col-md-6 col-sm-12 " data-aos="fade-up" data-aos-delay="100">
                 <a href="https://profile.diu.ac/md.bazlur.rahman">
                 <div class="member">
                   <div class="member-img">
@@ -385,7 +385,7 @@
                 </div>
               </a>
               </div>
-              <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+              <div class="col-lg-3 col-md-6 col-sm-12 " data-aos="fade-up" data-aos-delay="100">
                 <a href="https://profile.diu.ac/dr.md.sharifulislam">
                 <div class="member">
                   <div class="member-img">
@@ -419,7 +419,7 @@
   
               <div class="swiper-slide">
                 <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-12 mb-5" >
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-sm-12 mb-5" >
                         <div class="email-signature">
                             <div class="signature-img">
                                 <img src="assets/img/team/team-1.jpg" alt="">
@@ -441,7 +441,7 @@
                             <span class="signature-website">www.yourwebsite.com</span>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 mb-5" data-aos="fade-left" data-aos-delay="100">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-sm-12 mb-5" data-aos="fade-left" data-aos-delay="100">
                         <div class="email-signature">
                             <div class="signature-img">
                                 <img src="assets/img/team/team-2.jpg" alt="">
@@ -470,7 +470,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-12 mb-5" >
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-sm-12 mb-5" >
                         <div class="email-signature">
                             <div class="signature-img">
                                 <img src="assets/img/team/team-3.jpg" alt="">
@@ -492,7 +492,7 @@
                             <span class="signature-website">www.yourwebsite.com</span>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 mb-5" data-aos="fade-left" data-aos-delay="100">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-sm-12 mb-5" data-aos="fade-left" data-aos-delay="100">
                         <div class="email-signature">
                             <div class="signature-img">
                                 <img src="assets/img/team/team-4.jpg" alt="">

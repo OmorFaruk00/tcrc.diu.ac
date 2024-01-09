@@ -27,21 +27,25 @@
     line-height: 26px;
     color: #777777;
   }
+  .member{
+    padding: 0px 30px;
+  }
 
   .member-img img {
     border-radius: 20px 20px 0px 0px;
-    height: 300px !important;
+    height: 250px !important;
     width: 100% !important
   }
 
   .activitie {
     border: 3px solid #f5f5f5;
     padding: 10px;
-    border-radius: 20px
+    border-radius: 20px;
+    margin:0px 20px;
   }
 
   .activitie-img img {
-    height: 200px;
+    height: 150px;
     border-radius: 20px;
     width: 100%;
     margin-bottom: 20px;
@@ -103,7 +107,7 @@
     color: #FDC106 !important;
   }
   .icon-box:hover{
-    background: #fff !important;
+    background: gray !important;
   }
   .icon-box:hover h4{
     color: #000 !important;
@@ -742,7 +746,7 @@
           <div class="swiper-slide">
             <div class="row">
 
-              <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+              <div class="col-lg-3 col-md-6 col-sm-12 mb-3" data-aos="fade-up" data-aos-delay="100">
                 <a href="https://profile.diu.ac/patwary">
                   <div class="member">
                     <div class="member-img">
@@ -759,7 +763,7 @@
                 </a>
               </div>
 
-              <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+              <div class="col-lg-3 col-md-6 col-sm-12 mb-3" data-aos="fade-up" data-aos-delay="100">
                 <a href="https://profile.diu.ac/md.azmir.hossain">
                   <div class="member">
                     <div class="member-img">
@@ -774,7 +778,7 @@
                   </div>
                 </a>
               </div>
-              <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+              <div class="col-lg-3 col-md-6 col-sm-12 mb-3" data-aos="fade-up" data-aos-delay="100">
                 <a href="https://profile.diu.ac/md.raisul.islam.sourav">
                   <div class="member">
                     <div class="member-img">
@@ -790,7 +794,7 @@
                   </div>
                 </a>
               </div>
-              <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+              <div class="col-lg-3 col-md-6 col-sm-12 mb-3" data-aos="fade-up" data-aos-delay="100">
                 <a href="https://profile.diu.ac/prof.dr.a.t.mmahbuburrahmansarker">
                   <div class="member">
                     <div class="member-img">
@@ -810,7 +814,7 @@
 
           <div class="swiper-slide">
             <div class="row">
-              <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+              <div class="col-lg-3 col-md-6 col-sm-12 mb-3" data-aos="fade-up" data-aos-delay="100">
                 <a href="https://profile.diu.ac/mohammad.tareq">
                   <div class="member">
                     <div class="member-img">
@@ -824,7 +828,7 @@
                   </div>
                 </a>
               </div>
-              <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+              <div class="col-lg-3 col-md-6 col-sm-12 mb-3" data-aos="fade-up" data-aos-delay="100">
                 <a href="https://profile.diu.ac/shovon">
                   <div class="member">
                     <div class="member-img">
@@ -839,7 +843,7 @@
                   </div>
                 </a>
               </div>
-              <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+              <div class="col-lg-3 col-md-6 col-sm-12 mb-3" data-aos="fade-up" data-aos-delay="100">
                 <a href="https://profile.diu.ac/s.jubair.al.ahmed">
                   <div class="member">
                     <div class="member-img">
@@ -854,7 +858,7 @@
                   </div>
                 </a>
               </div>
-              <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+              <div class="col-lg-3 col-md-6 col-sm-12 mb-3" data-aos="fade-up" data-aos-delay="100">
                 <a
                   href="https://profile.diu.ac/jamsedur.rahman?fbclid=IwAR2mX4t0V4Qkk9aly9uMbv_bnAa_h2VheqDcPx4qf9S7Ny2rMxxQxINjvN4">
                   <div class="member">
@@ -874,7 +878,7 @@
           </div>
           <div class="swiper-slide">
             <div class="row">
-              <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+              <div class="col-lg-3 col-md-6 col-sm-12 mb-3" data-aos="fade-up" data-aos-delay="100">
                 <a href="https://profile.diu.ac/professor.farida.begum">
                   <div class="member">
                     <div class="member-img">
@@ -889,7 +893,7 @@
                   </div>
                 </a>
               </div>
-              <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+              <div class="col-lg-3 col-md-6 col-sm-12 mb-3" data-aos="fade-up" data-aos-delay="100">
                 <a
                   href="https://profile.diu.ac/md.fazlul.haque?fbclid=IwAR1iEwFPwxfdXkekbVN7KCVuDdedCtxb0ib3EC_h-UrWAUCLUQadAJoYRoM">
                   <div class="member">
@@ -905,7 +909,7 @@
                   </div>
                 </a>
               </div>
-              <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+              <div class="col-lg-3 col-md-6 col-sm-12 mb-3" data-aos="fade-up" data-aos-delay="100">
                 <a href="https://profile.diu.ac/md.rofiqul.islam">
                   <div class="member">
                     <div class="member-img">
@@ -920,7 +924,7 @@
                   </div>
                 </a>
               </div>
-              <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+              <div class="col-lg-3 col-md-6 col-sm-12 mb-3" data-aos="fade-up" data-aos-delay="100">
                 <a href="">
                   <div class="member">
                     <div class="member-img">
@@ -940,7 +944,7 @@
           </div>
           <div class="swiper-slide">
             <div class="row">
-              <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+              <div class="col-lg-3 col-md-6 col-sm-12 mb-3" data-aos="fade-up" data-aos-delay="100">
                 <a href="https://profile.diu.ac/farhana.zaman">
                   <div class="member">
                     <div class="member-img">
@@ -954,7 +958,7 @@
                   </div>
                 </a>
               </div>
-              <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+              <div class="col-lg-3 col-md-6 col-sm-12 mb-3" data-aos="fade-up" data-aos-delay="100">
                 <a href="https://profile.diu.ac/md.bazlur.rahman">
                   <div class="member">
                     <div class="member-img">
@@ -970,7 +974,7 @@
                   </div>
                 </a>
               </div>
-              <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+              <div class="col-lg-3 col-md-6 col-sm-12 mb-3" data-aos="fade-up" data-aos-delay="100">
                 <a href="https://profile.diu.ac/dr.md.sharifulislam">
                   <div class="member">
                     <div class="member-img">
@@ -1107,7 +1111,7 @@
           <div class="info-box">
             <i class="bx bx-phone"></i>
             <h3>Call Us</h3>
-            <p class="">01718200985
+            <p class="">+8801718200985
             </p>
           </div>
         </div>
@@ -1116,11 +1120,17 @@
 
       <div class="" data-aos="fade-up" data-aos-delay="100">
 
-        <div class=" ">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d14604.974079688413!2d90.40454096594159!3d23.774341155794485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sHouse%23%2004%2C%20Road%23%2001%2C%20Block%23%20F%2C%20Banani%2C%20Dhaka%201213%2C!5e0!3m2!1sen!2sbd!4v1702109721397!5m2!1sen!2sbd"
-            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="row">
+          <div class="col-lg-8 col-md-6 col-sm-12">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d14604.974079688413!2d90.40454096594159!3d23.774341155794485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sHouse%23%2004%2C%20Road%23%2001%2C%20Block%23%20F%2C%20Banani%2C%20Dhaka%201213%2C!5e0!3m2!1sen!2sbd!4v1702109721397!5m2!1sen!2sbd"
+              width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">            
+            <iframe width="420" height="400" src="https://www.youtube.com/embed/watch?v=B8bj74COb64&list=PLtPyVZ_r0dR4mBIQ9L8dfK2geQhbuBSBc">
+            </iframe>
+          </div>
         </div>
 
 

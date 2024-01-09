@@ -166,7 +166,7 @@
       <div class="social-links d-none d-md-flex align-items-center">
         <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
         <a href="https://www.facebook.com/BCGD.DIU" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-youtube"></i></a>
+        <a href="https://www.youtube.com/channel/UCZfqywsI1mP1wPJ4xA6esyg" class="instagram" target="_blank"><i class="bi bi-youtube"></i></a>
         <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
       </div>
     </div>
@@ -182,7 +182,7 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto{{ Request::is('/') ? ' active' : '' }}" href="{{route('home')}}">Home</a></li>          
-          <li class="dropdown"><a href="#"> <span>About Us</span>  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mt-1" height='20px'>
+          <li class="dropdown"><a href="#"> <span>About Us</span>  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mt-1" height='15px'>
             <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
           </svg></i></a>
             <ul>
@@ -195,7 +195,7 @@
               </li>              
             </ul>
           </li>
-          <li class="dropdown"><a href="#"><span>Our Approach</span>  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mt-1" height='20px'>
+          <li class="dropdown"><a href="#"><span>Our Approach</span>  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mt-1" height='15px'>
             <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
           </svg></a>
             <ul>             
@@ -204,10 +204,11 @@
               <li><a href="{{route('advocacy')}}">Advocacy</a></li>
               <li><a href="{{route('capacity')}}">Capacity Building</a></li>
               <li><a href="{{route('public.awereness')}}">Public Awareness</a></li>
+              <li><a href="{{route('publication')}}">Publication</a></li>
                          
             </ul>
           </li>
-          <li class="dropdown"><a href="#"><span>Area of Expertise</span>  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mt-1" height='20px'>
+          <li class="dropdown"><a href="#"><span>Area of Expertise</span>  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mt-1" height='15px'>
             <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
           </svg></a>
             <ul>
@@ -222,10 +223,10 @@
 
           <li><a class="nav-link scrollto{{ Request::is('recent_activities') ? ' active' : '' }}" href="{{ route('recent.activities') }}">Recent Activities</a></li>
 
-          <li><a class="nav-link scrollto{{ Request::is('publication') ? ' active' : '' }}" href="{{route('publication')}}">Publication</a></li>
+          {{-- <li><a class="nav-link scrollto{{ Request::is('publication') ? ' active' : '' }}" href="{{route('publication')}}">Publication</a></li> --}}
           <li><a class="nav-link scrollto{{ Request::is('achivement') ? ' active' : '' }}" href="{{route('achivement')}}">Achievement</a></li>
           <li><a class="nav-link scrollto{{ Request::is('our_network') ? ' active' : '' }}" href="{{route('network')}}">Network</a></li>
-          <li class="dropdown"><a href="#"><span>Newsroom</span>  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mt-1" height='20px'>
+          <li class="dropdown"><a href="#"><span>Newsroom</span>  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mt-1" height='15px'>
             <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
           </svg></a>
             <ul>
@@ -268,12 +269,12 @@
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-contact">
-            <a href="{{route('home')}}" class=""><img src="assets/img/bcgd.jpg" alt="" style="width:150px;margin-bottom:10px;height:80px"></a>
+            <a href="{{route('home')}}" class=""><img src="assets/img/bcgd.jpg" alt="" style="width:150px;margin-bottom:10px;height:50px"></a>
             <p>
               House# 04, Road# 01, Block# F,<br>
               Banani, Dhaka 1213, Bangladesh.<br>
                <br>
-              <strong>Phone:</strong>  01718200985<br>
+              <strong>Phone:</strong>  +8801718200985<br>
               <strong>Email:</strong> bcgd.diu@gmail.com<br>
             </p>
           </div>

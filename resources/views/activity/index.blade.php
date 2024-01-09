@@ -49,6 +49,39 @@
     color: #000 !important;
     margin: 0px 5px;
   }
+  #body-bg{
+        background:#F4F4F4;        
+    }
+    .card-body {
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+
+    .info {
+        padding: 30px;
+        /* margin-bottom:30px; */
+    }
+
+    .info h5 {
+        color: #000;
+        font-weight: 500;
+        text-align: justify;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .info p {
+        text-align: justify;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    .fas {
+    color: #000 !important;
+    margin: 0px 5px;
+  }
 </style>
 <section class="page-bg">
   <div class="container">
@@ -60,8 +93,175 @@
     </div>
   </div>
 </section>
+<section id="body-bg" class="publication">
+  
 
-<section>
+
+
+  <div class="container">
+ <h3>Road Safety</h3>
+
+      <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+              <div class="card-body">
+                  <img src="assets/img/road.jpg" alt="" style="width:100%;height:200px">
+                  <div class="info">
+                      <h5>Program Report: Roundtable Meeting on Road Safety Law - Bangladesh Perspective</h5>
+                      <p>
+                          The roundtable meeting on "Road Safety Law: Bangladesh Perspective" was organized by the Road Safety Coalition Bangladesh at Hotel Intercontinental, Dhaka. The discussion aimed
+                      </p>
+                      <a href="{{route('road_safety_1')}}" class="btn btn-warning" target="_blank">Read More</a>
+                  </div>
+              </div>
+          </div>      
+      </div>
+  </div>
+
+  <div class="container mt-4">
+    <h3>Migration</h3>
+
+    <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="card-body">
+                <img src="assets/img/migration1.png" alt="" style="width:100%;height:200px">
+                <div class="info">
+                    <h5>Seminar on "Importance of Standard Packaging Model to Protect Tobacco Tax Evasion in Bangladesh"</h5>
+                    <p>
+                        Speakers at a seminar said that it has become necessary to introduce the standard packaging for tobacco products as well the plain packaging in order to prevent revenue evasion.
+                    </p>
+                    <a href="{{route('migration_1')}}" class="btn btn-warning" target="_blank">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="card-body">
+                <img src="assets/img/migration2.png" alt="" style="width:100%;height:200px">
+                <div class="info">
+                    <h5>Textiles and Jute Minister's support for strengthening and amendment Tobacco Control Act- TCRC team met with the Minister</h5>
+                    <p>
+                        Tobacco seriously threatens public health, social degradation, the economy, and the environment. According to a study by the Bangladesh Cancer Society in 2018, the government's revenue from
+                    </p>
+                    <a href="{{route('migration_2')}}" class="btn btn-warning" target="_blank">Read More</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+<div class="container mt-4">
+  <h3>Public Health</h3>
+
+  <div class="row">
+      <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+          <div class="card-body">
+              <img src="assets/img/activity/activity4.png" alt="" style="width:100%;height:200px">
+              <div class="info">
+                  <h5>22 organizations demand ban on e-cigarette in Bangladesh</h5>
+                  <p>
+                      The organisations argued that the activities of tobacco companies in the production and expansion of e-cigarettes in the country may cause a serious threat to public health. 
+                  </p>
+                  <a href="{{route('public_health_1')}}" class="btn btn-warning" target="_blank">Read More</a>
+              </div>
+          </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+          <div class="card-body">
+              <img src="assets/img/activity/activity5.png" alt="" style="width:100%;height:200px">
+              <div class="info">
+                  <h5>Health Ministry’s Proposal to Ban E-Cigarettes is Commendable</h5>
+                  <p>
+                      Recently, the drafting amendment of the Smoking and Tobacco Products Usage (Control) Act-2005 (amendment 2013) has included a provision banning the production and marketing of E-Cigarettes,
+                  </p>
+                  <a href="{{route('public_health_2')}}" class="btn btn-warning" target="_blank">Read More</a>
+              </div>
+          </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+          <div class="card-body">
+              <img src="assets/img/activity/activity8.png" alt="" style="width:100%;height:200px">
+              <div class="info">
+                  <h5>Tobacco Tax Policy Reformation for Protecting Public Health</h5>
+                  <p>
+                      The lawmakers called upon the government to impose specific taxes on cigarettes and other tobacco products in the upcoming budget to protect public health and increase revenue income. Tobacco 
+                  </p>
+                  <a href="{{route('public_health_3')}}" class="btn btn-warning" target="_blank">Read More</a>
+              </div>
+          </div>
+      </div>
+      
+      
+      
+  </div>
+</div>
+
+<div class="container mt-4">
+  <h3>Climate Change</h3>
+ 
+       <div class="row">
+           <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+               <div class="card-body">
+                   <img src="assets/img/climate1.png" alt="" style="width:100%;height:200px">
+                   <div class="info">
+                       <h5>COP 27-Climate Change Debriefing Program at Parliament Members Club</h5>
+                       <p>
+                           Team Dhaka International University is at COP 27-Climate Change Debriefing Program at
+                           Parliament Members Club, Bangladesh National Parliament, Dhaka.
+                       </p>
+                       <a href="{{route('climate_change_1')}}" class="btn btn-warning" target="_blank">Read More</a>
+                   </div>
+               </div>
+           </div>
+           <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+               <div class="card-body">
+                   <img src="assets/img/climate2.png" alt="" style="width:100%;height:200px">
+                   <div class="info">
+                       <h5>Dhaka International University along with OXFAM Bangladesh conducted a COP side event on
+                           “Equity and Just Transition Bangladesh Insights at COP 28”</h5>
+                       <p>
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto id facere iusto cum
+                           quas. Placeat ab provident temporibus repellat laboriosam quia fugit odio incidunt, rerum
+                           fuga earum, ratione nostrum quis aliquid animi consequatur. Vitae ut delectus atque,
+                       </p>
+                       <a href="{{route('climate_change_2')}}" class="btn btn-warning" target="_blank">Read More</a>
+                   </div>
+               </div>
+           </div>
+           <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+               <div class="card-body">
+                   <img src="assets/img/climate3.png" alt="" style="width:100%;height:200px">
+                   <div class="info">
+                       <h5>The Multi-stakeholder Preparatory Workshop on "COP28 Influencing Arbitrations"</h5>
+                       <p>
+                           The Multi-stakeholder Preparatory Workshop on "COP28 Influencing Arbitrations" jointly
+                           organized by Dhaka International University, CANSA, and OXFAM at Hotel Intercontinental,
+                           Dhaka today (11 November 2023).
+                       </p>
+                       <a href="{{route('climate_change_3')}}" class="btn btn-warning" target="_blank">Read More</a>
+                   </div>
+               </div>
+           </div>
+           <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+               <div class="card-body">
+                   <img src="assets/img/united.png" alt="" style="width:100%;height:200px">
+                   <div class="info">
+                       <h5>United Nations Framework Convention on Climate Change</h5>
+                       <p>
+                           Dhaka International University has received international recognition (Observer Status) from
+                           the United Nations Framework Convention on Climate Change (UNFCCC)..
+                       </p>
+                       <a href="{{route('climate_change_4')}}" class="btn btn-warning" target="_blank">Read More</a>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+
+</section>
+
+{{-- <section>
   <div class="container mt-4" data-aos="fade-up">
 
     <div class="">
@@ -289,5 +489,5 @@
 
 
                   </div>
-</section><!-- End Services Section -->
+</section><!-- End Services Section --> --}}
 @endsection

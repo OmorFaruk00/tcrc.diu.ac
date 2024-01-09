@@ -41,10 +41,10 @@
 <section class="page-bg">
     <div class="container">
         <div class="" data-aos="fade-up" data-aos-delay="200">
-            <h1 class="page-title">Road Safety</h1>
+            <h1 class="page-title">Public Health</h1>
             <p class="page-desc">Welcome to Bangladesh Center for Governance and Development, DIU.</p>
             <button class="page-btn"> <a href="{{route('home')}}">Home</a> <i class="fas fa-arrow-right"></i>
-                Road Safety</button>
+                Public Health</button>
         </div>
     </div>
 </section>
