@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-@section('title', 'home')
+@section('title', 'BCGD')
 
 @section('content')
 <style>
@@ -87,6 +87,12 @@
     margin-left: 10px;
     border-radius: 5px;
   }
+  .area-read{
+    background: #FDC106;
+    color: #000;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
 
   .read_more:hover {
     background: #fff;
@@ -107,20 +113,96 @@
     color: #FDC106 !important;
   }
   .icon-box:hover{
-    background: gray !important;
+    background: #FDC106 !important;
   }
   .icon-box:hover h4{
     color: #000 !important;
   }  
+  .icon-box:hover .area-read{
+    background: #093C34;
+    color: #fff !important;
+  }
   /* .icon-box:hover a, a i{
     color: #FDC106 !important;
   } */
   .info-box i{
     color: #000 !important;
   }
+  .info-box {
+   height: 200px;
+  }
   .arow{
     color: #000 !important;
+  } 
+  .section-title{
+    font-size: 36px !important;
+    color: #080D41;
+    text-transform: capitalize;
+
+
   }
+  .area-icon{
+    width: 80px;
+    height: 80px;
+    background: #135C51;
+    border-radius: 50%;
+    border: 1px solid;
+    margin-bottom: 20px;
+  
+  }
+  .fb{
+    margin-left: 180px;
+  }
+  .fb-mobile{
+    display: none;
+  }
+  @media only screen and (min-width: 380px) and (max-width: 780px) { 
+    .slider-img{
+    height: 30vh;
+  } 
+
+}
+@media only screen and (min-width: 380px) and (max-width: 1380px) { 
+    .fb-btn{
+    /* margin-top:30px; */
+  }
+  .fb-post{
+    height: 400px;
+  }
+
+}
+@media only screen and (min-width: 1200px) and (max-width: 1490px) {  
+  .fb{
+    margin-left: 110px;
+    margin-top: 30px;
+  }
+
+}
+@media only screen and (min-width: 900px) and (max-width: 1190px) {  
+  .fb{
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+
+}
+@media only screen and (max-width: 767px) {
+            .fb {
+                display: none; /* Hide the div on smaller screens */
+            }
+            .fb-mobile{
+              display: block;
+            }
+        }
+
+        .slider-img  {
+
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+}
+
+      
+
 
 
 </style>
@@ -135,31 +217,31 @@
         aria-label="Slide 2"></button>
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
         aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+        aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+        aria-label="Slide 5"></button>
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="assets/img/slider1.png" class="d-block w-100" alt="..." style="height: 75vh">
-        {{-- <div class="carousel-caption d-none d-md-block">
-          <h3>Welcome to Bangladesh Center for Governance and Development, DIU.</h3>
-          <h6>BCGD are to become a think tank and academic hub on public policy, climate change and migration studies
-            across the globe. </h6>
-        </div> --}}
+        <img src="assets/img/slider1.png" class="d-block w-100 slider-img" alt="...">
+      
       </div>
       <div class="carousel-item">
-        <img src="assets/img/slider2.jpg" class="d-block w-100" alt="..." style="height: 75vh">
-        {{-- <div class="carousel-caption d-none d-md-block">
-          <h3>Welcome to Bangladesh Center for Governance and Development, DIU.</h3>
-          <h6>BCGD are to become a think tank and academic hub on public policy, climate change and migration studies
-            across the globe. </h6>
-        </div> --}}
+        <img src="assets/img/slider2.jpg" class="d-block w-100 slider-img" alt="..." >
+        
       </div>
       <div class="carousel-item">
-        <img src="assets/img/slider3.png" class="d-block w-100" alt="..." style="height: 75vh">
-        {{-- <div class="carousel-caption d-none d-md-block">
-          <h3>Welcome to Bangladesh Center for Governance and Development, DIU.</h3>
-          <h6>BCGD are to become a think tank and academic hub on public policy, climate change and migration studies
-            across the globe. </h6>
-        </div> --}}
+        <img src="assets/img/slider3.png" class="d-block w-100 slider-img" alt="..." >
+        
+      </div>
+      <div class="carousel-item">
+        <img src="assets/img/slider4.jpg" class="d-block w-100 slider-img" alt="..." >
+        
+      </div>
+      <div class="carousel-item">
+        <img src="assets/img/slider5.jpg" class="d-block w-100 slider-img" alt="..." >
+        
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
@@ -180,7 +262,7 @@
 
   <!-- ======= About Section ======= -->
   <section id="about" class="about about-bg">
-    <div class="container" data-aos="fade-up">
+    <div class="container" >
 
       <div class="row">
         <div class="col-lg-7 col-md-7 col-sm-12">
@@ -203,35 +285,42 @@
               class="fas fa-arrow-right arow"></i></a>
 
         </div>
-        <div class="col-lg-5 col-md-5 col-sm-12">
-          <iframe
-            src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FBCGD.DIU%2Fposts%2Fpfbid0RZb1LihBTKmdd2fLtH46grGmyHxff7nBTCwMShQ22XrmiX27srMzsEi8zLaK68R5l&show_text=true&width=500"
-            width="100%" height="370" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-            allowfullscreen="true" allow="autoplay; clipboard-write; picture-in-picture; web-share"></iframe>
-          <div class=" mt-4" data-aos="fade-left" data-aos-delay="100">
-            <a href="https://www.facebook.com/BCGD.DIU " target="_blank" class="btn-get-started scrollto" style="">View
-              BCGD Latest Facebook Post <i class="fas fa-arrow-right arow"></i></a>
+        <div class="col-lg-5 col-md-5 col-sm-12 " >
+          
+          <div class="fb">
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FBCGD.DIU&tabs=timeline&width=340&height=370&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=112453941853769" width="340" height="370" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+       </div>          
+          <div class=" mt-4 fb">
+            <a href="https://www.facebook.com/BCGD.DIU " target="_blank" class="btn-get-started scrollto fb-btn" style="">Latest Facebook Post <i class="fas fa-arrow-right arow"></i></a>
 
           </div>
-        </div>
+
+          <div class="fb-mobile">
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FBCGD.DIU&tabs=timeline&width=350&height=370&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="350" height="370" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+          </div>
+          <div class=" mt-4 fb-mobile">
+            <a href="https://www.facebook.com/BCGD.DIU " target="_blank" class="btn-get-started scrollto fb-btn" style="">Latest Facebook Post <i class="fas fa-arrow-right arow"></i></a>
+
+          </div>
+        </div>      
 
       </div>
   </section><!-- End About Section -->
 
 
   <!-- Recent Activities -->
-  <section id="">
-    <div class="container" data-aos="zoom-in">
-      <h2 class="title-header text-center mb-4">RECENT ACTIVITIES</h2>
+  <div>
+    <div class="container"  >
+      <h2 class="section-title text-center mb-4"> Recent Activities</h2>
 
 
-      <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+      <div class="testimonials-slider swiper"  data-aos-delay="100">
         <div class="swiper-wrapper">
 
           <div class="swiper-slide">
             <div class="row">
 
-              <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-5" data-aos="fade-up" data-aos-delay="100">
+              <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-5"  data-aos-delay="100">
                 <div class="activitie">
                   <div class="activitie-img">
                     <img src="assets/img/activity/activity1.png" class="img-fluid" alt="">
@@ -247,7 +336,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-5" data-aos="fade-up" data-aos-delay="100">
+              <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-5"  data-aos-delay="100">
                 <div class="activitie">
                   <div class="activitie-img">
                     <img src="assets/img/activity/activity2.png" class="img-fluid" alt="">
@@ -261,7 +350,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-5" data-aos="fade-up" data-aos-delay="100">
+              <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-5"  data-aos-delay="100">
                 <div class="activitie">
                   <div class="activitie-img">
                     <img src="assets/img/activity/activity3.png" class="img-fluid" alt="">
@@ -276,7 +365,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-5" data-aos="fade-up" data-aos-delay="100">
+              <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-5"  data-aos-delay="100">
                 <div class="activitie">
                   <div class="activitie-img">
                     <img src="assets/img/activity/activity4.png" class="img-fluid" alt="">
@@ -297,7 +386,7 @@
 
           <div class="swiper-slide">
             <div class="row">
-              <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-5" data-aos="fade-up" data-aos-delay="100">
+              <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-5"  data-aos-delay="100">
                 <div class="activitie">
                   <div class="activitie-img">
                     <img src="assets/img/activity/activity5.png" class="img-fluid" alt="">
@@ -312,7 +401,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-5" data-aos="fade-up" data-aos-delay="100">
+              <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-5"  data-aos-delay="100">
                 <div class="activitie">
                   <div class="activitie-img">
                     <img src="assets/img/activity/activity6.png" class="img-fluid" alt="">
@@ -327,7 +416,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-5" data-aos="fade-up" data-aos-delay="100">
+              <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-5"  data-aos-delay="100">
                 <div class="activitie">
                   <div class="activitie-img">
                     <img src="assets/img/activity/activity7.png" class="img-fluid" alt="">
@@ -343,7 +432,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-5" data-aos="fade-up" data-aos-delay="100">
+              <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-5"  data-aos-delay="100">
                 <div class="activitie">
                   <div class="activitie-img">
                     <img src="assets/img/activity/activity8.png" class="img-fluid" alt="">
@@ -369,15 +458,15 @@
       </div>
 
     </div>
-  </section>
+  </div>
   <!-- End Recent Activities -->
    <!-- ======= Our Approach Section ======= -->
-   <section section-bg>
+   <div >
     <div class="container">
-      <h3 class="title-header text-center">Our Approach</h3>     
+      <h2 class="section-title text-center mt-4">Our Approach</h2>     
 
-      <div class="row my-5">
-        <div class="col-lg-3 col-md-6 col-sm-12">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
           <a href="{{route('research')}}" target="_blank">
             <div class="our-project">
               <img src="assets/img/publication/publication88.png" style="height: 200px">
@@ -387,7 +476,7 @@
             </div>
           </a>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
           <a href="{{route('advocacy')}}" target="_blank">
             <div class="our-project">
               <img src="assets/img/activity/activity4.png" style="height: 200px">
@@ -397,7 +486,7 @@
             </div>
           </a>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
           <a href="{{route('capacity')}}" target="_blank">
             <div class="our-project">
               <img src="assets/img/migration1.png" style="height: 200px">
@@ -407,12 +496,33 @@
             </div>
           </a>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-12">
-          <a href="{{route('public.awereness')}}" target="_blank">
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
+          <a href="{{route('communication')}}" target="_blank">
             <div class="our-project">
               <img src="assets/img/climate2.png" style="height: 200px">
               <div class="team-content">
-                <span class="title">Public Awareness</span>
+                <span class="title">Communication</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
+          <a href="{{route('publication')}}" target="_blank">
+            <div class="our-project">
+              <img src="assets/img/publication/publication111.jpg" style="height: 200px">
+              <div class="team-content">
+                <span class="title">Publication</span>
+              </div>
+            </div>
+          </a>
+        </div>
+       
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
+          <a href="{{route('consultancy')}}" target="_blank">
+            <div class="our-project">
+              <img src="assets/img/consultancy.webp" style="height: 200px">
+              <div class="team-content">
+                <span class="title">Consultancy</span>
               </div>
             </div>
           </a>
@@ -424,71 +534,69 @@
 
     </div>
 
-  </section>
+  </div>
   <!-- ======= End Approach Section ======= -->
    <!-- ======= Area of Expertise======= -->
-   <section id="services" class="services">
-    <div class="container" data-aos="fade-up">
+   <div id="area-of-expertice" class="services py-3">
+    <div class="container" >
 
 
-      <h2 class="title-header text-center mb-4">Area of Expertise</h2>
+      <h2 class="section-title text-center mb-4">Area of Expertise</h2>
       <div class="row">
-        <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-5" data-aos="zoom-in" data-aos-delay="100">
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-5"  data-aos-delay="50">
           <div class="icon-box" style="width: 100%">
             <div class="d-flex justify-content-between px-4 pt-4">
-              <div class="icon "><i class="fas fa-exclamation-triangle"></i></div>
+              <div><img src="assets/img/area/area1.png" alt="" class="area-icon"></div>
               
             </div>
             <div class="px-4">
               <h4>Road Safety</h4>
             </div>
             <div class="p-4">
-              <a href="{{route('road.safety')}}" class="service-read" target="_blank"> Read More <i
-                  class="fas fa-arrow-right"></i></a>
+              <a href="{{route('road.safety')}}" class="area-read" target="_blank"> Read More</a>
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-5" data-aos="zoom-in" data-aos-delay="100">
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-5"  data-aos-delay="100">
           <div class="icon-box" style="width: 100%">
             <div class="d-flex justify-content-between px-4 pt-4">
-              <div class="icon "><i class="fas fa-cloud-sun"></i></div>
+              <div class=""><img src="assets/img/area/area2.png" alt="" class="area-icon"></div>
              
             </div>
             <div class="px-4">
               <h4>Climate Change</h4>
             </div>
             <div class="p-4">
-              <a href="{{route('climate_change')}}" class="service-read" target="_blank"> Read More <i
-                  class="fas fa-arrow-right"></i></a>
+              <a href="{{route('climate_change')}}" class="area-read" target="_blank"> Read More </a>
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-5" data-aos="zoom-in" data-aos-delay="100">
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-5"  data-aos-delay="100">
           <div class="icon-box" style="width: 100%">
             <div class="d-flex justify-content-between px-4 pt-4">
-              <div class="icon "><i class="fas fa-walking"></i></div>              
+              <div class=""><img src="assets/img/area/area3.png" alt="" class="area-icon"></div>              
             </div>
             <div class="px-4">
-              <h4>Migration</h4>
+              <h4>Climate Migration</h4>
             </div>
             <div class="p-4">
-              <a href="{{route('migration')}}" class="service-read" target="_blank"> Read More <i
-                  class="fas fa-arrow-right"></i></a>
+              <a href="{{route('migration')}}" class="area-read" target="_blank"> Read More 
+                 </a>
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-5" data-aos="zoom-in" data-aos-delay="100">
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-5"  data-aos-delay="100">
           <div class="icon-box" style="width: 100%">
             <div class="d-flex justify-content-between px-4 pt-4">
-              <div class="icon "><i class="fas fa-hospital"></i></div>
+              <div ><img src="assets/img/area/area4.png" alt="" class="area-icon"></div>
              
             </div>
             <div class="px-4">
               <h4>Public Health</h4>
             </div>
             <div class="p-4">
-              <a href="{{route('public.health')}}" class="service-read" target="_blank"> Read More <i
-                  class="fas fa-arrow-right"></i></a>
+              <a href="{{route('public.health')}}" class="area-read" target="_blank"> Read More 
+                  </a>
             </div>
           </div>
         </div>
@@ -497,21 +605,21 @@
       </div>
 
     </div>
-  </section>
+  </div>
   <!-- End Area of Expertise Section -->
   <!--  Start Publication Section -->
-  <section>
-    <div class="container" data-aos="zoom-in">
-      <h2 class="title-header text-center mb-4">PUBLICATIONS</h2>
+  <div class="py-4">
+    <div class="container" >
+      <h2 class="section-title text-center mb-4">Publications</h2>
 
 
-      <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+      <div class="testimonials-slider swiper"  data-aos-delay="100">
         <div class="swiper-wrapper">
 
           <div class="swiper-slide">
             <div class="row">
 
-              <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-5" data-aos="fade-up" data-aos-delay="100">
+              <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-5"  data-aos-delay="100">
                 <div class="activitie">
                   <div class="activitie-img">
                     <img src="assets/img/publication/publication.png" class="img-fluid" alt="">
@@ -529,7 +637,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-5" data-aos="fade-up" data-aos-delay="100">
+              <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-5"  data-aos-delay="100">
                 <div class="activitie">
                   <div class="activitie-img">
                     <img src="assets/img/publication/publication2.png" class="img-fluid" alt="">
@@ -547,7 +655,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-5" data-aos="fade-up" data-aos-delay="100">
+              <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-5"  data-aos-delay="100">
                 <div class="activitie">
                   <div class="activitie-img">
                     <img src="assets/img/publication/publication3.jpg" class="img-fluid" alt="">
@@ -567,7 +675,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-5" data-aos="fade-up" data-aos-delay="100">
+              <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-5"  data-aos-delay="100">
                 <div class="activitie">
                   <div class="activitie-img">
                     <img src="assets/img/publication/publication3.jpg" class="img-fluid" alt="">
@@ -588,7 +696,7 @@
           </div>
           <div class="swiper-slide">
             <div class="row">
-              <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-5" data-aos="fade-up" data-aos-delay="100">
+              <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-5"  data-aos-delay="100">
                 <div class="activitie">
                   <div class="activitie-img">
                     <img src="assets/img/publication/publication5.png" class="img-fluid" alt="">
@@ -606,7 +714,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-5" data-aos="fade-up" data-aos-delay="100">
+              <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-5"  data-aos-delay="100">
                 <div class="activitie">
                   <div class="activitie-img">
                     <img src="assets/img/publication/publication6.png" class="img-fluid" alt="">
@@ -621,7 +729,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-5" data-aos="fade-up" data-aos-delay="100">
+              <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-5"  data-aos-delay="100">
                 <div class="activitie">
                   <div class="activitie-img">
                     <img src="assets/img/publication/publication88.png" class="img-fluid" alt="">
@@ -643,19 +751,18 @@
       </div>
 
     </div>
-  </section>
+  </div>
    <!-- End Publication  Section-->
 
 
-  <section id="portfolio" class="portfolio">
-    <div class="container" data-aos="fade-up">
+  <div id="portfolio" class="portfolio py-4">
+    <div class="container" >
 
-      <div class="section-title">
-        <h2>Portfolio</h2>
-        <h3 class="title-header">Check our <span>Portfolio</span></h3>
+      <div class="">
+        <h2 class="section-title">Check our <span>Portfolio</span></h2>
       </div>
 
-      <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+      <div class="row portfolio-container"  data-aos-delay="200">
         <div class="col-lg-3 col-md-6 portfolio-item filter-app">
           <a href="assets/img/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"
             title="portfolio">
@@ -719,35 +826,40 @@
       </div>
 
     </div>
-  </section><!-- End Portfolio Section -->
+  </div><!-- End Portfolio Section -->
   
 
   <!-- ======= Team Section ======= -->
-  <section id="team" style="background: #F4F4F4">
-    <div class="container" data-aos="zoom-in">
+  <div id="team" style="background: #F4F4F4" class="py-4">
+    <div class="container" >   
 
-      <div class="row">
-        <div class="col-lg-9 col-md-6 col-sm-12">
-          <h6 class="title-section">OUR COMMITTEE</h6>
+      {{-- <div class="row">
+        <div class="col-lg-9 col-md-6 col-sm-12  d-flex justify-content-start">
           <div class="">
-            <h3 class="title-header">BCGD Executive Committee</h3>
+            <h3 class="section-title" style="font-size: 36px">Executive Committee</h3>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-end mb-5">
           <a href="{{route('about.executive')}}" class="btn-get-started scrollto" target="_blank">View All<i
               class="fas fa-arrow-right arow"></i> </a>
         </div>
+      </div> --}}
+      <h2 class="section-title">Executive Committee</h2>
+      <div class=" d-flex justify-content-end mb-2" style="margin-right: 30px">
+        <a href="{{route('about.executive')}}" class="btn-get-started scrollto" target="_blank">View All<i
+            class="fas fa-arrow-right arow"></i> </a>
       </div>
+      
 
 
-      <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+      <div class="testimonials-slider swiper"  data-aos-delay="100">
         <div class="swiper-wrapper">
 
           <div class="swiper-slide">
             <div class="row">
 
-              <div class="col-lg-3 col-md-6 col-sm-12 mb-3" data-aos="fade-up" data-aos-delay="100">
-                <a href="https://profile.diu.ac/patwary">
+              <div class="col-lg-3 col-md-6 col-sm-12 mb-3"  data-aos-delay="100">
+                <a href="https://profile.diu.ac/patwary" target="_blank">
                   <div class="member">
                     <div class="member-img">
                       <img
@@ -762,155 +874,8 @@
                   </div>
                 </a>
               </div>
-
-              <div class="col-lg-3 col-md-6 col-sm-12 mb-3" data-aos="fade-up" data-aos-delay="100">
-                <a href="https://profile.diu.ac/md.azmir.hossain">
-                  <div class="member">
-                    <div class="member-img">
-                      <img src="assets/img/team/Chairman, Department of Business Administration-Md Azmir Hossain.jpg"
-                        class="img-fluid" alt="">
-
-                    </div>
-                    <div class="team-info">
-                      <h4>Md. Azmir Hossain, Chairman, Department of Business Administration</h4>
-                      <p>Member</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-lg-3 col-md-6 col-sm-12 mb-3" data-aos="fade-up" data-aos-delay="100">
-                <a href="https://profile.diu.ac/md.raisul.islam.sourav">
-                  <div class="member">
-                    <div class="member-img">
-                      <img src="assets/img/team/Chairman, Department of Law, Md Raisul Islam Sourav.jpg"
-                        class="img-fluid" alt="">
-
-                    </div>
-                    <div class="team-info">
-                      <h4>Md. Raisul Islam Sourav, Chairman, Department of Law
-                      </h4>
-                      <p>Member</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-lg-3 col-md-6 col-sm-12 mb-3" data-aos="fade-up" data-aos-delay="100">
-                <a href="https://profile.diu.ac/prof.dr.a.t.mmahbuburrahmansarker">
-                  <div class="member">
-                    <div class="member-img">
-                      <img src="assets/img/team/Chairman, Department of CSE, Dr. A.T.M. Mahbubur Rahman Sarker.jpg"
-                        class="img-fluid" alt="">
-                    </div>
-                    <div class="team-info">
-                      <h4>Dr. A.T.M. Mahbubur Rahman Sarker, Chairman, Department of CSE</h4>
-                      <p>Member</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-          </div><!-- End testimonial item -->
-
-          <div class="swiper-slide">
-            <div class="row">
-              <div class="col-lg-3 col-md-6 col-sm-12 mb-3" data-aos="fade-up" data-aos-delay="100">
-                <a href="https://profile.diu.ac/mohammad.tareq">
-                  <div class="member">
-                    <div class="member-img">
-                      <img src="assets/img/team/Chairman, Department of EEE, Mohammad Tareq.jpg" class="img-fluid"
-                        alt="">
-                    </div>
-                    <div class="team-info">
-                      <h4>Mohammad Tareq, Chairman, Department of EEE</h4>
-                      <p>Member</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-lg-3 col-md-6 col-sm-12 mb-3" data-aos="fade-up" data-aos-delay="100">
-                <a href="https://profile.diu.ac/shovon">
-                  <div class="member">
-                    <div class="member-img">
-                      <img src="assets/img/team/Chairman, Department of Civil Engineering, S M SAZZAD AHMED SHOVON.jpg"
-                        class="img-fluid" alt="">
-
-                    </div>
-                    <div class="team-info">
-                      <h4>S M SAZZAD AHMED SHOVON, Chairman, Department of Civil Engineering</h4>
-                      <p>Member</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-lg-3 col-md-6 col-sm-12 mb-3" data-aos="fade-up" data-aos-delay="100">
-                <a href="https://profile.diu.ac/s.jubair.al.ahmed">
-                  <div class="member">
-                    <div class="member-img">
-                      <img src="assets/img/team/Chairman, Department of English, S. Jubair Al Ahmed.jpg"
-                        class="img-fluid" alt="">
-
-                    </div>
-                    <div class="team-info">
-                      <h4>S. Jubair Al Ahmed,Chairman, Department of English</h4>
-                      <p>Member</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-lg-3 col-md-6 col-sm-12 mb-3" data-aos="fade-up" data-aos-delay="100">
-                <a
-                  href="https://profile.diu.ac/jamsedur.rahman?fbclid=IwAR2mX4t0V4Qkk9aly9uMbv_bnAa_h2VheqDcPx4qf9S7Ny2rMxxQxINjvN4">
-                  <div class="member">
-                    <div class="member-img">
-                      <img src="assets/img/team/Chairman, Department of Sociology, Jamsedur Rahman.jpg"
-                        class="img-fluid" alt="">
-
-                    </div>
-                    <div class="team-info">
-                      <h4>Jamsedur Rahman, Chairman, Department of Sociology</h4>
-                      <p>Member</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="row">
-              <div class="col-lg-3 col-md-6 col-sm-12 mb-3" data-aos="fade-up" data-aos-delay="100">
-                <a href="https://profile.diu.ac/professor.farida.begum">
-                  <div class="member">
-                    <div class="member-img">
-                      <img src="assets/img/team/Chairman, Department of Pharmacy, Professor Farida Begum.jpg"
-                        class="img-fluid" alt="">
-
-                    </div>
-                    <div class="team-info">
-                      <h4>Professor Farida Begum, Chairman, Department of Pharmacy</h4>
-                      <p>Member</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-lg-3 col-md-6 col-sm-12 mb-3" data-aos="fade-up" data-aos-delay="100">
-                <a
-                  href="https://profile.diu.ac/md.fazlul.haque?fbclid=IwAR1iEwFPwxfdXkekbVN7KCVuDdedCtxb0ib3EC_h-UrWAUCLUQadAJoYRoM">
-                  <div class="member">
-                    <div class="member-img">
-                      <img src="assets/img/team/Chairman, Department of Political Science, Md. Fazlul Haque.jpg"
-                        class="img-fluid" alt="">
-
-                    </div>
-                    <div class="team-info">
-                      <h4>Md. Fazlul Haque, Chairman, Department of Political Science</h4>
-                      <p>Member</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-lg-3 col-md-6 col-sm-12 mb-3" data-aos="fade-up" data-aos-delay="100">
-                <a href="https://profile.diu.ac/md.rofiqul.islam">
+              <div class="col-lg-3 col-md-6 col-sm-12 mb-3"  data-aos-delay="100">
+                <a href="https://profile.diu.ac/md.rofiqul.islam" target="_blank">
                   <div class="member">
                     <div class="member-img">
                       <img src="assets/img/team/Chairman, Department of Economics, Md. Rofiqul Islam.jpg"
@@ -924,58 +889,23 @@
                   </div>
                 </a>
               </div>
-              <div class="col-lg-3 col-md-6 col-sm-12 mb-3" data-aos="fade-up" data-aos-delay="100">
-                <a href="">
+              <div class="col-lg-3 col-md-6 col-sm-12 mb-3"  data-aos-delay="100">
+                <a href="https://profile.diu.ac/professor.farida.begum" target="_blank">
                   <div class="member">
                     <div class="member-img">
-                      <img src="assets/img/team/Sunita Rani Biswas, Assistant Professor, Department of Law.jpg"
+                      <img src="assets/img/team/Chairman, Department of Pharmacy, Professor Farida Begum.jpg"
                         class="img-fluid" alt="">
 
                     </div>
                     <div class="team-info">
-                      <h4>Sunita Rani Biswas, Assistant Professor, Department of Law</h4>
+                      <h4>Professor Farida Begum, Chairman, Department of Pharmacy</h4>
                       <p>Member</p>
                     </div>
                   </div>
                 </a>
               </div>
-            </div>
-
-          </div>
-          <div class="swiper-slide">
-            <div class="row">
-              <div class="col-lg-3 col-md-6 col-sm-12 mb-3" data-aos="fade-up" data-aos-delay="100">
-                <a href="https://profile.diu.ac/farhana.zaman">
-                  <div class="member">
-                    <div class="member-img">
-                      <img src="assets/img/team/Farhana Zaman Liza.jpg" class="img-fluid" alt="">
-
-                    </div>
-                    <div class="team-info">
-                      <h4>Farhana Zaman Liza</h4>
-                      <p>Member</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-lg-3 col-md-6 col-sm-12 mb-3" data-aos="fade-up" data-aos-delay="100">
-                <a href="https://profile.diu.ac/md.bazlur.rahman">
-                  <div class="member">
-                    <div class="member-img">
-                      <img
-                        src="assets/img/team/Md. Bazlur Rahman, Associate Professor, Department of Business Administration, DIU.jpg"
-                        class="img-fluid" alt="">
-
-                    </div>
-                    <div class="team-info">
-                      <h4>Md. Bazlur Rahman, Associate Professor, Department of Business Administration, DIU</h4>
-                      <p>Member</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-lg-3 col-md-6 col-sm-12 mb-3" data-aos="fade-up" data-aos-delay="100">
-                <a href="https://profile.diu.ac/dr.md.sharifulislam">
+              <div class="col-lg-3 col-md-6 col-sm-12 mb-3"  data-aos-delay="100">
+                <a href="https://profile.diu.ac/dr.md.sharifulislam" target="_blank">
                   <div class="member">
                     <div class="member-img">
                       <img
@@ -990,6 +920,195 @@
                   </div>
                 </a>
               </div>
+
+              
+             
+          
+            </div>
+
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 col-sm-12 mb-3"  data-aos-delay="100">
+                <a href="https://profile.diu.ac/prof.dr.a.t.mmahbuburrahmansarker" target="_blank">
+                  <div class="member">
+                    <div class="member-img">
+                      <img src="assets/img/team/Chairman, Department of CSE, Dr. A.T.M. Mahbubur Rahman Sarker.jpg"
+                        class="img-fluid" alt="">
+                    </div>
+                    <div class="team-info">
+                      <h4>Dr. A.T.M. Mahbubur Rahman Sarker, Chairman, Department of CSE</h4>
+                      <p>Member</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12 mb-3"  data-aos-delay="100">
+                <a href="https://profile.diu.ac/md.bazlur.rahman" target="_blank">
+                  <div class="member">
+                    <div class="member-img">
+                      <img
+                        src="assets/img/team/Md. Bazlur Rahman, Associate Professor, Department of Business Administration, DIU.jpg"
+                        class="img-fluid" alt="">
+
+                    </div>
+                    <div class="team-info">
+                      <h4>Md. Bazlur Rahman, Associate Professor, Department of Business Administration, DIU</h4>
+                      <p>Member</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12 mb-3"  data-aos-delay="100">
+                <a
+                  href="https://profile.diu.ac/md.fazlul.haque?fbclid=IwAR1iEwFPwxfdXkekbVN7KCVuDdedCtxb0ib3EC_h-UrWAUCLUQadAJoYRoM" target="_blank">
+                  <div class="member">
+                    <div class="member-img">
+                      <img src="assets/img/team/Chairman, Department of Political Science, Md. Fazlul Haque.jpg"
+                        class="img-fluid" alt="">
+
+                    </div>
+                    <div class="team-info">
+                      <h4>Md. Fazlul Haque, Chairman, Department of Political Science</h4>
+                      <p>Member</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12 mb-3"  data-aos-delay="100">
+                <a href="https://profile.diu.ac/s.jubair.al.ahmed" target="_blank">
+                  <div class="member">
+                    <div class="member-img">
+                      <img src="assets/img/team/Chairman, Department of English, S. Jubair Al Ahmed.jpg"
+                        class="img-fluid" alt="">
+
+                    </div>
+                    <div class="team-info">
+                      <h4>S. Jubair Al Ahmed,Chairman, Department of English</h4>
+                      <p>Member</p>
+                    </div>
+                  </div>
+                </a>
+              </div>         
+           
+              
+           
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 col-sm-12 mb-3"  data-aos-delay="100">
+                <a href="https://profile.diu.ac/md.azmir.hossain" target="_blank">
+                  <div class="member">
+                    <div class="member-img">
+                      <img src="assets/img/team/Chairman, Department of Business Administration-Md Azmir Hossain.jpg"
+                        class="img-fluid" alt="">
+
+                    </div>
+                    <div class="team-info">
+                      <h4>Md. Azmir Hossain, Chairman, Department of Business Administration</h4>
+                      <p>Member</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12 mb-3"  data-aos-delay="100">
+                <a
+                  href="https://profile.diu.ac/jamsedur.rahman?fbclid=IwAR2mX4t0V4Qkk9aly9uMbv_bnAa_h2VheqDcPx4qf9S7Ny2rMxxQxINjvN4" target="_blank">
+                  <div class="member">
+                    <div class="member-img">
+                      <img src="assets/img/team/Chairman, Department of Sociology, Jamsedur Rahman.jpg"
+                        class="img-fluid" alt="">
+
+                    </div>
+                    <div class="team-info">
+                      <h4>Jamsedur Rahman, Chairman, Department of Sociology</h4>
+                      <p>Member</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12 mb-3"  data-aos-delay="100">
+                <a href="https://profile.diu.ac/mohammad.tareq" target="_blank">
+                  <div class="member">
+                    <div class="member-img">
+                      <img src="assets/img/team/Chairman, Department of EEE, Mohammad Tareq.jpg" class="img-fluid"
+                        alt="">
+                    </div>
+                    <div class="team-info">
+                      <h4>Mohammad Tareq, Chairman, Department of EEE</h4>
+                      <p>Member</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12 mb-3"  data-aos-delay="100">
+                <a href="https://profile.diu.ac/md.raisul.islam.sourav" target="_blank">
+                  <div class="member">
+                    <div class="member-img">
+                      <img src="assets/img/team/Chairman, Department of Law, Md Raisul Islam Sourav.jpg"
+                        class="img-fluid" alt="">
+
+                    </div>
+                    <div class="team-info">
+                      <h4>Md. Raisul Islam Sourav, Chairman, Department of Law
+                      </h4>
+                      <p>Member</p>
+                    </div>
+                  </div>
+                </a>
+              </div>    
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 col-sm-12 mb-3"  data-aos-delay="100">
+                <a href="#">
+                  <div class="member">
+                    <div class="member-img">
+                      <img src="assets/img/team/Sunita Rani Biswas, Assistant Professor, Department of Law.jpg"
+                        class="img-fluid" alt="">
+
+                    </div>
+                    <div class="team-info">
+                      <h4>Sunita Rani Biswas, Assistant Professor, Department of Law</h4>
+                      <p>Member</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12 mb-3"  data-aos-delay="100">
+                <a href="https://profile.diu.ac/shovon" target="_blank">
+                  <div class="member">
+                    <div class="member-img">
+                      <img src="assets/img/team/Chairman, Department of Civil Engineering, S M SAZZAD AHMED SHOVON.jpg"
+                        class="img-fluid" alt="">
+
+                    </div>
+                    <div class="team-info">
+                      <h4>S M SAZZAD AHMED SHOVON, Chairman, Department of Civil Engineering</h4>
+                      <p>Member</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12 mb-3"  data-aos-delay="100">
+                <a href="https://profile.diu.ac/farhana.zaman" target="_blank">
+                  <div class="member">
+                    <div class="member-img">
+                      <img src="assets/img/team/Farhana Zaman Liza.jpg" class="img-fluid" alt="">
+
+                    </div>
+                    <div class="team-info">
+                      <h4>Farhana Zaman Liza</h4>
+                      <p>Member</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            
+           
             </div>
           </div>
         </div>
@@ -997,70 +1116,97 @@
       </div>
 
     </div>
-  </section>
+  </div>
 <!-- ======= End Team Section ======= -->
+
 
   <!-- ======= Network Section ======= -->
   <section id="clients" class="clients mb-5 py-5 my-5" style="background: #F6F9FE">
-    <div class="container" data-aos="zoom-in">
-      <h6 class="title-header">OUR NETWORKS</h6>
+    <div class="container" >
+      <h2 class="section-title">OUR NETWORKS</h2>
 
-      <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+      <div class="testimonials-slider swiper"  data-aos-delay="100">
         <div class="swiper-wrapper">
 
           <div class="swiper-slide">
             <div class="row">
               <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                <img src="assets/img/network/international/Asian_Development_Bank_logo.svg.png" class="img-fluid" alt=""
-                  style="height: 100px">
-              </div>
+                <a href="https://www.adb.org/" target="_blank">
+                <img src="assets/img/network/international/Asian_Development_Bank_logo.svg.png" class="" alt=""
+                  style="height: 60px;width:140px">
+                </a>
+              </div>            
               <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                <img src="assets/img/network/international/download.png" class="img-fluid" alt="">
-              </div>
-              <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                <a href="https://www.oxfam.org/en" target="_blank">
                 <img
                   src="assets/img/network/international/png-clipart-green-oxfam-logo-oxfam-logo-icons-logos-emojis-shop-logos-thumbnail.png"
                   class="img-fluid" alt="">
+                </a>
               </div>
               <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                <a href="https://www.vitalstrategies.org/" target="_blank">
                 <img src="assets/img/network/international/download.png" class="img-fluid" alt="">
+                </a>
               </div>
               <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                <a href="https://theunion.org/" target="_blank">
                 <img src="assets/img/network/international/The Union.png" class="img-fluid" alt="">
+                </a>
               </div>
               <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                <a href="https://www.roadsafetyngos.org/" target="_blank">
                 <img src="assets/img/network/national/alliance_logo_464x200.png" class="img-fluid" alt="">
+                </a>
+              </div>
+              <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                <a href="https://www.brac.net/" target="_blank">
+                <img src="assets/img/network/national/BRAC_logo.svg.png" class="img-fluid" alt="">
+                </a>
               </div>
             </div>
           </div>
 
           <div class="swiper-slide">
-            <div class="row mb-4">
+            <div class="row mb-4">             
               <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                <img src="assets/img/network/national/BRAC_logo.svg.png" class="img-fluid" alt="">
-              </div>
-              <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                <a href="https://clpatrust.org/" target="_blank">
                 <img src="assets/img/network/national/clpa_logo_wt.png" class="img-fluid" alt="">
+                </a>
               </div>
               <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                <a href="https://diu.ac/" target="_blank">
                 <img src="assets/img/network/national/DIU Logo High.png" class="img-fluid" alt="">
+                </a>
               </div>
               <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                <a href="http://www.brta.gov.bd/" target="_blank">
                 <img src="assets/img/network/national/Emblem_of_Bangladesh_Road_Transport_Authority_(BRTA).svg.png"
-                  class="img-fluid" alt="" style="height: 90px">
+                  class="img-fluid" alt="" style="height: 90px;width:140px">
+                </a>
               </div>
               <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                <a href="https://www.iphrc.org/" target="_blank">
                 <img src="assets/img/network/national/IPHRC Logo.jpeg" class="img-fluid" alt="">
+                </a>
               </div>
               <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                <a href="https://interpressnetwork.org/" target="_blank">
                 <img src="assets/img/network/national/IPNLogoo.png" class="img-fluid" alt="">
+                </a>
+              </div>
+              <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                <a href="https://www.iom.int/" target="_blank">
+                <img src="assets/img/network/national/iom.png" class="img-fluid" alt="">
+                </a>
               </div>
             </div>
           </div>
           <div class="swiper-slide">
             <div class="row mb-4">
               <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                <a href="https://www.nirapadsarakchai.org/" target="_blank">
                 <img src="assets/img/network/national/Nirapad Sorok CHai.png" class="img-fluid" alt="">
+                </a>
               </div>
               <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
                 <img src="assets/img/network/national/zzz.jpg" class="img-fluid" alt="" style="height: 90px">
@@ -1074,21 +1220,20 @@
 
     </div>
   </section><!-- End Network Section -->
+ <x-Counter></x-Counter>
+
 
 
 
   <!-- ======= Contact Section ======= -->
-  <section id="contact" class="contact" >
-    
-    <div class="container" data-aos="fade-up">
+  <div id="contact" class="contact pb-4" >    
+    <div class="container" >
 
-      <div class="section-title">
-        <h2>Contact</h2>
-        <h3 class="title-header">Contact Us</h3><i class="fas fa-heart"></i>
-        <p>Contact us for more information.</p>
+      <div class="">
+        <h2 class="section-title text-center">Contact Us</h2>
       </div>
 
-      <div class="row" data-aos="fade-up" data-aos-delay="100">
+      <div class="row"  data-aos-delay="100">
         <div class="col-lg-6">
           <div class="info-box mb-4">
             <i class="bx bx-map"></i>
@@ -1103,7 +1248,9 @@
           <div class="info-box">
             <i class="bx bx-envelope"></i>
             <h3>Email Us</h3>
+            <p>info@bcgddiu.org</p>
             <p>bcgd.diu@gmail.com </p>
+            <p> infobcgddiu@gmail.com  </p>
           </div>
         </div>
 
@@ -1118,17 +1265,17 @@
 
       </div>
 
-      <div class="" data-aos="fade-up" data-aos-delay="100">
+      <div class=""  data-aos-delay="100">
 
         <div class="row">
           <div class="col-lg-8 col-md-6 col-sm-12">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d14604.974079688413!2d90.40454096594159!3d23.774341155794485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sHouse%23%2004%2C%20Road%23%2001%2C%20Block%23%20F%2C%20Banani%2C%20Dhaka%201213%2C!5e0!3m2!1sen!2sbd!4v1702109721397!5m2!1sen!2sbd"
-              width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+              width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
           <div class="col-lg-4 col-md-6 col-sm-12">            
-            <iframe width="420" height="400" src="https://www.youtube.com/embed/watch?v=B8bj74COb64&list=PLtPyVZ_r0dR4mBIQ9L8dfK2geQhbuBSBc">
+            <iframe width="420" height="250" src="https://www.youtube.com/embed/watch?v=B8bj74COb64&list=PLtPyVZ_r0dR4mBIQ9L8dfK2geQhbuBSBc">
             </iframe>
           </div>
         </div>
@@ -1138,7 +1285,7 @@
       </div>
 
     </div>
-  </section><!-- End Contact Section -->
+  </div><!-- End Contact Section -->
 
 </main><!-- End #main -->
 

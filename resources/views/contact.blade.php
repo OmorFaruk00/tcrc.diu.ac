@@ -7,6 +7,9 @@
    .info-box i{
     color: #000 !important;
   }
+  .info-box {
+    height: 200px;
+  }
   .fas {
     color: #000 !important;
     margin: 0px 5px;
@@ -27,9 +30,7 @@
     <div class="container" data-aos="fade-up">
 
       <div class="section-title">
-        <h2>Contact</h2>
         <h3 class="title-header">Contact Us</h3>
-        <p>Contact us for more information.</p>
       </div>
 
       <div class="row" data-aos="fade-up" data-aos-delay="100">
@@ -47,7 +48,9 @@
           <div class="info-box">
             <i class="bx bx-envelope"></i>
             <h3>Email Us</h3>
+            <p>info@bcgddiu.org</p>
             <p>bcgd.diu@gmail.com </p>
+            <p> infobcgddiu@gmail.com  </p>
           </div>
         </div>
 

@@ -42,11 +42,11 @@ Route::get('/advocacy3',[FrontEndController::class,'advocacy3'])->name('advocacy
 Route::get('/capacity_building',[FrontEndController::class,'capacityBuilding'])->name('capacity');
 Route::get('/capacity_building1',[FrontEndController::class,'capacityBuilding1'])->name('capacity1');
 Route::get('/capacity_building2',[FrontEndController::class,'capacityBuilding2'])->name('capacity2');
-Route::get('/public_awereness',[FrontEndController::class,'publicAwereness'])->name('public.awereness');
-Route::get('/public_awereness1',[FrontEndController::class,'publicAwereness1'])->name('public_awereness1');
-Route::get('/public_awereness2',[FrontEndController::class,'publicAwereness2'])->name('public_awereness2');
-Route::get('/public_awereness3',[FrontEndController::class,'publicAwereness3'])->name('public_awereness3');
-Route::get('/public_awereness4',[FrontEndController::class,'publicAwereness4'])->name('public_awereness4');
+Route::get('/communication',[FrontEndController::class,'communication'])->name('communication');
+Route::get('/communication1',[FrontEndController::class,'communication1'])->name('communication1');
+Route::get('/communication2',[FrontEndController::class,'communication2'])->name('communication2');
+Route::get('/communication3',[FrontEndController::class,'communication3'])->name('communication3');
+Route::get('/communication4',[FrontEndController::class,'communication4'])->name('communication4');
 Route::get('/road_sefety',[FrontEndController::class,'roadSefety'])->name('road.safety');
 Route::get('/road_sefety_1',[FrontEndController::class,'roadSefety1'])->name('road_safety_1');
 Route::get('/climate_change',[FrontEndController::class,'climateChange'])->name('climate_change');
@@ -99,3 +99,5 @@ Route::get('/climate_change_1',[FrontEndController::class,'climateChange1'])->na
 Route::get('/climate_change_2',[FrontEndController::class,'climateChange2'])->name('climate_change_2');
 Route::get('/climate_change_3',[FrontEndController::class,'climateChange3'])->name('climate_change_3');
 Route::get('/climate_change_4',[FrontEndController::class,'climateChange4'])->name('climate_change_4');
+Route::get('/consultancy',[FrontEndController::class,'consultancy'])->name('consultancy');
+Route::view('/admin','admin.layouts.admin');

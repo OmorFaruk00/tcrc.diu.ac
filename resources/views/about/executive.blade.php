@@ -56,7 +56,7 @@
 </style>
 <section class="page-bg">
     <div class="container">
-          <div class="" data-aos="fade-up" data-aos-delay="200">
+          <div class="" >
             <h1 class="page-title"> Executive Body</h1>
             <p class="page-desc">Welcome to Bangladesh Center for Governance and Development, DIU.</p>
             <button class="page-btn"> <a href="{{route('home')}}">Home</a>  <i class="fas fa-arrow-right"></i> Executive</button>         
@@ -74,15 +74,15 @@
         </div>
 
         <section id="team" >
-          <div class="container" data-aos="fade-up">
+          <div class="container">
                  <div class="mb-4">
-                    <h3 class="content-section">BCGD Advisory Panel</h3>
+                    <h3 class="content-section"> Advisory Panel</h3>
                 </div>
              
               </div>
     
             <div class="row">
-              <div class="col-lg-4 col-md-6 col-sm-12 " data-aos="fade-up" data-aos-delay="100">
+              <div class="col-lg-4 col-md-6 col-sm-12 " >
                 <a href="https://profile.diu.ac/sislamk">
                   <div class="member" >
                     <div class="member-img">
@@ -96,7 +96,7 @@
                 </a>
               </div>
     
-              <div class="col-lg-4 col-md-6 col-sm-12 " data-aos="fade-up" data-aos-delay="200">
+              <div class="col-lg-4 col-md-6 col-sm-12 " >
                 <a href="https://profile.diu.ac/prof.dr.ganeshchandrasaha">
                 <div class="member">
                   <div class="member-img">
@@ -111,7 +111,7 @@
                 </a>
               </div>
     
-              <div class="col-lg-4 col-md-6 col-sm-12 " data-aos="fade-up" data-aos-delay="300">
+              <div class="col-lg-4 col-md-6 col-sm-12 " >
                 <a href="https://profile.diu.ac/patwari">
                 <div class="member">
                   <div class="member-img">
@@ -125,23 +125,7 @@
                 </div>
                 </a>
               </div>
-    
-              <div class="col-lg-4 col-md-6 col-sm-12 " data-aos="fade-up" data-aos-delay="400">
-                <a href="">
-                <div class="member">
-                  <div class="member-img">
-                    <img src="assets/img/team/Kamal Uddin, Former Diplomat.jpg"  alt="" style="">
-                    
-                  </div>
-                  <div class="team-info">
-                    <h4>Kamal Uddin, Former Diplomat</h4>
-                    <p>Adviser</p>
-                  </div>
-                </div>
-                </a>
-              </div>
-
-              <div class="col-lg-4 col-md-6 col-sm-12 " data-aos="fade-up" data-aos-delay="400">
+              <div class="col-lg-4 col-md-6 col-sm-12 " >
                 <a href="">
                 <div class="member">
                   <div class="member-img">
@@ -155,8 +139,7 @@
                 </div>
                 </a>
               </div>
-
-              <div class="col-lg-4 col-md-6 col-sm-12 " data-aos="fade-up" data-aos-delay="400">
+              <div class="col-lg-4 col-md-6 col-sm-12 " >
                 <a href="">
                 <div class="member">
                   <div class="member-img">
@@ -170,24 +153,35 @@
                   </div>
                 </div>
                 </a>
-              </div>      
-
-
-    
+              </div>     
+              <div class="col-lg-4 col-md-6 col-sm-12 " >
+                <a href="">
+                <div class="member">
+                  <div class="member-img">
+                    <img src="assets/img/team/Kamal Uddin, Former Diplomat.jpg"  alt="" style="">                    
+                  </div>
+                  <div class="team-info">
+                    <h4>Kamal Uddin, Former Diplomat</h4>
+                    <p>Adviser</p>
+                  </div>
+                </div>
+                </a>
+              </div>
+   
             </div>
     
           </div>
        
-          <div class="container" data-aos="fade-up">
+          <div class="container">
               <div class="col-lg-9 col-md-6 col-sm-12 col-sm-12">
                 <div class="mb-4">
-                    <h3 class="content-section">BCGD Executive Committee</h3>
+                    <h3 class="content-section">Executive Committee</h3>
                 </div>
               </div>            
              
     
             <div class="row">
-              <div class="col-lg-3 col-md-6 col-sm-12 " data-aos="fade-up" data-aos-delay="100">
+              <div class="col-lg-3 col-md-6 col-sm-12 " >
                 <a href="https://profile.diu.ac/patwary">
                 <div class="member">
                   <div class="member-img">
@@ -200,9 +194,107 @@
                   </div>
                 </div>
               </a>
-              </div>              
+              </div> 
+              <div class="col-lg-3 col-md-6 col-sm-12 " >
+                <a href="https://profile.diu.ac/md.rofiqul.islam">
+                <div class="member">
+                  <div class="member-img">
+                    <img src="assets/img/team/Chairman, Department of Economics, Md. Rofiqul Islam.jpg" class="img-fluid" alt="">
+                    
+                  </div>
+                  <div class="team-info">
+                    <h4>Md. Rofiqul Islam, Chairman, Department of Economics</h4>
+                    <p>Member</p>
+                  </div>
+                </div>
+              </a>
+              </div> 
+              <div class="col-lg-3 col-md-6 col-sm-12 " >
+                <a href="https://profile.diu.ac/professor.farida.begum">
+                <div class="member">
+                  <div class="member-img">
+                    <img src="assets/img/team/Chairman, Department of Pharmacy, Professor Farida Begum.jpg" class="img-fluid" alt="">
+                    
+                  </div>
+                  <div class="team-info">
+                    <h4>Professor Farida Begum, Chairman, Department of Pharmacy</h4>
+                    <p>Member</p>
+                  </div>
+                </div>
+              </a>
+              </div>  
+              <div class="col-lg-3 col-md-6 col-sm-12 " >
+                <a href="https://profile.diu.ac/dr.md.sharifulislam">
+                <div class="member">
+                  <div class="member-img">
+                    <img src="assets/img/team/Dr. Md. Shariful Alam, Associate Professor, Department of Political Science, DIU.jpg" class="img-fluid" alt="">
+                    
+                  </div>
+                  <div class="team-info">
+                    <h4>Shariful Alam, Associate Professor, Department of Political Science, DIU</h4>
+                    <p>Member</p>
+                  </div>
+                </div>
+              </a>
+              </div>    
+              <div class="col-lg-3 col-md-6 col-sm-12 " >
+                <a href="https://profile.diu.ac/prof.dr.a.t.mmahbuburrahmansarker">
+                <div class="member">
+                  <div class="member-img">
+                    <img src="assets/img/team/Chairman, Department of CSE, Dr. A.T.M. Mahbubur Rahman Sarker.jpg" class="img-fluid" alt="">
+                    
+                  </div>
+                  <div class="team-info">
+                    <h4>Dr. A.T.M. Mahbubur Rahman Sarker, Chairman, Department of CSE</h4>
+                    <p>Member</p>
+                  </div>
+                </div>
+              </a>
+              </div>    
+              <div class="col-lg-3 col-md-6 col-sm-12 " >
+                <a href="https://profile.diu.ac/md.bazlur.rahman">
+                <div class="member">
+                  <div class="member-img">
+                    <img src="assets/img/team/Md. Bazlur Rahman, Associate Professor, Department of Business Administration, DIU.jpg" class="img-fluid" alt="">
+                    
+                  </div>
+                  <div class="team-info">
+                    <h4>Md. Bazlur Rahman, Associate Professor, Department of Business Administration, DIU</h4>
+                    <p>Member</p>
+                  </div>
+                </div>
+              </a>
+              </div>   
+              <div class="col-lg-3 col-md-6 col-sm-12 " >
+                <a href="https://profile.diu.ac/md.fazlul.haque?fbclid=IwAR1iEwFPwxfdXkekbVN7KCVuDdedCtxb0ib3EC_h-UrWAUCLUQadAJoYRoM">
+                <div class="member">
+                  <div class="member-img">
+                    <img src="assets/img/team/Chairman, Department of Political Science, Md. Fazlul Haque.jpg" class="img-fluid" alt="">
+                    
+                  </div>
+                  <div class="team-info">
+                    <h4>Md. Fazlul Haque, Chairman, Department of Political Science</h4>
+                    <p>Member</p>
+                  </div>
+                </div>
+              </a>
+              </div>  
+              <div class="col-lg-3 col-md-6 col-sm-12 " >
+                <a href="https://profile.diu.ac/s.jubair.al.ahmed">
+                <div class="member">
+                  <div class="member-img">
+                    <img src="assets/img/team/Chairman, Department of English, S. Jubair Al Ahmed.jpg" class="img-fluid" alt="">
+                    
+                  </div>
+                  <div class="team-info">
+                    <h4>S. Jubair Al Ahmed,Chairman, Department of English</h4>
+                    <p>Member</p>
+                  </div>
+                </div>
+              </a>
+              </div> 
 
-              <div class="col-lg-3 col-md-6 col-sm-12 " data-aos="fade-up" data-aos-delay="100">
+              <div class="col-lg-3 col-md-6 col-sm-12 " >
                 <a href="https://profile.diu.ac/md.azmir.hossain">
                 <div class="member">
                   <div class="member-img">
@@ -216,7 +308,35 @@
                 </div>
               </a>
               </div>
-              <div class="col-lg-3 col-md-6 col-sm-12 " data-aos="fade-up" data-aos-delay="100">
+              <div class="col-lg-3 col-md-6 col-sm-12 " >
+                <a href="https://profile.diu.ac/jamsedur.rahman?fbclid=IwAR2mX4t0V4Qkk9aly9uMbv_bnAa_h2VheqDcPx4qf9S7Ny2rMxxQxINjvN4">
+                <div class="member">
+                  <div class="member-img">
+                    <img src="assets/img/team/Chairman, Department of Sociology, Jamsedur Rahman.jpg" class="img-fluid" alt="">
+                    
+                  </div>
+                  <div class="team-info">
+                    <h4>Jamsedur Rahman, Chairman, Department of Sociology</h4>
+                    <p>Member</p>
+                  </div>
+                </div>
+              </a>
+              </div>  
+              <div class="col-lg-3 col-md-6 col-sm-12 " >
+                <a href="https://profile.diu.ac/mohammad.tareq">
+                <div class="member">
+                  <div class="member-img">
+                    <img src="assets/img/team/Chairman, Department of EEE, Mohammad Tareq.jpg" class="img-fluid" alt="">
+                    
+                  </div>
+                  <div class="team-info">
+                    <h4>Mohammad Tareq, Chairman, Department of EEE</h4>
+                    <p>Member</p>
+                  </div>
+                </div>
+              </a>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12 " >
                 <a href="https://profile.diu.ac/md.raisul.islam.sourav">
                 <div class="member">
                   <div class="member-img">
@@ -231,119 +351,7 @@
                 </div>
               </a>
               </div>
-              <div class="col-lg-3 col-md-6 col-sm-12 " data-aos="fade-up" data-aos-delay="100">
-                <a href="https://profile.diu.ac/prof.dr.a.t.mmahbuburrahmansarker">
-                <div class="member">
-                  <div class="member-img">
-                    <img src="assets/img/team/Chairman, Department of CSE, Dr. A.T.M. Mahbubur Rahman Sarker.jpg" class="img-fluid" alt="">
-                    
-                  </div>
-                  <div class="team-info">
-                    <h4>Dr. A.T.M. Mahbubur Rahman Sarker, Chairman, Department of CSE</h4>
-                    <p>Member</p>
-                  </div>
-                </div>
-              </a>
-              </div>
-              <div class="col-lg-3 col-md-6 col-sm-12 " data-aos="fade-up" data-aos-delay="100">
-                <a href="https://profile.diu.ac/mohammad.tareq">
-                <div class="member">
-                  <div class="member-img">
-                    <img src="assets/img/team/Chairman, Department of EEE, Mohammad Tareq.jpg" class="img-fluid" alt="">
-                    
-                  </div>
-                  <div class="team-info">
-                    <h4>Mohammad Tareq, Chairman, Department of EEE</h4>
-                    <p>Member</p>
-                  </div>
-                </div>
-              </a>
-              </div>
-              <div class="col-lg-3 col-md-6 col-sm-12 " data-aos="fade-up" data-aos-delay="100">
-                <a href="https://profile.diu.ac/shovon">
-                <div class="member">
-                  <div class="member-img">
-                    <img src="assets/img/team/Chairman, Department of Civil Engineering, S M SAZZAD AHMED SHOVON.jpg" class="img-fluid" alt="">
-                    
-                  </div>
-                  <div class="team-info">
-                    <h4>S M SAZZAD AHMED SHOVON, Chairman, Department of Civil Engineering</h4>
-                    <p>Member</p>
-                  </div>
-                </div>
-              </a>
-              </div>
-              <div class="col-lg-3 col-md-6 col-sm-12 " data-aos="fade-up" data-aos-delay="100">
-                <a href="https://profile.diu.ac/s.jubair.al.ahmed">
-                <div class="member">
-                  <div class="member-img">
-                    <img src="assets/img/team/Chairman, Department of English, S. Jubair Al Ahmed.jpg" class="img-fluid" alt="">
-                    
-                  </div>
-                  <div class="team-info">
-                    <h4>S. Jubair Al Ahmed,Chairman, Department of English</h4>
-                    <p>Member</p>
-                  </div>
-                </div>
-              </a>
-              </div>
-              <div class="col-lg-3 col-md-6 col-sm-12 " data-aos="fade-up" data-aos-delay="100">
-                <a href="https://profile.diu.ac/jamsedur.rahman?fbclid=IwAR2mX4t0V4Qkk9aly9uMbv_bnAa_h2VheqDcPx4qf9S7Ny2rMxxQxINjvN4">
-                <div class="member">
-                  <div class="member-img">
-                    <img src="assets/img/team/Chairman, Department of Sociology, Jamsedur Rahman.jpg" class="img-fluid" alt="">
-                    
-                  </div>
-                  <div class="team-info">
-                    <h4>Jamsedur Rahman, Chairman, Department of Sociology</h4>
-                    <p>Member</p>
-                  </div>
-                </div>
-              </a>
-              </div>
-              <div class="col-lg-3 col-md-6 col-sm-12 " data-aos="fade-up" data-aos-delay="100">
-                <a href="https://profile.diu.ac/professor.farida.begum">
-                <div class="member">
-                  <div class="member-img">
-                    <img src="assets/img/team/Chairman, Department of Pharmacy, Professor Farida Begum.jpg" class="img-fluid" alt="">
-                    
-                  </div>
-                  <div class="team-info">
-                    <h4>Professor Farida Begum, Chairman, Department of Pharmacy</h4>
-                    <p>Member</p>
-                  </div>
-                </div>
-              </a>
-              </div>
-              <div class="col-lg-3 col-md-6 col-sm-12 " data-aos="fade-up" data-aos-delay="100">
-                <a href="https://profile.diu.ac/md.fazlul.haque?fbclid=IwAR1iEwFPwxfdXkekbVN7KCVuDdedCtxb0ib3EC_h-UrWAUCLUQadAJoYRoM">
-                <div class="member">
-                  <div class="member-img">
-                    <img src="assets/img/team/Chairman, Department of Political Science, Md. Fazlul Haque.jpg" class="img-fluid" alt="">
-                    
-                  </div>
-                  <div class="team-info">
-                    <h4>Md. Fazlul Haque, Chairman, Department of Political Science</h4>
-                    <p>Member</p>
-                  </div>
-                </div>
-              </a>
-              </div>
-              <div class="col-lg-3 col-md-6 col-sm-12 " data-aos="fade-up" data-aos-delay="100">
-                <a href="https://profile.diu.ac/md.rofiqul.islam">
-                <div class="member">
-                  <div class="member-img">
-                    <img src="assets/img/team/Chairman, Department of Economics, Md. Rofiqul Islam.jpg" class="img-fluid" alt="">
-                    
-                  </div>
-                  <div class="team-info">
-                    <h4>Md. Rofiqul Islam, Chairman, Department of Economics</h4>
-                    <p>Member</p>
-                  </div>
-                </div>
-              </a>
-              </div>
-              <div class="col-lg-3 col-md-6 col-sm-12 " data-aos="fade-up" data-aos-delay="100">
+              <div class="col-lg-3 col-md-6 col-sm-12 " >
                 <a href="">
                 <div class="member">
                   <div class="member-img">
@@ -357,7 +365,27 @@
                 </div>
               </a>
               </div>
-              <div class="col-lg-3 col-md-6 col-sm-12 " data-aos="fade-up" data-aos-delay="100">
+             
+             
+              <div class="col-lg-3 col-md-6 col-sm-12 " >
+                <a href="https://profile.diu.ac/shovon">
+                <div class="member">
+                  <div class="member-img">
+                    <img src="assets/img/team/Chairman, Department of Civil Engineering, S M SAZZAD AHMED SHOVON.jpg" class="img-fluid" alt="">
+                    
+                  </div>
+                  <div class="team-info">
+                    <h4>S M SAZZAD AHMED SHOVON, Chairman, Department of Civil Engineering</h4>
+                    <p>Member</p>
+                  </div>
+                </div>
+              </a>
+              </div>
+             
+                       
+                      
+              
+              <div class="col-lg-3 col-md-6 col-sm-12 " >
                 <a href="https://profile.diu.ac/farhana.zaman">
                 <div class="member">
                   <div class="member-img">
@@ -371,34 +399,7 @@
                 </div>
               </a>
               </div>
-              <div class="col-lg-3 col-md-6 col-sm-12 " data-aos="fade-up" data-aos-delay="100">
-                <a href="https://profile.diu.ac/md.bazlur.rahman">
-                <div class="member">
-                  <div class="member-img">
-                    <img src="assets/img/team/Md. Bazlur Rahman, Associate Professor, Department of Business Administration, DIU.jpg" class="img-fluid" alt="">
-                    
-                  </div>
-                  <div class="team-info">
-                    <h4>Md. Bazlur Rahman, Associate Professor, Department of Business Administration, DIU</h4>
-                    <p>Member</p>
-                  </div>
-                </div>
-              </a>
-              </div>
-              <div class="col-lg-3 col-md-6 col-sm-12 " data-aos="fade-up" data-aos-delay="100">
-                <a href="https://profile.diu.ac/dr.md.sharifulislam">
-                <div class="member">
-                  <div class="member-img">
-                    <img src="assets/img/team/Dr. Md. Shariful Alam, Associate Professor, Department of Political Science, DIU.jpg" class="img-fluid" alt="">
-                    
-                  </div>
-                  <div class="team-info">
-                    <h4>Shariful Alam, Associate Professor, Department of Political Science, DIU</h4>
-                    <p>Member</p>
-                  </div>
-                </div>
-              </a>
-              </div>
+                       
              
     
     
@@ -414,7 +415,7 @@
 {{-- <section>
     <div class="container my-5">
         <h1 class="mb-3">Executive Person</h1>
-        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+        <div class="testimonials-slider swiper" >
             <div class="swiper-wrapper">
   
               <div class="swiper-slide">
@@ -441,7 +442,7 @@
                             <span class="signature-website">www.yourwebsite.com</span>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-sm-12 mb-5" data-aos="fade-left" data-aos-delay="100">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-sm-12 mb-5" data-aos="fade-left" >
                         <div class="email-signature">
                             <div class="signature-img">
                                 <img src="assets/img/team/team-2.jpg" alt="">
@@ -492,7 +493,7 @@
                             <span class="signature-website">www.yourwebsite.com</span>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-sm-12 mb-5" data-aos="fade-left" data-aos-delay="100">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-sm-12 mb-5" data-aos="fade-left" >
                         <div class="email-signature">
                             <div class="signature-img">
                                 <img src="assets/img/team/team-4.jpg" alt="">

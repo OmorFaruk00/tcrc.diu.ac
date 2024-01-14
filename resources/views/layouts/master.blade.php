@@ -40,12 +40,20 @@
     justify-content: center;
     align-items: center;
     list-style: none;
-    margin: 0;
-    padding: 0;
+   
+    
 }
+/* .head-bottom{
+  margin-bottom: 10px;
+  margin-top: 20px;
+  border-bottom: 1px solid gray !important;
+
+} */
+
   .navbar>ul>li {
   white-space: nowrap;
-  padding: 10px 0 10px 5px !important;
+  padding: 10px 0px 10px 11px !important;
+  
 }
 .navbar a,
 .navbar a:focus {  
@@ -61,19 +69,26 @@
  
   .navbar a,
 .navbar a:focus {  
-  font-size: 11px !important;
+  font-size: 14px !important;
 
 }
 .top-logo img{
   width:70px
+}
+.navbar>ul>li {
+  padding: 10px 0px 10px 6px !important;
 }
 }
 @media only screen and (min-width: 1100px) and (max-width: 1199px) { 
  
  .navbar a,
 .navbar a:focus {  
- font-size: 13px !important;
+ font-size: 14px !important;
 
+}
+.navbar>ul>li {
+  white-space: nowrap;
+  padding: 10px 0px 10px 14px !important;
 }
 .top-logo img{
  width:70px
@@ -83,8 +98,11 @@
  
   .navbar a,
 .navbar a:focus {  
-  font-size: 14px !important;
+  font-size: 16px !important;
 
+}
+.navbar>ul>li {
+  padding: 10px 0px 10px 10px !important;
 }
 .top-logo img{
   width:100px
@@ -139,6 +157,17 @@
   color: #fff;
   padding-top: 15px;
 }
+.head-border{
+  margin-bottom: 10px;
+  border-bottom: 1px solid gray !important;
+}
+.btn-title:hover{
+  color: #FDC106 !important;
+}
+.btn-title{
+  color: #fff !important;
+}
+
 
 
 
@@ -156,16 +185,16 @@
   <section id="topbar" class="d-flex align-items-center">
     <div class="container d-flex justify-content-center justify-content-md-between">
       <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">bcgd.diu@gmail.com</a></i>
+        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">info@bcgddiu.org</a></i>
         <i class="bi bi-phone d-flex align-items-center ms-4"><span>+8801718200985 </span></i>
       </div>
       <div class="social-links d-none d-md-flex align-items-center">
-        <a href="https://www.facebook.com/BCGD.DIU" class="facebook"><h5 class="pt-2 color-white">Bangladesh Center for Governance and Development-DIU</h5></a>
+        <a href="https://www.facebook.com/BCGD.DIU" class="btn-title"><h5 class="pt-2 color-white">Bangladesh Center for Governance and Development-DIU</h5></a>
        
       </div>
       <div class="social-links d-none d-md-flex align-items-center">
         <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="https://www.facebook.com/BCGD.DIU" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.facebook.com/BCGD.DIU" class="facebook" target="_blank"><i class="bi bi-facebook"></i></a>
         <a href="https://www.youtube.com/channel/UCZfqywsI1mP1wPJ4xA6esyg" class="instagram" target="_blank"><i class="bi bi-youtube"></i></a>
         <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
       </div>
@@ -182,7 +211,7 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto{{ Request::is('/') ? ' active' : '' }}" href="{{route('home')}}">Home</a></li>          
-          <li class="dropdown"><a href="#"> <span>About Us</span>  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mt-1" height='15px'>
+          <li class="dropdown"><a href="#"> <span>About Us</span>  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mt-1" height='10px'>
             <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
           </svg></i></a>
             <ul>
@@ -190,12 +219,12 @@
               <li class="dropdown"> <a href="#"><span>Our Team</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
                   <li><a href="{{route('about.executive')}}">Executive Body</a></li>
-                  <li><a href="{{route('about.team')}}">Working Team</a></li>                  
+                  <li><a href="{{route('about.team')}}">Resource Team</a></li>                  
                 </ul>
               </li>              
             </ul>
           </li>
-          <li class="dropdown"><a href="#"><span>Our Approach</span>  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mt-1" height='15px'>
+          <li class="dropdown"><a href="#"><span>Our Approach</span>  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mt-1" height='10px'>
             <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
           </svg></a>
             <ul>             
@@ -203,18 +232,19 @@
               <li><a href="{{route('research')}}">Research</a></li>
               <li><a href="{{route('advocacy')}}">Advocacy</a></li>
               <li><a href="{{route('capacity')}}">Capacity Building</a></li>
-              <li><a href="{{route('public.awereness')}}">Public Awareness</a></li>
+              <li><a href="{{route('communication')}}">Communication</a></li>
               <li><a href="{{route('publication')}}">Publication</a></li>
+              <li><a href="{{route('consultancy')}}"> Consultancy</a></li>
                          
             </ul>
           </li>
-          <li class="dropdown"><a href="#"><span>Area of Expertise</span>  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mt-1" height='15px'>
+          <li class="dropdown"><a href="#"><span>Area of Expertise</span>  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mt-1" height='10px'>
             <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
           </svg></a>
             <ul>
               <li><a href="{{route('road.safety')}}">Road Safety</a></li>
               <li><a href="{{route('climate_change')}}">Climate Change</a></li>
-              <li><a href="{{route('migration')}}">Migration</a></li>
+              <li><a href="{{route('migration')}}">Climate Migration</a></li>
               <li><a href="{{route('public.health')}}">Public Health</a></li>
                          
             </ul>
@@ -226,7 +256,7 @@
           {{-- <li><a class="nav-link scrollto{{ Request::is('publication') ? ' active' : '' }}" href="{{route('publication')}}">Publication</a></li> --}}
           <li><a class="nav-link scrollto{{ Request::is('achivement') ? ' active' : '' }}" href="{{route('achivement')}}">Achievement</a></li>
           <li><a class="nav-link scrollto{{ Request::is('our_network') ? ' active' : '' }}" href="{{route('network')}}">Network</a></li>
-          <li class="dropdown"><a href="#"><span>Newsroom</span>  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mt-1" height='15px'>
+          <li class="dropdown"><a href="#"><span>Newsroom</span>  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mt-1" height='10px'>
             <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
           </svg></a>
             <ul>
@@ -252,6 +282,9 @@
       {{-- <img src="assets/img/list.png" alt="" > --}}
     </div>
   </header><!-- End Header -->
+  <div class="head-border">
+
+  </div>
 
 
 
@@ -269,13 +302,15 @@
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-contact">
-            <a href="{{route('home')}}" class=""><img src="assets/img/bcgd.jpg" alt="" style="width:150px;margin-bottom:10px;height:50px"></a>
+            <a href="{{route('home')}}" class=""><img src="assets/img/logo.jpg" alt="" style="width:150px;margin-bottom:10px;height:50px"></a>
             <p>
               House# 04, Road# 01, Block# F,<br>
               Banani, Dhaka 1213, Bangladesh.<br>
                <br>
               <strong>Phone:</strong>  +8801718200985<br>
+              <strong>Email:</strong> info@bcgddiu.org<br>
               <strong>Email:</strong> bcgd.diu@gmail.com<br>
+              <strong>Email:</strong>  infobcgddiu@gmail.com <br>
             </p>
           </div>
 
@@ -284,8 +319,8 @@
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="{{route('about.executive')}}" target="_blank">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#services">Services</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#portfolio">Portfolio</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#area-of-expertice">Area of Expertise</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="{{route('contact')}}" target="_blank">Contact</a></li>
             </ul>
           </div>
@@ -296,8 +331,8 @@
               <li><i class="bx bx-chevron-right"></i> <a href="{{route('recent.activities')}}" target="_blank">Recent Activities</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="{{route('publication')}}" target="_blank">Publication</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="{{route('achivement')}}" target="_blank">Achievement</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="{{route('network')}}" target="_blank">Our Network</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="{{route('social.media')}}" target="_blank">Social Media</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{{route('network')}}" target="_blank">Network</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{{route('mainstream.media')}}" target="_blank">Newsroom</a></li>
             </ul>
           </div>
 
@@ -306,9 +341,9 @@
             <p>Get in touch our social network for more information.</p>
             <div class="social-links mt-3">
               <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="https://www.facebook.com/BCGD.DIU" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+              <a href="https://www.facebook.com/BCGD.DIU" class="facebook" target="_blank"><i class="bx bxl-facebook"></i></a>
+              <a href="https://www.youtube.com/channel/UCZfqywsI1mP1wPJ4xA6esyg" class="instagram" target="_blank"><i class="bi bi-youtube"></i></a>
+              {{-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a> --}}
               <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
             </div>
           </div>

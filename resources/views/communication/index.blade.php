@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-@section('title', 'public awareness')
+@section('title', 'Communication')
 
 @section('content')
 <style>
@@ -41,10 +41,10 @@
 <section class="page-bg">
     <div class="container">
         <div class="" data-aos="fade-up" data-aos-delay="200">
-            <h1 class="page-title">Public <A></A>Awareness</h1>
+            <h1 class="page-title">Communication</h1>
             <p class="page-desc">Welcome to Bangladesh Center for Governance and Development, DIU.</p>
             <button class="page-btn"> <a href="{{route('home')}}">Home</a> <i class="fas fa-arrow-right"></i>
-                Public Awareness</button>
+                Communication</button>
         </div>
     </div>
 </section>
@@ -63,7 +63,7 @@
                             Team Dhaka International University is at COP 27-Climate Change Debriefing Program at
                             Parliament Members Club, Bangladesh National Parliament, Dhaka.
                         </p>
-                        <a href="{{route('public_awereness1')}}" class="btn btn-warning" target="_blank">Read More</a>
+                        <a href="{{route('communication1')}}" class="btn btn-warning" target="_blank">Read More</a>
                     </div>
                 </div>
             </div>
@@ -78,7 +78,7 @@
                             quas. Placeat ab provident temporibus repellat laboriosam quia fugit odio incidunt, rerum
                             fuga earum, ratione nostrum quis aliquid animi consequatur. Vitae ut delectus atque,
                         </p>
-                        <a href="{{route('public_awereness2')}}" class="btn btn-warning" target="_blank">Read More</a>
+                        <a href="{{route('communication2')}}" class="btn btn-warning" target="_blank">Read More</a>
                     </div>
                 </div>
             </div>
@@ -92,7 +92,7 @@
                             organized by Dhaka International University, CANSA, and OXFAM at Hotel Intercontinental,
                             Dhaka today (11 November 2023).
                         </p>
-                        <a href="{{route('public_awereness3')}}" class="btn btn-warning" target="_blank">Read More</a>
+                        <a href="{{route('communication3')}}" class="btn btn-warning" target="_blank">Read More</a>
                     </div>
                 </div>
             </div>
@@ -105,7 +105,7 @@
                             Dhaka International University has received international recognition (Observer Status) from
                             the United Nations Framework Convention on Climate Change (UNFCCC)..
                         </p>
-                        <a href="{{route('public_awereness4')}}" class="btn btn-warning" target="_blank">Read More</a>
+                        <a href="{{route('communication4')}}" class="btn btn-warning" target="_blank">Read More</a>
                     </div>
                 </div>
             </div>

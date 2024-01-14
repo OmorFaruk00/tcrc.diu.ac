@@ -77,40 +77,34 @@
 
   <section id="mission" class="mission">
     <div class="container" data-aos="fade-up">
-      <div class="row ">        
-        <div class="col-lg-6  p-5" data-aos="fade-up" data-aos-delay="100">
+      <div class="row mb-5">  
+        <div class="col-lg-2 col-md-4 col-sm-12" data-aos="fade-right" data-aos-delay="100">
+          <img src="assets/img/slider1.jpg" class="" alt="" style="height:170px;width:170px;border-radius:50%">
+        </div>       
+        <div class="col-lg-10 col-md-8 col-sm-12 p-2" data-aos="fade-up" data-aos-delay="100">
             <h2 class="title-section">Our Mission</h2>
             <p class="description" style="text-align:justify">
-              <i class="bi bi-check-circle-fill"></i> Analyze public policies, governance and development issues, national and regional development priorities, challenges posed by the 4IR, climate change, migration and displacement.
-            </p>
-
-            <p class="description" style="text-align:justify">
-              <i class="bi bi-check-circle-fill"></i>
+              Analyze public policies, governance and development issues, national and regional development priorities, challenges posed by the 4IR, climate change, migration and displacement.
               Advocate for the development and implementation of the pro-poor public policies through the mobilization of experts, professionals and academia.
+              Establish networks and partnerships with national, regional and international agencies and institutes for both generation and dissemination of knowledge, sharing of experiences and capacity building.
+
             </p>
 
-            <p class="description" style="text-align:justify">
-              <i class="bi bi-check-circle-fill"></i>
-              Establish networks and partnerships with national, regional and international agencies and institutes for both generation and dissemination of knowledge, sharing of experiences and capacity building. 
-            </p>
+            
         </div>
-        <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-          <img src="assets/img/slider1.jpg" class="page_img" alt="" style="height: 400px">
-        </div> 
+        
         </div>
       </div>
     </div>
-  </section>
 
-  <section id="vission" class="vission">
     <div class="container" data-aos="fade-up">
-      <div class="row "> 
-        <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-          <img src="assets/img/slider2.jpg" class="page_img" alt="" style="height: 300px">
+      <div class="row mb-5"> 
+        <div class="col-lg-2 col-md-4 col-sm-12" data-aos="fade-right" data-aos-delay="100">
+          <img src="assets/img/slider2.jpg" alt="" style="height:170px;width:170px;border-radius:50%">
         </div>        
-        <div class="col-lg-6  p-5" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-lg-10 col-md-8 col-sm-12  py-5 px-2" data-aos="fade-up" data-aos-delay="100">
             <h2 class="title-section">Our Vission</h2>
-            <p class="fst-italic my-4" class="desc-section">
+            <p class="fst-italic my-2" class="desc-section">
               The visions of BCGD are to become a think tank and academic hub on public policy, climate change and migration studies across the globe.
             </p>        
 
@@ -119,33 +113,35 @@
         </div>
       </div>
     </div>
-  </section>
 
-  <section id="history" class="history">
     <div class="container" data-aos="fade-up">
 
       <div class="row "> 
+        <div class="col-lg-2 col-md-4 col-sm-12" data-aos="fade-right" data-aos-delay="100">
+          <img src="assets/img/slider3.jpg" alt="" style="height:170px;width:170px;border-radius:50%">
+        </div> 
         
-        <div class="col-lg-6  p-5" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-lg-10 col-md-8 col-sm-12 " data-aos="fade-up" data-aos-delay="100">
             <h2 class="title-section">Our Goals</h2>
             <p class="description" style="text-align:justify">
-              <i class="bi bi-check-circle-fill"></i> Develop a pool of professionals, academicians and researchers in the fields of public policy, governance and development, public health, disasters, climate change, migration, and displacement.
+               Develop a pool of professionals, academicians and researchers in the fields of public policy, governance and development, public health, disasters, climate change, migration, and displacement.
+              Create evidences for strengthening the public policies on governance and development through conducting research on policy matters and academic areas at local, national and regional levels and disseminate the results for public awareness and mobilizing the support of the members of the public and the policy makers.
+              Offer a open platform for dialogue, debate and discourse on public policies, governance, development, public health, climate change, migration and displacement, and social inclusion. 
             </p>   
-            <p class="description" style="text-align:justify">
+            {{-- <p class="description" style="text-align:justify">
               <i class="bi bi-check-circle-fill"></i> Create evidences for strengthening the public policies on governance and development through conducting research on policy matters and academic areas at local, national and regional levels and disseminate the results for public awareness and mobilizing the support of the members of the public and the policy makers. 
             </p>   
             <p class="description" style="text-align:justify">
               <i class="bi bi-check-circle-fill"></i> Offer a open platform for dialogue, debate and discourse on public policies, governance, development, public health, climate change, migration and displacement, and social inclusion. 
-            </p>    
+            </p>     --}}
 
         </div>
-        <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-          <img src="assets/img/slider3.jpg" class="page_img" alt="" style="height: 400px">
-        </div> 
+        
         </div>
       </div>
     </div>
   </section>
+   
 
 
 @endsection

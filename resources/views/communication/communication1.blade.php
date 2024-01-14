@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'public awareness')
+@section('title', 'communication')
 @section('content')
 <style>
   .item p {

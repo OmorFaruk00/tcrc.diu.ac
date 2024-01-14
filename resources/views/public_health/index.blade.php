@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-@section('title', 'Road Safety')
+@section('title', 'public health')
 
 @section('content')
 <style>

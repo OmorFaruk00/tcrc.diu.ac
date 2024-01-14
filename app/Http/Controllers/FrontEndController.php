@@ -77,20 +77,20 @@ class FrontEndController extends Controller
     public function capacityBuilding2(){
         return view('capacity_building.capacity-building2');
     }
-     public function publicAwereness(){
-        return view('public_awareness.index');
+     public function communication(){
+        return view('communication.index');
     }
-    public function publicAwereness1(){
-        return view('public_awareness.public-awareness1');
+    public function communication1(){
+        return view('communication.communication1');
     }
-    public function publicAwereness2(){
-        return view('public_awareness.public-awareness2');
+    public function communication2(){
+        return view('communication.communication2');
     }
-    public function publicAwereness3(){
-        return view('public_awareness.public-awareness3');
+    public function communication3(){
+        return view('communication.communication3');
     }
-    public function publicAwereness4(){
-        return view('public_awareness.public-awareness4');
+    public function communication4(){
+        return view('communication.communication4');
     }
     public function roadSefety(){
         return view('road_sefety.index');
@@ -245,6 +245,9 @@ class FrontEndController extends Controller
     }
     public function climateChange4(){
         return view('climate_change.climate-change4');
+    }
+    public function consultancy(){
+        return view('consultancy.index');
     }
    
 
