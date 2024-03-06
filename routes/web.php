@@ -1,7 +1,12 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\NetworkController;
+use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\FrontEndController;
+use App\Http\Controllers\MediaCenterController;
+use App\Http\Controllers\OurExpertiseController;
+use App\Http\Controllers\PublicationsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,11 +26,12 @@ Route::get('/about_team',[FrontEndController::class,'aboutTeam'])->name('about.t
 Route::get('/about_history',[FrontEndController::class,'aboutHistory'])->name('about.history');
 Route::get('/about_executive',[FrontEndController::class,'aboutExecutive'])->name('about.executive');
 Route::get('/contact',[FrontEndController::class,'contact'])->name('contact');
+Route::get('/bd_tpack',[FrontEndController::class,'bdTpack'])->name('bd_tpack');
 Route::get('/recent_activities',[FrontEndController::class,'recentActivities'])->name('recent.activities');
 Route::get('/publication',[FrontEndController::class,'publication'])->name('publication');
 Route::get('/achivement',[FrontEndController::class,'achivement'])->name('achivement');
 Route::get('/our_network',[FrontEndController::class,'network'])->name('network');
-Route::get('/research',[FrontEndController::class,'research'])->name('research');
+Route::get('/research',[FrontEndController::class,'research'])->name('researchs');
 Route::get('/research1',[FrontEndController::class,'research1'])->name('research1');
 Route::get('/research2',[FrontEndController::class,'research2'])->name('research2');
 Route::get('/research3',[FrontEndController::class,'research3'])->name('research3');
@@ -101,3 +107,73 @@ Route::get('/climate_change_3',[FrontEndController::class,'climateChange3'])->na
 Route::get('/climate_change_4',[FrontEndController::class,'climateChange4'])->name('climate_change_4');
 Route::get('/consultancy',[FrontEndController::class,'consultancy'])->name('consultancy');
 Route::view('/admin','admin.layouts.admin');
+
+
+    Route::get('/recent_activies',[OurExpertiseController::class,'recentActivies'])->name('recent_activies');
+    Route::get('/recent_activies/{id}',[OurExpertiseController::class,'recentActiviesDetails'])->name('recent_activities_details');
+
+    Route::get('/graphical_health',[OurExpertiseController::class,'graphicalHealth'])->name('graphical_health');
+    Route::get('/graphical_health/{id}',[OurExpertiseController::class,'graphicalHealthDetails'])->name('graphical_health_details');
+
+    Route::get('/standard_packaging',[OurExpertiseController::class,'standardPackaging'])->name('standard_packaging');
+    Route::get('/standard_packaging/{id}',[OurExpertiseController::class,'standardPackagingDetails'])->name('standard_packaging_details');
+
+    Route::get('/emerging_tobacco',[OurExpertiseController::class,'emergingTobacco'])->name('emerging_tobacco');
+    Route::get('/emerging_tobacco/{id}',[OurExpertiseController::class,'emergingTobaccoDetails'])->name('emerging_tobacco_details');
+
+    Route::get('/tobacco_taxation',[OurExpertiseController::class,'tobaccoTaxation'])->name('tobacco_taxation');
+    Route::get('/tobacco_taxation/{id}',[OurExpertiseController::class,'tobaccoTaxationDetails'])->name('tobacco_taxation_details');
+
+    Route::get('/law_amendment',[OurExpertiseController::class,'lawAmendment'])->name('law_amendment');
+    Route::get('/law_amendment/{id}',[OurExpertiseController::class,'lawAmendmentDetails'])->name('law_amendment_details');
+
+    Route::get('/public_health',[OurExpertiseController::class,'publicHealth'])->name('public_health');
+    Route::get('/public_health/{id}',[OurExpertiseController::class,'publicHealthDetails'])->name('public_health_details');
+
+    Route::get('/mayor_alliance',[OurExpertiseController::class,'mayorAlliance'])->name('mayor_alliance');
+    Route::get('/mayor_alliance/{id}',[OurExpertiseController::class,'mayorAllianceDetails'])->name('mayor_alliance_details');
+
+    Route::get('/other_activities',[OurExpertiseController::class,'otherActivities'])->name('other_activities');
+    Route::get('/other_activities/{id}',[OurExpertiseController::class,'otherActivitiesDetails'])->name('other_activities_details');
+
+
+
+Route::prefix('publications')->group(function () {
+    Route::get('/research',[PublicationsController::class,'research'])->name('research');
+    Route::get('/research/{id}',[PublicationsController::class,'researchDetails'])->name('research_details');
+
+    Route::get('/article',[PublicationsController::class,'article'])->name('article');
+    Route::get('/article/{id}',[PublicationsController::class,'articleDetails'])->name('article_details');
+
+    Route::get('/factsheet',[PublicationsController::class,'factsheet'])->name('factsheet');
+    Route::get('/factsheet/{id}',[PublicationsController::class,'factsheetDetails'])->name('factsheet_details');
+
+    Route::get('/policy_brief',[PublicationsController::class,'policyBrief'])->name('policy_brief');
+    Route::get('/policy_brief/{id}',[PublicationsController::class,'policyBriefDetails'])->name('policy_brief_details');
+
+    Route::get('/others',[PublicationsController::class,'others'])->name('others');
+    Route::get('/others/{id}',[PublicationsController::class,'othersDetails'])->name('others_details');
+    
+});
+
+Route::get('/project/ongoing_project',[ProjectController::class,'ongoingProject'])->name('ongoing_project');
+Route::get('/project/ongoing_project/{id}',[ProjectController::class,'ongoingProjectDetails'])->name('ongoing_project_details');
+Route::get('/project/completed_project',[ProjectController::class,'completedProject'])->name('completed_project');
+Route::get('/project/completed_project/{id}',[ProjectController::class,'completedProjectDetails'])->name('completed_project_details');
+
+Route::get('/networks/national_partner',[NetworkController::class,'nationalPartner'])->name('national_partner');
+Route::get('/networks/international_partner',[NetworkController::class,'internationalPartner'])->name('international_partner');
+
+
+Route::prefix('media_center')->group(function () {
+    Route::get('/mainstream_media',[MediaCenterController::class,'mainstreamMedia'])->name('mainstream_media');
+    Route::get('/mainstream_media/{id}',[MediaCenterController::class,'mainstreamMediaDetails'])->name('mainstream_media_details');
+
+    Route::get('/electronic_media',[MediaCenterController::class,'electronicMedia'])->name('electronic_media');
+    Route::get('/electronic_media/{id}',[MediaCenterController::class,'electronicMediaDetails'])->name('electronic_media_details');
+
+    Route::get('/photo',[MediaCenterController::class,'photo'])->name('photo');
+    Route::get('/video',[MediaCenterController::class,'video'])->name('video');
+
+    
+});

@@ -3,11 +3,17 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Traits\ApiTrait;
 
 class FrontEndController extends Controller
 {
+    use ApiTrait;
     public function index(){
-        return view('index');
+        $teams = $this->getTeamMembers('general');
+        $activities = $this->getRecentActivities('activities');
+        $sliders =  $this->getSlider();
+        $partners = $this->getPartner();
+        return view('index',compact('sliders','activities','teams','partners'));
     }
     public function aboutTeam(){
         return view('about.team');
@@ -21,6 +27,9 @@ class FrontEndController extends Controller
     public function contact(){
         return view('contact');
     }    
+    public function bdTpack(){
+        return view('bd_tpack');
+    } 
    
     public function network(){
         return view('our-network');

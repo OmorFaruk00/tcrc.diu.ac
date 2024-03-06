@@ -5,12 +5,12 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>@yield('title', 'app')</title>
+  <title>TCRC-DIU @yield('title',)</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/bcgd.jpg" rel="icon">
+  <link href="assets/images/tcrc.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -27,9 +27,15 @@
   <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
   <link href="{{ asset('assets/css/pages.css') }}" rel="stylesheet">
   <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
-  {{-- <link href="{{ asset('assets/css/fontawesome.css') }}" rel="stylesheet"> --}}
- <!-- Add this to the head of your HTML file -->
-<!-- Add this to the head of your HTML file -->
+   <!-- Include jQuery -->
+   <script src="{{ asset('assets/js/jquery-3.6.0.min.js') }}"></script>
+
+
+  <!-- Include Owl Carousel CSS and JS files -->
+<link href="{{ asset('assets/css/owl.carousel.min.css') }}" rel="stylesheet">
+<link href="{{ asset('assets/css/owl.theme.default.min.css') }}" rel="stylesheet">
+<script src="{{ asset('assets/js/owl.carousel.min.js') }}"></script>
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
 
@@ -43,21 +49,14 @@
    
     
 }
-/* .head-bottom{
-  margin-bottom: 10px;
-  margin-top: 20px;
-  border-bottom: 1px solid gray !important;
-
-} */
-
   .navbar>ul>li {
   white-space: nowrap;
-  padding: 10px 0px 10px 11px !important;
+  padding: 10px 0px 5px 5px !important;
   
 }
 .navbar a,
 .navbar a:focus {  
-  font-size: 18px !important;
+  font-size: 16px !important;
   text-align: center;
 
 }
@@ -69,26 +68,26 @@
  
   .navbar a,
 .navbar a:focus {  
-  font-size: 14px !important;
+  font-size: 13px !important;
 
 }
 .top-logo img{
   width:70px
 }
 .navbar>ul>li {
-  padding: 10px 0px 10px 6px !important;
+  padding: 10px 0px 5px 5px !important;
 }
 }
 @media only screen and (min-width: 1100px) and (max-width: 1199px) { 
  
  .navbar a,
 .navbar a:focus {  
- font-size: 14px !important;
+ font-size: 13px !important;
 
 }
 .navbar>ul>li {
   white-space: nowrap;
-  padding: 10px 0px 10px 14px !important;
+  padding: 10px 0px 5px 5px !important;
 }
 .top-logo img{
  width:70px
@@ -98,11 +97,11 @@
  
   .navbar a,
 .navbar a:focus {  
-  font-size: 16px !important;
+  font-size: 14px !important;
 
 }
 .navbar>ul>li {
-  padding: 10px 0px 10px 10px !important;
+  padding: 10px 0px 6px 6px !important;
 }
 .top-logo img{
   width:100px
@@ -133,28 +132,28 @@
   }
 }
 .footer-top{
-  background: #063c34 !important;
+  background: #79c7c8 !important;
   /* background: linear-gradient(to right, #008080, #135C51) !important;
   /* Replace #008080 and #135C51 with your desired gradient colors */
-  color: #fff !important; 
+  color: #000 !important; 
 }
 .footer-contact p{
-  color: #fff !important;
+  color: #000 !important;
 }
 .footer-links ul li a,i{
-  color: #fff !important;
+  color: #000 !important;
 }
 .footer-links h4{
-  color: #fff !important;
+  color: #000 !important;
 }
 #footer{
-  background: #135C51 !important;
+  background: #36CFD1 !important;
 }
 .copyright {
  height: 30px;
 }
 .copyright p{
-  color: #fff;
+  color: #000;
   padding-top: 15px;
 }
 .head-border{
@@ -165,7 +164,7 @@
   color: #FDC106 !important;
 }
 .btn-title{
-  color: #fff !important;
+  color: #000 !important;
 }
 
 
@@ -185,11 +184,11 @@
   <section id="topbar" class="d-flex align-items-center">
     <div class="container d-flex justify-content-center justify-content-md-between">
       <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">info@bcgddiu.org</a></i>
-        <i class="bi bi-phone d-flex align-items-center ms-4"><span>+8801718200985 </span></i>
+        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com" style="color: #000">infotcrcdiu@gmail.com </a></i>
+        <i class="bi bi-phone d-flex align-items-center ms-4"><span style="color: #000"> +88 016 80097627 &  +880171 8200 985</span></i>
       </div>
       <div class="social-links d-none d-md-flex align-items-center">
-        <a href="https://www.facebook.com/BCGD.DIU" class="btn-title"><h5 class="pt-2 color-white">Bangladesh Center for Governance and Development-DIU</h5></a>
+        <a href="https://www.facebook.com/BCGD.DIU" class="btn-title"><h5 class="pt-2 color-white">Tobacco Control and Research Cell (TCRC)-DIU</h5></a>
        
       </div>
       <div class="social-links d-none d-md-flex align-items-center">
@@ -206,7 +205,7 @@
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex align-items-center">
     <div class=" d-flex align-items-center justify-content-between">      
-      <a href="{{route('home')}}" class="top-logo"><img src="assets/img/logo.jpg" alt="" style=""></a>
+      <a href="{{route('home')}}" class="top-logo"><img src="{{ asset('assets/images/tcrc.png') }}" alt="TCRC Logo"></a>
 
       <nav id="navbar" class="navbar">
         <ul>
@@ -224,48 +223,88 @@
               </li>              
             </ul>
           </li>
-          <li class="dropdown"><a href="#"><span>Our Approach</span>  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mt-1" height='10px'>
+          <li class="dropdown"><a href="#"><span>Our Expertise</span>  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mt-1" height='10px'>
             <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
           </svg></a>
             <ul>             
                 
+              <li><a href="{{ route('recent_activies') }}">Recent Activites</a></li>
+              <li><a href="{{route('graphical_health')}}">Graphical Health Warnings</a></li>
+              <li><a href="{{route('standard_packaging')}}">Standard Packaging</a></li>
+              <li><a href="{{route('emerging_tobacco')}}">Emerging Tobacco Products</a></li>
+              <li><a href="{{route('tobacco_taxation')}}">Tobacco Taxation</a></li>
+              <li><a href="{{route('law_amendment')}}">Law Amendment</a></li>
+              <li><a href="{{route('public_health')}}">Public Health</a></li>
+              <li><a href="{{route('mayor_alliance')}}">Mayor Alliance for Healthy Cities</a></li>
+              <li><a href="{{route('other_activities')}}">Other Activities</a></li>
+              
+                         
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Publications</span>  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mt-1" height='10px'>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+          </svg></a>
+            <ul>
               <li><a href="{{route('research')}}">Research</a></li>
-              <li><a href="{{route('advocacy')}}">Advocacy</a></li>
-              <li><a href="{{route('capacity')}}">Capacity Building</a></li>
-              <li><a href="{{route('communication')}}">Communication</a></li>
-              <li><a href="{{route('publication')}}">Publication</a></li>
-              <li><a href="{{route('consultancy')}}"> Consultancy</a></li>
+              <li><a href="{{route('article')}}">Article</a></li>
+              <li><a href="{{route('factsheet')}}">Factsheet</a></li>
+              <li><a href="{{route('policy_brief')}}">Policy Brief</a></li>
+              <li><a href="{{route('others')}}">Others</a></li>
+              
                          
             </ul>
           </li>
-          <li class="dropdown"><a href="#"><span>Area of Expertise</span>  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mt-1" height='10px'>
+
+          <li class="dropdown"><a href="#"><span>Projects</span>  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mt-1" height='10px'>
             <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
           </svg></a>
             <ul>
-              <li><a href="{{route('road.safety')}}">Road Safety</a></li>
-              <li><a href="{{route('climate_change')}}">Climate Change</a></li>
-              <li><a href="{{route('migration')}}">Climate Migration</a></li>
-              <li><a href="{{route('public.health')}}">Public Health</a></li>
+              <li><a href="{{route('ongoing_project')}}">Ongoing Projects</a></li>
+              <li><a href="{{route('completed_project')}}">Completed Projects</a></li>           
                          
             </ul>
-          </li>
-          {{-- <li><a class="nav-link scrollto" href="{{route('recent.activities')}}">Recent Activities</a></li> --}}
+          </li>         
+          
 
-          <li><a class="nav-link scrollto{{ Request::is('recent_activities') ? ' active' : '' }}" href="{{ route('recent.activities') }}">Recent Activities</a></li>
-
-          {{-- <li><a class="nav-link scrollto{{ Request::is('publication') ? ' active' : '' }}" href="{{route('publication')}}">Publication</a></li> --}}
+        
           <li><a class="nav-link scrollto{{ Request::is('achivement') ? ' active' : '' }}" href="{{route('achivement')}}">Achievement</a></li>
-          <li><a class="nav-link scrollto{{ Request::is('our_network') ? ' active' : '' }}" href="{{route('network')}}">Network</a></li>
-          <li class="dropdown"><a href="#"><span>Newsroom</span>  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mt-1" height='10px'>
+
+          <li class="dropdown"><a href="#"><span>Networks</span>  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mt-1" height='10px'>
             <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
           </svg></a>
             <ul>
-              {{-- <li><a href="{{route('social.media')}}">Social Media</a></li> --}}
-              <li><a href="{{route('mainstream.media')}}">Mainstream Media</a></li>
-              <li><a href="{{route('electronic.media')}}">Electronic Media</a></li>
+              <li><a href="{{route('national_partner')}}">National Partners</a></li>
+              <li><a href="{{route('international_partner')}}">International Partners</a></li>           
                          
             </ul>
           </li>
+          <li class="dropdown"><a href="#"><span>Media Center</span>  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mt-1" height='10px'>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+          </svg></a>
+            <ul>
+              <li><a href="{{route('mainstream_media')}}">Mainstream Media News</a></li>
+              <li><a href="{{route('electronic_media')}}">Electronic Media News</a></li>
+              <li><a href="{{route('photo')}}">Photos</a></li>
+              <li><a href="{{route('video')}}">Videos</a></li>
+                         
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>KnowledgeHub</span>  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mt-1" height='10px'>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+          </svg></a>
+            <ul>             
+                
+              <li><a href="{{route('graphical_health')}}">Graphical Health Warnings</a></li>
+              <li><a href="{{route('standard_packaging')}}">Standard Packaging</a></li>
+              <li><a href="{{route('emerging_tobacco')}}">Emerging Tobacco Products</a></li>
+              <li><a href="{{route('tobacco_taxation')}}">Tobacco Taxation</a></li>
+              <li><a href="{{route('law_amendment')}}">Law Amendment</a></li>
+              <li><a href="{{route('public_health')}}">Public Health</a></li>
+              
+                         
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto"  href="{{route('bd_tpack')}}">BD-Tpack</a></li>
           <li><a class="nav-link scrollto{{ Request::is('contact') ? ' active' : '' }}"  href="{{route('contact')}}">Contact Us</a></li>
         </ul>
         {{-- <i class="bi bi-list mobile-nav-toggle"></i> --}}
@@ -302,37 +341,35 @@
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-contact">
-            <a href="{{route('home')}}" class=""><img src="assets/img/logo.jpg" alt="" style="width:150px;margin-bottom:10px;height:50px"></a>
+            <a href="{{route('home')}}" class=""><img src="{{ asset('assets/images/tcrc.png') }}" alt="" style="width:200px;margin-bottom:10px;height:60px;margin-left:-20px"></a>
             <p>
               House# 04, Road# 01, Block# F,<br>
               Banani, Dhaka 1213, Bangladesh.<br>
                <br>
-              <strong>Phone:</strong>  +8801718200985<br>
-              <strong>Email:</strong> info@bcgddiu.org<br>
-              <strong>Email:</strong> bcgd.diu@gmail.com<br>
-              <strong>Email:</strong>  infobcgddiu@gmail.com <br>
+              <strong>Phone:</strong>  +88 016 80097627<br>
+              <strong>Phone:</strong>  +880171 8200 985<br>
+              <strong>Email:</strong> infotcrcdiu@gmail.com<br>
             </p>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Useful Links</h4>
+            <h4>Quick Links</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="{{route('about.executive')}}" target="_blank">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#portfolio">Portfolio</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#area-of-expertice">Area of Expertise</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#activities">Recent Activities</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#publication">Publications</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="{{route('contact')}}" target="_blank">Contact</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Useful Links</h4>
+            <h4>Quick Links</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="{{route('recent.activities')}}" target="_blank">Recent Activities</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="{{route('publication')}}" target="_blank">Publication</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="{{route('achivement')}}" target="_blank">Achievement</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="{{route('network')}}" target="_blank">Network</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="{{route('mainstream.media')}}" target="_blank">Newsroom</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#team" target="_blank">Team</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#network" target="_blank">Networks</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#achivement" target="_blank">Achievement</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{{route('mainstream_media')}}" target="_blank">Media Center</a></li>
             </ul>
           </div>
 
@@ -376,7 +413,7 @@
   <script src="{{ asset('assets/vendor/php-email-form/validate.js') }}"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="{{ asset('assets/js/main.js') }}"></script>
 
 </body>
 

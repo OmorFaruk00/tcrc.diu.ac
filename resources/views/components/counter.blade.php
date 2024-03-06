@@ -42,7 +42,7 @@ try {
 //     die("Connection failed: " . $conn->connect_error);
 // }
 
-$checkConditionSql = "SELECT COUNT(*) as count FROM bcgd WHERE date = '$currentDate' AND country_code = '$countryCode' AND ip = '$visitorIp'";
+$checkConditionSql = "SELECT COUNT(*) as count FROM tcrc WHERE date = '$currentDate' AND country_code = '$countryCode' AND ip = '$visitorIp'";
 $checkConditionResult = $conn->query($checkConditionSql);
 $checkConditionCount = $checkConditionResult->fetch_assoc()['count'];
 if ($checkConditionCount > 0) {
@@ -50,21 +50,21 @@ if ($checkConditionCount > 0) {
     // console.log('already count')
 } else {
     // SQL query to insert data
-    $sql = "INSERT INTO bcgd (ip, country_code, date) VALUES ('$visitorIp', '$countryCode', '$currentDate')";
+    $sql = "INSERT INTO tcrc (ip, country_code, date) VALUES ('$visitorIp', '$countryCode', '$currentDate')";
     $conn->query($sql);    
 }
 
 
-$totalVisitorsSql = "SELECT COUNT(*) as total FROM bcgd";
+$totalVisitorsSql = "SELECT COUNT(*) as total FROM tcrc";
 $totalVisitorsResult = $conn->query($totalVisitorsSql);
 $totalVisitors = $totalVisitorsResult->fetch_assoc()['total'];
 
-$countCountryCodesSql = "SELECT COUNT(DISTINCT country_code) AS unique_country_count FROM bcgd";
+$countCountryCodesSql = "SELECT COUNT(DISTINCT country_code) AS unique_country_count FROM tcrc";
 $countCountryCodesResult = $conn->query($countCountryCodesSql);
 $countCountryCodes = $countCountryCodesResult->fetch_assoc()['unique_country_count'];
 
 // SQL query to count total visitors for today
-$countTodayVisitorsSql = "SELECT COUNT(*) AS total_today_visitors FROM bcgd WHERE date = '$currentDate'";
+$countTodayVisitorsSql = "SELECT COUNT(*) AS total_today_visitors FROM tcrc WHERE date = '$currentDate'";
 $countTodayVisitorsResult = $conn->query($countTodayVisitorsSql);
 $countTodayVisitors = $countTodayVisitorsResult->fetch_assoc()['total_today_visitors'];
 
@@ -72,7 +72,7 @@ $countTodayVisitors = $countTodayVisitorsResult->fetch_assoc()['total_today_visi
 $thirtyDaysAgo = date('Y-m-d', strtotime('-30 days'));
 
 // SQL query to count total visitors for the last 30 days
-$countLast30DaysVisitorsSql = "SELECT COUNT(*) AS total_last_30_days_visitors FROM bcgd WHERE date >= '$thirtyDaysAgo'";
+$countLast30DaysVisitorsSql = "SELECT COUNT(*) AS total_last_30_days_visitors FROM tcrc WHERE date >= '$thirtyDaysAgo'";
 $countLast30DaysVisitorsResult = $conn->query($countLast30DaysVisitorsSql);
 
 $countLast30DaysVisitors = $countLast30DaysVisitorsResult->fetch_assoc()['total_last_30_days_visitors'];

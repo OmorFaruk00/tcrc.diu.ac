@@ -1,28 +1,36 @@
 @extends('layouts.master')
-
-@section('title', 'about_history')
-
+@section('title', 'About History')
 @section('content')
 <section class="page-bg">
   <div class="container">
         <div class="" data-aos="fade-up" data-aos-delay="200">
           <h1 class="page-title"> About History</h1>
-          <p class="text-white">Welcome to Bangladesh Center for Governance and Development, DIU.</p>
-          <button class="page-btn"> <a href="{{route('home')}}">Home</a>  <i class="fas fa-arrow-right"></i> History</button>         
+          <p class="page-desc">Welcome to Tobacco Control and Research Cell (TCRC), DIU.</p>
+          <button class="page-btn"> <a  href="{{route('home')}}">Home</a>  <i class="fas fa-arrow-right"></i> History</button>         
         </div>        
     </div>
 </section>
 
 
 <section class="container">
-  <h2>About DIU and BCGD</h2>
-  <p style="text-align: justify">“A commitment to excellence in teaching and research will increasingly depend on a university’s capacity to partner as much it does on its ability to create and disseminate knowledge. Put another way, effective engagement that is central to university strategy may provide the most powerful driver of the agility required to thrive in the uncertain environment to which universities are subject worldwide.” said by Gaskell, S. & A. Collette. (The Benefits of Engagement. Times Higher Ed Feature Article; Dec 8, 2016.)</p>
+  <h2>About DIU and TCRC</h2>
+  <p style="text-align:justify"><strong>Dhaka International University (DIU)</strong> is one of the leading, familiar and
+    note-worthy private universities in Bangladesh which was established on 7th April 1995. It is a
+    non-profitable institution having strict academic discipline. This university was founded by Late Alhaj
+    Professor Dr. A. B. M. Mafizul Islam Patwari, Former Chairman of the Department of Law, University of Dhaka,
+    Bangladesh. It is recognized that Dhaka International University is such a private university, which was
+    founded by a person who was a renowned humanist and academician. He established this university with high
+    hopes and aspirations to disseminate knowledge and thus to extend the horizon of knowledge. That is why, the
+    motto of DIU is the universal adage, &quot;Knowledge is Power&quot;. DIU generates this power of Knowledge
+    in an individual through teaching-learning, training, research and guidance by using modern, pragmatic and
+    well-designed curriculum and syllabi.&nbsp;&nbsp;</p>
 
-  <p style="text-align:justify"><strong>Dhaka International University (DIU)</strong> is one of the leading private universities in Bangladesh. It is a non-profitable institution which maintains strict academic rules and provides quality educations in 10 disciplines. The mission of DIU is to produce able leaders in the respective field of study who can meet the challenges of present dynamic world. It provides multidisciplinary knowledge, improves communication and interpersonal skills at the highest level of excellence among the students, which will make them honest, sincere and dedicated in their thoughts and deeds. The vision of this university is ‘to see an educated and healthy generation’. </p>
-
-  <p style="text-align:justify">To meet successfully the above vision and missions, the university is continuously working on various governance, and development issues including climate change, human migration due to climate change, public health, human rights and so on.</p>
-
-  <p style="text-align:justify">As Bangladesh looks forward to becoming an advanced economy by 2041, the country needs professionals with an adequate understanding of the evolving governance and development dynamics. Therefore, there is always an overarching need for critical research on governance and development issues such as nationwide fast mobility and communication for fast economic growth, climate change, river erosion, reduced upstream flow of the rivers, salinity, migration, displacement, increased inequality, unemployment, social disintegration, and so on. Within this context and formalization with the community engagement, the university has established the <strong> Bangladesh Center for Governance and Development (BCGD). </strong></p>
+  <p style="text-align:justify"><strong> Tobacco Control and Research Cell (TCRC) </strong> is a research and advocacy cell of
+    Dhaka International University which was established in 2012. The mission of the cell are to carry out the
+    research and advocacy for effective tobacco control movement and to create awareness as well as act as a
+    pressure group to enforce, implement, and modify tobacco control law. <strong>&nbsp;</strong>The vision of
+    the cell is to same with the Honorable Prime Minister of Bangladesh is to create country tobacco free by
+    2040. </p>
 
 </section>
 {{-- <section>
