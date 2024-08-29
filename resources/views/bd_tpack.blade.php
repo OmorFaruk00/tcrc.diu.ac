@@ -2,7 +2,72 @@
 @section('title', 'BD-TPack')
 @section('content')
 <style>
-   
+
+
+
+#project{
+  background: #F4F4F4;
+
+}
+
+.publication{
+  text-align: center;
+  margin-bottom: 50px;
+  position: relative;
+}
+.publication:after{
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(60deg,#4da1a9,#99c24d);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+  transform: scale(0);
+  transition: all 0.5s ease 0s;
+}
+.publication:hover:after{
+  transform: scale(1);
+}
+.publication img{
+  width: 100%;
+  height: auto;
+}
+.publication .team-content{
+  width: 75%;
+  background: #fff;
+  padding: 30px 0;
+  margin: 0 auto;
+  border: 1px solid #eee;
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  transition: all 0.3s ease 0s;
+}
+.publication .title{
+  font-size: 16px;
+  font-weight: 700;
+  color: #444;
+  text-transform: uppercase;
+  margin: 0 0 10px 0;
+}
+.publication .post{
+  display: block;
+  font-size: 13px;
+  color: #999;
+  text-transform: capitalize;
+}
+
+
+@media only screen and (max-width:990px){
+  .publication{ margin-bottom: 80px; }
+}
+
+
+
 </style>
 <section class="page-bg">
     <div class="container">
@@ -15,142 +80,84 @@
     </div>
 </section>
 
-<section id="executive">
+<div style="background:#F6F9FE">
     <div class="container">
-        <div class="owl-carousel owl-theme" id="activities">
-            <div class="item">
-                <div class="activitie mb-4">
-                    <div class="activitie-img">
-                        <img src="assets/img/activity/activity1.png" class="img-fluid" alt="">
-
-                    </div>
-                    <div class="activitie-info">
-                        <h4>Program Report: Roundtable Meeting on Road Safety Law - Bangladesh Perspective
-                        </h4>
-                        <p>The roundtable meeting on Road Safety Law Bangladesh Perspective was organized by the Road
-                            Safety
-                            Coalition Bangladesh at Hotel Intercontinental, Dhaka. </p>
-                        <p>21st October, 2023</p>
-                        <a href="{{ route('activity1') }}" target="_blank" class="read_more mb-4">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="activitie">
-                    <div class="activitie-img">
-                        <img src="assets/img/activity/activity1.png" class="img-fluid" alt="">
-
-                    </div>
-                    <div class="activitie-info">
-                        <h4>Program Report: Roundtable Meeting on Road Safety Law - Bangladesh Perspective
-                        </h4>
-                        <p>The roundtable meeting on Road Safety Law Bangladesh Perspective was organized by the Road
-                            Safety
-                            Coalition Bangladesh at Hotel Intercontinental, Dhaka. </p>
-                        <p>21st October, 2023</p>
-                        <a href="{{ route('activity1') }}" target="_blank" class="read_more mb-4">Read More</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="activitie">
-                    <div class="activitie-img">
-                        <img src="assets/img/activity/activity1.png" class="img-fluid" alt="">
-
-                    </div>
-                    <div class="activitie-info">
-                        <h4>Program Report: Roundtable Meeting on Road Safety Law - Bangladesh Perspective
-                        </h4>
-                        <p>The roundtable meeting on Road Safety Law Bangladesh Perspective was organized by the Road
-                            Safety
-                            Coalition Bangladesh at Hotel Intercontinental, Dhaka. </p>
-                        <p>21st October, 2023</p>
-                        <a href="{{ route('activity1') }}" target="_blank" class="read_more mb-4">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="activitie">
-                    <div class="activitie-img">
-                        <img src="assets/img/activity/activity1.png" class="img-fluid" alt="">
-
-                    </div>
-                    <div class="activitie-info">
-                        <h4>Program Report: Roundtable Meeting on Road Safety Law - Bangladesh Perspective
-                        </h4>
-                        <p>The roundtable meeting on Road Safety Law Bangladesh Perspective was organized by the Road
-                            Safety
-                            Coalition Bangladesh at Hotel Intercontinental, Dhaka. </p>
-                        <p>21st October, 2023</p>
-                        <a href="{{ route('activity1') }}" target="_blank" class="read_more mb-4">Read More</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="activitie">
-                    <div class="activitie-img">
-                        <img src="assets/img/activity/activity1.png" class="img-fluid" alt="">
-
-                    </div>
-                    <div class="activitie-info">
-                        <h4>Program Report: Roundtable Meeting on Road Safety Law - Bangladesh Perspective
-                        </h4>
-                        <p>The roundtable meeting on Road Safety Law Bangladesh Perspective was organized by the Road
-                            Safety
-                            Coalition Bangladesh at Hotel Intercontinental, Dhaka. </p>
-                        <p>21st October, 2023</p>
-                        <a href="{{ route('activity1') }}" target="_blank" class="read_more mb-4">Read More</a>
-                    </div>
-                </div>
-            </div>
-           
-           
-        </div>
-
+        <div >
+            <div class="container">
+              <h2 class="section-title text-center mt-4">Publications</h2>     
         
+              <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
+                  <a href="{{route('research')}}" target="_blank">
+                    <div class="publication">
+                      <img src="assets/img/publication/publication88.png" style="height: 200px">
+                      <div class="team-content">
+                        <span class="title">Research</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
+                  <a href="{{route('journal_article')}}" target="_blank">
+                    <div class="publication">
+                      <img src="assets/img/activity/activity4.png" style="height: 200px">
+                      <div class="team-content">
+                        <span class="title">Journal Article</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
+                  <a href="{{route('newspaper_article')}}" target="_blank">
+                    <div class="publication">
+                      <img src="assets/img/migration1.png" style="height: 200px">
+                      <div class="team-content">
+                        <span class="title">Newspaper Article</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
+                  <a href="{{route('factsheet')}}" target="_blank">
+                    <div class="publication">
+                      <img src="assets/img/climate2.png" style="height: 200px">
+                      <div class="team-content">
+                        <span class="title">Factsheet</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
+                  <a href="{{route('policy_brief')}}" target="_blank">
+                    <div class="publication">
+                      <img src="assets/img/publication/publication111.jpg" style="height: 200px">
+                      <div class="team-content">
+                        <span class="title">Policy Brief</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+               
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
+                  <a href="{{route('completed_project')}}" target="_blank">
+                    <div class="publication">
+                      <img src="assets/img/consultancy.webp" style="height: 200px">
+                      <div class="team-content">
+                        <span class="title">Completed Projects</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+        
+        
+              </div>
+        
+        
+            </div>
+        
+          </div>
     </div>
-    </div>
-    </div>
-</section>
-
-
-
-
-
-
-<script>
-    var owl = $('#activities');
-        owl.owlCarousel({
-            margin: 20,
-            dots: true,
-            nav: true,
-            navText: [
-                "<i class='fa fa-chevron-left'></i>",
-                "<i class='fa fa-chevron-right'></i>"
-            ],
-            autoplay: true,
-            autoplayHoverPause: true,
-            loop: true,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 1
-                },
-                1000: {
-                    items: 3
-                },
-                1200: {
-                    items: 4
-                }
-            }
-        });
-</script>
-
-
+</div>
 
 
 

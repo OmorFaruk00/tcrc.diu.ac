@@ -1,9 +1,17 @@
 @extends('layouts.master')
 @section('title', 'Research Details')
+@section('content') 
+<style>
+     .details-img {
+        height: 500px;
+        display: flex;
+        justify-content: center
 
-@section('content')
-
-    
+    }
+    .details-img img{
+        height: 100%;
+        width: 60%;
+    }
 </style>
 <section class="page-bg">
   <div class="container">
@@ -17,25 +25,18 @@
 </section>
 
 <div class="container py-5">
-    <div class="details-body">
-        <div class="details-img">
-            <img src="https://media.istockphoto.com/id/1443384686/photo/man-walking-in-crowds-of-people.webp?b=1&s=612x612&w=0&k=20&c=Mf6kUMF5uDelh7w-ekwHZifXBBu9QdUhk2x4hotoZDM=" alt="">         
-            
+  <div class="details-body">
+      <div class="details-img">
+          <img src="{{$data->file_path}}" alt="">          
         </div>
-        <div class="details-title">
-            <p class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat vel blanditiis facere cum quos ea? Quaerat commodi architecto labore aperiam at mollitia nostrum molestiae consequatur saepe blanditiis,</p>
-        </div>
-        <div class="details-desc">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis assumenda accusamus nemo fugiat omnis quis totam! Vel quae consequuntur veritatis, ex culpa, illum dolor cumque voluptatibus quod neque officia ipsam animi reiciendis eaque nam eum architecto accusantium numquam blanditiis quibusdam.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis assumenda accusamus nemo fugiat omnis quis totam! Vel quae consequuntur veritatis, ex culpa, illum dolor cumque voluptatibus quod neque officia ipsam animi reiciendis eaque nam eum architecto accusantium numquam blanditiis quibusdam.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis assumenda accusamus nemo fugiat omnis quis totam! Vel quae consequuntur veritatis, ex culpa, illum dolor cumque voluptatibus quod neque officia ipsam animi reiciendis eaque nam eum architecto accusantium numquam blanditiis quibusdam.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis assumenda accusamus nemo fugiat omnis quis totam! Vel quae consequuntur veritatis, ex culpa, illum dolor cumque voluptatibus quod neque officia ipsam animi reiciendis eaque nam eum architecto accusantium numquam blanditiis quibusdam.</p>
-        </div>
-        <a class="btn_read" href="pdf/publication1.pdf" download="downloaded_file.pdf">Download</a>
-
-
-
-    </div>
+      <div class="details-title pt-3">
+          <h4 class="title">{{$data->title}}</h4>
+      </div>
+      <div class="details-desc">
+          {!! $data->description !!}
+      </div>
+      <a class="btn_read" href="{{$data->file_link}}" target="_blank" download="downloaded_file.pdf">Download</a>
+  </div>
 </div>
 
 

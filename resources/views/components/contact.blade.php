@@ -38,7 +38,7 @@
 
       </div>
 
-      <div class=""  data-aos-delay="100">
+      <div id="Contact"  data-aos-delay="100">
 
         <div class="row">
           <div class="col-lg-8 col-md-6 col-sm-12">
@@ -47,8 +47,10 @@
               width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
+
+
           <div class="col-lg-4 col-md-6 col-sm-12">            
-            <iframe width="420" height="250" src="https://www.youtube.com/embed/nGYmUMqFOUI">
+            <iframe width="420" height="250" :src="`https://www.youtube.com/embed/${setting.video.code}`">
             </iframe>
           </div>
         </div>
@@ -58,4 +60,38 @@
       </div>
 
     </div>
-  </div><!-- End Contact Section -->
+  </div>
+
+  <script>
+    $(document).ready(function() {
+        var vue = new Vue({
+            el: '#Contact',
+            data: {
+                config: {
+                    base_path: "{{ env('API_URL') }}",
+                },
+                setting: '',
+            },
+            methods: {
+                getData() {
+                    var vm = this;
+
+                    axios.get(`${vm.config.base_path}/setting`)
+                        .then((response) => {
+                            vm.setting = response.data;                         
+
+                        }).catch((error) => {
+                            console.log(error.response);
+                        });
+                }
+            },
+            created() {
+                this.getData();
+
+
+
+
+            }
+        });
+    });
+</script>

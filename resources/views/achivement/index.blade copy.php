@@ -1,14 +1,14 @@
 @extends('layouts.master')
 
-@section('title', 'Article')
+@section('title', 'Achivements')
 
 @section('content')
 <section class="page-bg">
   <div class="container">
         <div class="" data-aos="fade-up" data-aos-delay="200">
-          <h1 class="page-title"> Article</h1>
+          <h1 class="page-title"> Achivements</h1>
           <p class="page-desc">Welcome to Tobacco Control and Research Cell (TCRC), DIU.</p>
-          <button class="page-btn"> <a  href="{{route('home')}}">Home</a>  <i class="fas fa-arrow-right"></i> Article</button>         
+          <button class="page-btn"> <a  href="{{route('home')}}">Home</a>  <i class="fas fa-arrow-right"></i> Achivements</button>         
         </div>        
     </div>
 </section>
@@ -27,7 +27,7 @@
             </div>
             <div class="col-lg-8 col-md-8 col-sm-12">
              <div class="publication">
-              <a href="{{ route('article_details',['id'=>1]) }}" target="_blank">
+              <a href="{{ route('achivement_details',['id'=>1]) }}" target="_blank">
                 <div class="publication-info">
                   <h4>TOBACCO CONTROL LAWS OF BANGLADESH:
                     ANALYSIS OF GAPS AND PROPOSED REFORMS
@@ -57,7 +57,7 @@
             </div>
             <div class="col-lg-8 col-md-8 col-sm-12">
              <div class="publication">
-              <a href="{{ route('article_details',['id'=>1]) }}" target="_blank">
+              <a href="{{ route('achivement_details',['id'=>1]) }}" target="_blank">
                 <div class="publication-info">
                   <h4>TOBACCO CONTROL LAWS OF BANGLADESH:
                     ANALYSIS OF GAPS AND PROPOSED REFORMS

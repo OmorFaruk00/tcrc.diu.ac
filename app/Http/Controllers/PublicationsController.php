@@ -3,24 +3,40 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Traits\ApiTrait;
 
 class publicationsController extends Controller
 {
+    use ApiTrait;
     public function research(){
-        return view('publications.research.index');
+        $data = $this->getPublications('research');
+        return view('publications.research.index',compact('data'));
 
     }
     public function researchDetails($id){
-        return view('publications.research.details');
+        $data = $this->getPublicationDetails($id);
+        return view('publications.research.details',compact('data'));
         
     }
 
-    public function article(){
-        return view('publications.article.index');
+    public function journalArticle(){
+        $data = $this->getPublications('journal_articles');
+        return view('publications.article.journal.index',compact('data'));
 
     }
-    public function articleDetails($id){
-        return view('publications.article.details');
+    public function journalArticleDetails($id){
+         $data = $this->getPublicationDetails($id);
+        return view('publications.article.journal.details',compact('data'));
+        
+    }
+    public function newspaperArticle(){
+        $data = $this->getPublications('newspaper_articles');
+        return view('publications.article.newspaper.index',compact('data'));
+
+    }
+    public function newspaperArticleDetails($id){
+        $data = $this->getPublicationDetails($id);
+        return view('publications.article.newspaper.details',compact('data'));
         
     }
     public function factsheet(){
@@ -40,12 +56,12 @@ class publicationsController extends Controller
         return view('publications.policy_brief.details');
         
     }
-    public function others(){
-        return view('publications.others.index');
+    public function programReport(){
+        return view('publications.program_report.index');
 
     }
-    public function othersDetails($id){
-        return view('publications.others.details');
+    public function programReportDetails($id){
+        return view('publications.program_report.details');
         
     }
 }

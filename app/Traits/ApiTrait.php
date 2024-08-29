@@ -147,4 +147,27 @@ trait ApiTrait
         // return response()->json(NULL, 404);
 
     }
+
+    public function getPublications($type){
+        if (Cache::has($type)) {
+            return Cache::get($type);
+        }
+
+       $result = json_decode(@file_get_contents('' . env('API_URL') . '/research-publication/'.$type, false, self::ssl()));
+
+        if (!empty($result)) {
+            Cache::put($type,$result, 1440); //1440 minute = 1 day
+            return$result;
+        }
+        return response()->json(NULL, 404);
+
+    }
+    public function getPublicationDetails($id){      
+
+       $result = json_decode(@file_get_contents('' . env('API_URL') . '/publication/'.$id, false, self::ssl()));
+       return$result;
+
+    
+
+    }
 }

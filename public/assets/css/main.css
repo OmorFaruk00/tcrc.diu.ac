@@ -92,13 +92,13 @@
 .team-info h4 {
   font-weight: 700;
   margin-bottom: 5px;
-  font-size: 18px;
+  font-size: 22px;
   color: #222222;
 }
 
 .team-info p {
   font-style: italic;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 26px;
   color: #6D747F;
 }
@@ -210,9 +210,21 @@
   padding: 0px 10px;
   margin-bottom: 10px;
   text-align: justify;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 
 }
-
+.publication-info .description {
+  color: #6D747F;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  max-height: 3.5em;
+  margin-bottom: 20px;
+}
 .publication-info p {
   color: #000 !important;
   padding: 0px 10px;
@@ -1068,7 +1080,7 @@
 }
 
 .activitie-info h4 {
-  font-size: 16px;
+  font-size: 20px;
   line-height: 26px;
   color: #000;
   padding: 0px 10px;

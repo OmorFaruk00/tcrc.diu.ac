@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'Others Details')
+@section('title', 'Achivements Details')
 
 @section('content')
 
@@ -8,10 +8,10 @@
 <section class="page-bg">
   <div class="container">
     <div class="" data-aos="fade-up" data-aos-delay="200">
-      <h1 class="page-title"> Others Details</h1>
+      <h1 class="page-title"> Article Details</h1>
       <p class="page-desc">Welcome to Tobacco Control and Research Cell (TCRC), DIU.</p>
       <button class="page-btn"> <a href="{{ route('home') }}">Home</a> <i class="fas fa-arrow-right"></i>
-        Others</button>
+        Article</button>
     </div>
   </div>
 </section>

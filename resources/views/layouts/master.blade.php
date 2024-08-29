@@ -10,12 +10,13 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/images/tcrc.png" rel="icon">
+  <link href="assets/images/tcrc.jpg" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet"> 
+  {{-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">  --}}
   <!-- Vendor CSS Files -->
+  <link href="{{ asset('assets/vendor/font/font.css')}}" rel="stylesheet">
   <link href="{{ asset('assets/vendor/aos/aos.css')}}" rel="stylesheet">
   <link href="{{ asset('assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
   <link href="{{ asset('assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
@@ -25,7 +26,7 @@
 
   <!-- Template Main CSS File -->
   <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
-  <link href="{{ asset('assets/css/pages.css') }}" rel="stylesheet">
+  <link href="{{ asset('assets/css/main.css') }}" rel="stylesheet">
   <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
    <!-- Include jQuery -->
    <script src="{{ asset('assets/js/jquery-3.6.0.min.js') }}"></script>
@@ -34,6 +35,9 @@
   <!-- Include Owl Carousel CSS and JS files -->
 <link href="{{ asset('assets/css/owl.carousel.min.css') }}" rel="stylesheet">
 <link href="{{ asset('assets/css/owl.theme.default.min.css') }}" rel="stylesheet">
+<script src="{{ asset('assets/vendor/jquery/jquery.min.js') }}"></script>
+<script src="{{ asset('assets/vendor/vue/vue.min.js') }}"></script>
+<script src="{{ asset('assets/vendor/axios/axios.min.js') }}"></script>
 <script src="{{ asset('assets/js/owl.carousel.min.js') }}"></script>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -62,7 +66,8 @@
 }
 .top-logo img{
   /* margin-left:50px; */
-  width:200px
+  width:200px;
+  height: 85px;
 }
 @media only screen and (min-width: 990px) and (max-width: 1099px) { 
  
@@ -104,7 +109,7 @@
   padding: 10px 0px 6px 6px !important;
 }
 .top-logo img{
-  width:100px
+  width:100px;  
 }
 }
 @media only screen and (min-width: 380px) and (max-width: 480px) { 
@@ -132,28 +137,28 @@
   }
 }
 .footer-top{
-  background: #79c7c8 !important;
+  background: #093C34 !important;
   /* background: linear-gradient(to right, #008080, #135C51) !important;
   /* Replace #008080 and #135C51 with your desired gradient colors */
-  color: #000 !important; 
+  color: #fff !important; 
 }
 .footer-contact p{
-  color: #000 !important;
+  color: #fff !important;
 }
 .footer-links ul li a,i{
-  color: #000 !important;
+  color: #fff !important;
 }
 .footer-links h4{
-  color: #000 !important;
+  color: #fff !important;
 }
 #footer{
-  background: #36CFD1 !important;
+  background: #135C51 !important;
 }
 .copyright {
  height: 30px;
 }
 .copyright p{
-  color: #000;
+  color: #fff;
   padding-top: 15px;
 }
 .head-border{
@@ -164,7 +169,7 @@
   color: #FDC106 !important;
 }
 .btn-title{
-  color: #000 !important;
+  color: #fff !important;
 }
 
 
@@ -184,18 +189,18 @@
   <section id="topbar" class="d-flex align-items-center">
     <div class="container d-flex justify-content-center justify-content-md-between">
       <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com" style="color: #000">infotcrcdiu@gmail.com </a></i>
-        <i class="bi bi-phone d-flex align-items-center ms-4"><span style="color: #000"> +88 016 80097627 &  +880171 8200 985</span></i>
+        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com" style="color: #fff">infotcrcdiu@gmail.com </a></i>
+        <i class="bi bi-phone d-flex align-items-center ms-4"><span style="color: #fff"> +88 016 80097627 &  +880171 8200 985</span></i>
       </div>
       <div class="social-links d-none d-md-flex align-items-center">
-        <a href="https://www.facebook.com/BCGD.DIU" class="btn-title"><h5 class="pt-2 color-white">Tobacco Control and Research Cell (TCRC)-DIU</h5></a>
+        <a href="https://www.facebook.com/TCRCDIU/" class="btn-title"><h5 class="pt-2 color-white">Tobacco Control and Research Cell (TCRC)-DIU</h5></a>
        
       </div>
       <div class="social-links d-none d-md-flex align-items-center">
-        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="https://www.facebook.com/BCGD.DIU" class="facebook" target="_blank"><i class="bi bi-facebook"></i></a>
-        <a href="https://www.youtube.com/channel/UCZfqywsI1mP1wPJ4xA6esyg" class="instagram" target="_blank"><i class="bi bi-youtube"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+        <a href="https://twitter.com/tcrcdiu" class="twitter" target="_blank"><i class="bi bi-twitter"></i></a>
+        <a href="https://www.facebook.com/TCRCDIU/" class="facebook" target="_blank"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.youtube.com/@tobaccocontrolresearchcell1467" class="instagram" target="_blank"><i class="bi bi-youtube"></i></a>
+        <a href="https://www.linkedin.com/company/90463493" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></i></a>
       </div>
     </div>
   </section>
@@ -205,7 +210,7 @@
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex align-items-center">
     <div class=" d-flex align-items-center justify-content-between">      
-      <a href="{{route('home')}}" class="top-logo"><img src="{{ asset('assets/images/tcrc.png') }}" alt="TCRC Logo"></a>
+      <a href="{{route('home')}}" class="top-logo"><img src="{{ asset('assets/images/tcrc.jpg') }}" alt="TCRC Logo"></a>
 
       <nav id="navbar" class="navbar">
         <ul>
@@ -246,10 +251,15 @@
           </svg></a>
             <ul>
               <li><a href="{{route('research')}}">Research</a></li>
-              <li><a href="{{route('article')}}">Article</a></li>
+              <li class="dropdown"> <a href="#"><span>Article</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="{{route('journal_article')}}">Journal Article</a></li>
+                  <li><a href="{{route('newspaper_article')}}">Newspaper Article</a></li>                  
+                </ul>
+              </li>  
               <li><a href="{{route('factsheet')}}">Factsheet</a></li>
               <li><a href="{{route('policy_brief')}}">Policy Brief</a></li>
-              <li><a href="{{route('others')}}">Others</a></li>
+              <li><a href="{{route('program_reports')}}">Program Reports</a></li>
               
                          
             </ul>
@@ -341,7 +351,7 @@
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-contact">
-            <a href="{{route('home')}}" class=""><img src="{{ asset('assets/images/tcrc.png') }}" alt="" style="width:200px;margin-bottom:10px;height:60px;margin-left:-20px"></a>
+            <a href="{{route('home')}}" class=""><img src="{{ asset('assets/images/tcrc.jpg') }}" alt="" style="width:200px;margin-bottom:10px;height:60px;"></a>
             <p>
               House# 04, Road# 01, Block# F,<br>
               Banani, Dhaka 1213, Bangladesh.<br>
@@ -377,11 +387,11 @@
             <h4>Our Social Networks</h4>
             <p>Get in touch our social network for more information.</p>
             <div class="social-links mt-3">
-              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="https://www.facebook.com/TCRCDIU" class="twitter" target="_blank"><i class="bx bxl-twitter"></i></a>
               <a href="https://www.facebook.com/BCGD.DIU" class="facebook" target="_blank"><i class="bx bxl-facebook"></i></a>
-              <a href="https://www.youtube.com/channel/UCZfqywsI1mP1wPJ4xA6esyg" class="instagram" target="_blank"><i class="bi bi-youtube"></i></a>
+              <a href="https://www.youtube.com/@tobaccocontrolresearchcell1467" class="instagram" target="_blank"><i class="bi bi-youtube"></i></a>
               {{-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a> --}}
-              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              <a href="https://www.linkedin.com/company/90463493" class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
             </div>
           </div>
 
