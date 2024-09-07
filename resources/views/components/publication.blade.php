@@ -118,7 +118,7 @@
               </div>
              
               <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
-                <a href="{{route('program_reports')}}" target="_blank">
+                <a href="{{route('publication')}}" target="_blank">
                   <div class="publication">
                     <img src="assets/img/consultancy.webp" style="height: 200px">
                     <div class="team-content">

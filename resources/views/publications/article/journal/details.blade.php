@@ -18,7 +18,7 @@
         <div class="" data-aos="fade-up" data-aos-delay="200">
             <h1 class="page-title"> Journal Article Details</h1>
             <p class="page-desc">Welcome to Tobacco Control and Research Cell (TCRC), DIU.</p>
-            <button class="page-btn"> <a href="{{ route('home') }}">Home</a> <i class="fas fa-arrow-right"></i>
+            <button class="page-btn"> <a href="{{ route('home') }}">Home</a> <i class="fas fa-arrow-right"></i>Library <i class="fas fa-arrow-right"></i>Article <i class="fas fa-arrow-right"></i>
                 Journal Article</button>
         </div>
     </div>

@@ -30,8 +30,7 @@ class publicationsController extends Controller
         
     }
     public function newspaperArticle(){
-        $data = $this->getPublications('newspaper_articles');
-        return view('publications.article.newspaper.index',compact('data'));
+        return view('publications.article.newspaper.index');
 
     }
     public function newspaperArticleDetails($id){
@@ -44,7 +43,8 @@ class publicationsController extends Controller
 
     }
     public function factsheetDetails($id){
-        return view('publications.factsheet.details');
+        $data = $this->getPublicationDetails($id);
+        return view('publications.factsheet.details',compact('data'));
         
     }
 
@@ -53,7 +53,8 @@ class publicationsController extends Controller
 
     }
     public function policyBriefDetails($id){
-        return view('publications.policy_brief.details');
+        $data = $this->getPublicationDetails($id);
+        return view('publications.policy_brief.details',compact('data'));
         
     }
     public function programReport(){
@@ -61,7 +62,8 @@ class publicationsController extends Controller
 
     }
     public function programReportDetails($id){
-        return view('publications.program_report.details');
+        $data = $this->getPublicationDetails($id);
+        return view('publications.program_report.details',compact('data'));
         
     }
 }

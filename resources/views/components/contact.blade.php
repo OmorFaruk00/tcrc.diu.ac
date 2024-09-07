@@ -50,7 +50,7 @@
 
 
           <div class="col-lg-4 col-md-6 col-sm-12">            
-            <iframe width="420" height="250" :src="`https://www.youtube.com/embed/${setting.video.code}`">
+            <iframe width="420" height="250" :src="`https://www.youtube.com/embed/${setting.footer_video.code}`">
             </iframe>
           </div>
         </div>

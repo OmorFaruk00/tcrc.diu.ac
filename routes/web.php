@@ -20,7 +20,7 @@ use Illuminate\Support\Facades\Artisan;
 |
 */
 
-Route::get('/cache-clear', function() {
+Route::get('/cache-clear', function () {
     Artisan::call('cache:clear');
     return 'cache cleared successfully';
 });
@@ -39,36 +39,36 @@ Route::get('/achivement', [FrontEndController::class, 'achivement'])->name('achi
 Route::get('/achivement/{id}', [FrontEndController::class, 'achivementDetails'])->name('achivement_details');
 
 
-Route::get('/recent_activies', [OurExpertiseController::class, 'recentActivies'])->name('recent_activies');
-Route::get('/recent_activies/{id}', [OurExpertiseController::class, 'recentActiviesDetails'])->name('recent_activities_details');
+Route::prefix('our_expertise')->group(function () {
+    Route::get('/recent_activies', [OurExpertiseController::class, 'recentActivies'])->name('recent_activies');
+    Route::get('/recent_activities/{id}', [OurExpertiseController::class, 'recentActiviesDetails'])->name('recent_activities_details');
 
-Route::get('/graphical_health', [OurExpertiseController::class, 'graphicalHealth'])->name('graphical_health');
-Route::get('/graphical_health/{id}', [OurExpertiseController::class, 'graphicalHealthDetails'])->name('graphical_health_details');
+    Route::get('/graphical_health', [OurExpertiseController::class, 'graphicalHealth'])->name('graphical_health');
+    Route::get('/graphical_health/{id}', [OurExpertiseController::class, 'graphicalHealthDetails'])->name('graphical_health_details');
 
-Route::get('/standard_packaging', [OurExpertiseController::class, 'standardPackaging'])->name('standard_packaging');
-Route::get('/standard_packaging/{id}', [OurExpertiseController::class, 'standardPackagingDetails'])->name('standard_packaging_details');
+    Route::get('/standard_packaging', [OurExpertiseController::class, 'standardPackaging'])->name('standard_packaging');
+    Route::get('/standard_packaging/{id}', [OurExpertiseController::class, 'standardPackagingDetails'])->name('standard_packaging_details');
 
-Route::get('/emerging_tobacco', [OurExpertiseController::class, 'emergingTobacco'])->name('emerging_tobacco');
-Route::get('/emerging_tobacco/{id}', [OurExpertiseController::class, 'emergingTobaccoDetails'])->name('emerging_tobacco_details');
+    Route::get('/emerging_tobacco', [OurExpertiseController::class, 'emergingTobacco'])->name('emerging_tobacco');
+    Route::get('/emerging_tobacco/{id}', [OurExpertiseController::class, 'emergingTobaccoDetails'])->name('emerging_tobacco_details');
 
-Route::get('/tobacco_taxation', [OurExpertiseController::class, 'tobaccoTaxation'])->name('tobacco_taxation');
-Route::get('/tobacco_taxation/{id}', [OurExpertiseController::class, 'tobaccoTaxationDetails'])->name('tobacco_taxation_details');
+    Route::get('/tobacco_taxation', [OurExpertiseController::class, 'tobaccoTaxation'])->name('tobacco_taxation');
+    Route::get('/tobacco_taxation/{id}', [OurExpertiseController::class, 'tobaccoTaxationDetails'])->name('tobacco_taxation_details');
 
-Route::get('/law_amendment', [OurExpertiseController::class, 'lawAmendment'])->name('law_amendment');
-Route::get('/law_amendment/{id}', [OurExpertiseController::class, 'lawAmendmentDetails'])->name('law_amendment_details');
+    Route::get('/law_amendment', [OurExpertiseController::class, 'lawAmendment'])->name('law_amendment');
+    Route::get('/law_amendment/{id}', [OurExpertiseController::class, 'lawAmendmentDetails'])->name('law_amendment_details');
 
-Route::get('/public_health', [OurExpertiseController::class, 'publicHealth'])->name('public_health');
-Route::get('/public_health/{id}', [OurExpertiseController::class, 'publicHealthDetails'])->name('public_health_details');
+    Route::get('/public_health', [OurExpertiseController::class, 'publicHealth'])->name('public_health');
+    Route::get('/public_health/{id}', [OurExpertiseController::class, 'publicHealthDetails'])->name('public_health_details');
 
-Route::get('/mayor_alliance', [OurExpertiseController::class, 'mayorAlliance'])->name('mayor_alliance');
-Route::get('/mayor_alliance/{id}', [OurExpertiseController::class, 'mayorAllianceDetails'])->name('mayor_alliance_details');
+    Route::get('/mayor_alliance', [OurExpertiseController::class, 'mayorAlliance'])->name('mayor_alliance');
+    Route::get('/mayor_alliance/{id}', [OurExpertiseController::class, 'mayorAllianceDetails'])->name('mayor_alliance_details');
 
-Route::get('/other_activities', [OurExpertiseController::class, 'otherActivities'])->name('other_activities');
-Route::get('/other_activities/{id}', [OurExpertiseController::class, 'otherActivitiesDetails'])->name('other_activities_details');
+    Route::get('/other_activities', [OurExpertiseController::class, 'otherActivities'])->name('other_activities');
+    Route::get('/other_activities/{id}', [OurExpertiseController::class, 'otherActivitiesDetails'])->name('other_activities_details');
+});
 
-
-
-Route::prefix('publications')->group(function () {
+Route::prefix('library')->group(function () {
     Route::get('/research', [PublicationsController::class, 'research'])->name('research');
     Route::get('/research/{id}', [PublicationsController::class, 'researchDetails'])->name('research_details');
 
@@ -84,8 +84,8 @@ Route::prefix('publications')->group(function () {
     Route::get('/policy_brief', [PublicationsController::class, 'policyBrief'])->name('policy_brief');
     Route::get('/policy_brief/{id}', [PublicationsController::class, 'policyBriefDetails'])->name('policy_brief_details');
 
-    Route::get('/program_reports', [PublicationsController::class, 'programReport'])->name('program_reports');
-    Route::get('/program_reports/{id}', [PublicationsController::class, 'programReportDetails'])->name('program_reports_details');
+    Route::get('/publication', [PublicationsController::class, 'programReport'])->name('publication');
+    Route::get('/publication/{id}', [PublicationsController::class, 'programReportDetails'])->name('publication_details');
 });
 
 Route::get('/project/ongoing_project', [ProjectController::class, 'ongoingProject'])->name('ongoing_project');

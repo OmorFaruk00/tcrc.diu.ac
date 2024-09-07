@@ -1,27 +1,56 @@
-/* .publication-info {
-    margin-bottom: 20px;
-  }
-  
-  .publication-info h4 {
-    margin-top: 10px;
-    font-size: 24px;
-    line-height: 26px;
-    color: #000 !important;
-    padding: 0px 10px;
-    margin-bottom: 10px;
-    text-align: justify;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-  
-  }
-  .publication-info .description {
-    color: #6D747F;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    max-height: 3.5em;
-    margin-bottom: 20px;
-  } */
+.pagination {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  border-radius: 0.25rem;
+}
+
+/* Pagination items */
+.pagination .page-item {
+  margin: 0 2px;
+}
+
+/* Disabled state */
+.pagination .page-item.disabled .page-link {
+  pointer-events: none;
+  background-color: #e9ecef;
+  border-color: #dee2e6;
+  color: #6c757d;
+}
+
+/* Active state */
+.pagination .page-item.active .page-link {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #fff;
+}
+
+/* Default link styles */
+.pagination .page-link {
+  position: relative;
+  display: block;
+  padding: 0.5rem 0.75rem;
+  margin-left: -1px;
+  line-height: 1.25;
+  color: #007bff;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+/* Hover state */
+.pagination .page-link:hover {
+  z-index: 2;
+  color: #0056b3;
+  background-color: #e9ecef;
+  border-color: #dee2e6;
+}
+
+/* Focus state */
+.pagination .page-link:focus {
+  z-index: 3;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}

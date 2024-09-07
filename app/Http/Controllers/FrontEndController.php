@@ -39,8 +39,9 @@ class FrontEndController extends Controller
     public function achivement(){
         return view('achivement.index');
     }
-    public function achivementDetails(){
-        return view('achivement.details');
+    public function achivementDetails($id){
+        $data = $this->getPublicationDetails($id);
+        return view('achivement.details',compact('data'));
     }
     
     

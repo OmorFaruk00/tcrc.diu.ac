@@ -233,7 +233,7 @@
           </svg></a>
             <ul>             
                 
-              <li><a href="{{ route('recent_activies') }}">Recent Activites</a></li>
+              <li><a href="{{route('recent_activies') }}">Recent Activites</a></li>
               <li><a href="{{route('graphical_health')}}">Graphical Health Warnings</a></li>
               <li><a href="{{route('standard_packaging')}}">Standard Packaging</a></li>
               <li><a href="{{route('emerging_tobacco')}}">Emerging Tobacco Products</a></li>
@@ -246,7 +246,7 @@
                          
             </ul>
           </li>
-          <li class="dropdown"><a href="#"><span>Publications</span>  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mt-1" height='10px'>
+          <li class="dropdown"><a href="#"><span> ​Library</span>  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mt-1" height='10px'>
             <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
           </svg></a>
             <ul>
@@ -259,7 +259,7 @@
               </li>  
               <li><a href="{{route('factsheet')}}">Factsheet</a></li>
               <li><a href="{{route('policy_brief')}}">Policy Brief</a></li>
-              <li><a href="{{route('program_reports')}}">Program Reports</a></li>
+              <li><a href="{{route('publication')}}">Publications</a></li>
               
                          
             </ul>
@@ -424,6 +424,8 @@
 
   <!-- Template Main JS File -->
   <script src="{{ asset('assets/js/main.js') }}"></script>
+
+  @yield('script')
 
 </body>
 
