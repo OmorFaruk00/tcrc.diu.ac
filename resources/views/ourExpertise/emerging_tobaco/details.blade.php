@@ -16,7 +16,7 @@
   </div>
 </section>
 
-<div class="container py-5">
+{{-- <div class="container py-5">
   <div class="details-body">
       <div class="details-img">
           <img src="{{$data->image_path}}" alt="">                   
@@ -28,7 +28,34 @@
          <p>{!! $data->description !!}</p>
       </div>
   </div>
+</div> --}}
+
+<div class="container py-5">
+  <div class="clearfix">
+      <h4 class="pb-3">{{$data->title}}</h4>     
+      <a href="javascript:void(0);" onclick="openModal()">
+          <img src="{{$data->image_path}}" alt="" class="article-img">
+      </a>   
+      <div class="content-desc" style="text-align: justify">{!! $data->description !!}</div>     
+  </div>
 </div>
+<div id="imageModal" class="image-modal">
+  <span class="close-btn" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImage">
+</div>
+
+  <!-- JavaScript for Modal -->
+  <script>
+    function openModal() {
+        document.getElementById("imageModal").style.display = "flex";
+        document.getElementById("modalImage").src = "{{$data->image_path}}";
+    }
+  
+    function closeModal() {
+        document.getElementById("imageModal").style.display = "none";
+    }
+  </script>
+
 
 
 

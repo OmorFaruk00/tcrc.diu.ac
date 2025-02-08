@@ -17,25 +17,32 @@
 </section>
 
 <div class="container py-5">
-    <div class="details-body">
-        <div class="details-img">
-            <img src="https://media.istockphoto.com/id/1478017633/photo/high-angle-view-of-a-lonely-man-walking-throght-the-forest.webp?b=1&s=612x612&w=0&k=20&c=VjCe9Yqsv3-j0X2a0i-12hdKFaEkjYe8sYIzlCnZHeY=" alt="">         
-            
-        </div>
-        <div class="details-title">
-            <p class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat vel blanditiis facere cum quos ea? Quaerat commodi architecto labore aperiam at mollitia nostrum molestiae consequatur saepe blanditiis,</p>
-        </div>
-        <div class="details-desc">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis assumenda accusamus nemo fugiat omnis quis totam! Vel quae consequuntur veritatis, ex culpa, illum dolor cumque voluptatibus quod neque officia ipsam animi reiciendis eaque nam eum architecto accusantium numquam blanditiis quibusdam.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis assumenda accusamus nemo fugiat omnis quis totam! Vel quae consequuntur veritatis, ex culpa, illum dolor cumque voluptatibus quod neque officia ipsam animi reiciendis eaque nam eum architecto accusantium numquam blanditiis quibusdam.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis assumenda accusamus nemo fugiat omnis quis totam! Vel quae consequuntur veritatis, ex culpa, illum dolor cumque voluptatibus quod neque officia ipsam animi reiciendis eaque nam eum architecto accusantium numquam blanditiis quibusdam.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis assumenda accusamus nemo fugiat omnis quis totam! Vel quae consequuntur veritatis, ex culpa, illum dolor cumque voluptatibus quod neque officia ipsam animi reiciendis eaque nam eum architecto accusantium numquam blanditiis quibusdam.</p>
-        </div>
-
-
-
-    </div>
+  <div class="clearfix">
+      <h4 class="pb-3">{{$data->title}}</h4>     
+      <a href="javascript:void(0);" onclick="openModal()">
+          <img src="{{$data->image_path}}" alt="" class="article-img">
+      </a>   
+      <div class="content-desc" style="text-align: justify">{!! $data->description !!}</div>     
+  </div>
 </div>
+<div id="imageModal" class="image-modal">
+  <span class="close-btn" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImage">
+</div>
+
+  <!-- JavaScript for Modal -->
+  <script>
+    function openModal() {
+        document.getElementById("imageModal").style.display = "flex";
+        document.getElementById("modalImage").src = "{{$data->image_path}}";
+    }
+  
+    function closeModal() {
+        document.getElementById("imageModal").style.display = "none";
+    }
+  </script>
+
+
 
 
 

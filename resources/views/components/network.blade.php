@@ -54,7 +54,6 @@
                     axios.get(`${vm.config.base_path}/partner`)
                         .then((response) => {
                             vm.items = response.data;
-                            console.log(response.data);
                             setTimeout(function() {
                                 var owl = $('#partner');
                                 owl.owlCarousel({

@@ -22,6 +22,22 @@ class FrontEndController extends Controller
     public function aboutHistory(){
         return view('about.history');
     }
+    public function fctcPolicy(){
+        return view('about.fctc_policy.index');
+
+    }
+    public function fctcPolicyDetails($id){
+        $data = $this->getPublicationDetails($id);
+        return view('about.fctc_policy.details',compact('data'));
+    }
+
+    public function ourRecognition(){
+        return view('about.our_recognition.index');
+    }
+    public function ourRecognitionDetails($id){
+        $data = $this->getPublicationDetails($id);
+        return view('about.our_recognition.details',compact('data'));
+    }
     public function aboutExecutive(){
         $teams = $this->getTeamMembers('executive_team');
         return view('about.executive',compact('teams'));

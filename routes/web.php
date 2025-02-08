@@ -30,6 +30,10 @@ Route::get('/cache-clear', function () {
 Route::get('/', [FrontEndController::class, 'index'])->name('home');
 Route::get('/about_team', [FrontEndController::class, 'aboutTeam'])->name('about.team');
 Route::get('/about_history', [FrontEndController::class, 'aboutHistory'])->name('about.history');
+Route::get('/fctc_5.3_policy', [FrontEndController::class, 'fctcPolicy'])->name('about.fctc_5.3_policy');
+Route::get('/fctc_5.3_policy/{id}', [FrontEndController::class, 'fctcPolicyDetails'])->name('about.fctc_5.3_policy_details');
+Route::get('/our_recognition', [FrontEndController::class, 'ourRecognition'])->name('about.our_recognition');
+Route::get('/our_recognition/{id}', [FrontEndController::class, 'ourRecognitionDetails'])->name('about.our_recognition_details');
 Route::get('/about_executive', [FrontEndController::class, 'aboutExecutive'])->name('about.executive');
 Route::get('/contact', [FrontEndController::class, 'contact'])->name('contact');
 Route::get('/bd_tpack', [FrontEndController::class, 'bdTpack'])->name('bd_tpack');

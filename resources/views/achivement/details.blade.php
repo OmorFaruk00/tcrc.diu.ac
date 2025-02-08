@@ -17,6 +17,41 @@
 </section>
 
 <div class="container py-5">
+  <div class="clearfix">
+      <h4 class="pb-3">{{$data->title}}</h4>
+
+      <!-- Clickable Image -->
+      <a href="javascript:void(0);" onclick="openModal()">
+          <img src="{{$data->file_path}}" alt="" class="article-img">
+      </a>
+
+      <!-- Description -->
+      <div class="content-desc" style="text-align: justify">{!! $data->description !!}</div>
+
+      {{-- <!-- Download Button -->
+      <a class="btn_read" href="{{$data->file_link}}" target="_blank" download="downloaded_file.pdf">Download</a> --}}
+  </div>
+</div>
+
+<!-- Image Modal -->
+<div id="imageModal" class="image-modal">
+  <span class="close-btn" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImage">
+</div>
+
+<!-- JavaScript for Modal -->
+<script>
+  function openModal() {
+      document.getElementById("imageModal").style.display = "flex";
+      document.getElementById("modalImage").src = "{{$data->file_path}}";
+  }
+
+  function closeModal() {
+      document.getElementById("imageModal").style.display = "none";
+  }
+</script>
+
+{{-- <div class="container py-5">
   <div class="details-body">
       <div class="details-img">
           <img src="{{$data->file_path}}" alt="">          
@@ -24,12 +59,12 @@
       <div class="details-title pt-3">
           <h4 class="title">{{$data->title}}</h4>
       </div>
-      <div class="details-desc">
+      <div class="details-desc mb-4">
           {!! $data->description !!}
       </div>
       <a class="btn_read" href="{{$data->file_link}}" target="_blank" download="downloaded_file.pdf">Download</a>
   </div>
-</div>
+</div> --}}
 
 
 

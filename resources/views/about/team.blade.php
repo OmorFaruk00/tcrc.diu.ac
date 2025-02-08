@@ -13,7 +13,7 @@
     </div>
 </section>
 @if(!empty($teams))
-  <x-about-team :teams="$teams"></x-about-team>
+  <x-about-resource-team :teams="$teams"></x-about-resource-team>
   @endif
   
 @endsection

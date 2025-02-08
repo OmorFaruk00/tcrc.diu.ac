@@ -63,7 +63,7 @@
   <div class="container py-4">
       <div >
           <div class="container">
-            <h2 class="section-title text-center mt-4">Publications</h2>     
+            <h2 class="section-title text-center mt-4">Library</h2>     
       
             <div class="row">
               <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
@@ -122,7 +122,7 @@
                   <div class="publication">
                     <img src="assets/img/consultancy.webp" style="height: 200px">
                     <div class="team-content">
-                      <span class="title">Program Reports</span>
+                      <span class="title">Publication</span>
                     </div>
                   </div>
                 </a>

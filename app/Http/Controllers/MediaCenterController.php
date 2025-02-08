@@ -11,14 +11,16 @@ class MediaCenterController extends Controller
     public function mainstreamMedia(){
         return view('media_center.mainstream_media.index');
     }
-    public function mainstreamMediaDetails(){
-        return view('media_center.mainstream_media.details');
+    public function mainstreamMediaDetails($id){
+        $data = $this->getActivityDetails($id);
+        return view('media_center.mainstream_media.details',compact('data'));
     }
     public function electronicMedia(){
         return view('media_center.electronic_media.index');
     }
-    public function electronicMediaDetails(){
-        return view('media_center.electronic_media.details');
+    public function electronicMediaDetails($id){
+        $data = $this->getActivityDetails($id);
+        return view('media_center.electronic_media.details',compact('data'));
     }
     public function photo(){
         $photos = $this->photoData();

@@ -2,6 +2,12 @@
     .team-info {
     height: 115px;
 }
+/* .member-img img {
+    width: 100%;         
+    height: 100%;        
+    object-fit: cover;    
+    object-position: center top;
+} */
 </style>
 <div id="" style="background: #F4F4F4" class="py-4">
     <div class="container">      
@@ -20,10 +26,23 @@
                         </div>
                     </div>
                 </a>
+               </div>
+                @endforeach
+                @endif
+
+                {{-- <div class="col-xl-3">
+                        <div class="member">
+                            <div class="member-img">
+                                <img src="https://api.diu.ac/images/Tcrc_Rahat_Rahman.jpeg" alt="">
+                            </div>
+                            <div class="team-info">
+                                <h4 style="font-size: 18px">Md Rahat Rahman</h4>
+                                <p class="pb-3">Administrative Assistant</p>
+                            </div>
+                        </div>
+                </div> --}}
             </div>
-            @endforeach
-            @endif
-            </div>
+
         </div>
     </div>
 </div>

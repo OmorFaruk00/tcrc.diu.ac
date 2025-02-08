@@ -241,10 +241,6 @@
 
 
   <!-- Recent Activities -->
-  {{-- @if(!empty($activities))
-  <x-activities :activities="$activities"></x-activities>
-  @endif --}}
-
   <x-activities />
   <!-- End Recent Activities -->
 
@@ -258,18 +254,13 @@
   <!--  End Achivement Section -->
 
 
-  <!-- ======= Team Section ======= -->
-  {{-- @if(!empty($teams))
-  <x-team :teams="$teams"></x-team>
-  @endif --}}
+  <!-- ======= Team Section ======= -->  
   <x-team />
   <!-- ======= End Team Section ======= -->
 
 
   <!-- ======= Network Section ======= -->
-  {{-- @if(!empty($partners))
-  <x-network :partners="$partners"></x-network>
-  @endif --}}
+  
   <x-network />
   <!-- End Network Section -->
 

@@ -29,6 +29,8 @@
                     </div>
                 </a>
             </div>
+
+        
            
         </div>
     </div>
@@ -78,7 +80,6 @@
                     axios.get(`${vm.config.base_path}/teams/executive_team`)
                         .then((response) => {
                             vm.items = response.data.data;
-                            console.log(vm.items);
                             setTimeout(function() {
                                 var owl = $('#team');
                                 owl.owlCarousel({
